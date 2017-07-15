@@ -39,9 +39,9 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 			arg.projectStatus="${currentPage.properties.projectStatus}"
 			arg.managementStatus="${currentPage.properties.managementStatus}"
 			arg.packagingStatus="${currentPage.properties.packagingStatus}"
-			arg.semanticVersioning="${currentPage.properties.semanticVersioning}"
 			arg.javaVersion="${currentPage.properties.javaVersion}"
 			arg.javaeeVersion="${currentPage.properties.javaeeVersion}"
+			arg.semanticVersioning="${currentPage.properties.semanticVersioning}"
 			arg.license="${currentPage.properties.license}"
 		/>
 		<p>

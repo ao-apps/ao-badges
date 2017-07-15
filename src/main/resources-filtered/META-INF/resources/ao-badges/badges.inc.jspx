@@ -35,14 +35,14 @@ Arguments:
 	arg.packagingStatus     (Optional) The packaging status.
 	                        Must be one of "developmental", "active", "unsupported"
 
-	arg.semanticVersioning  (Optional) The semantic versioning version.
-	                        Must be one of "2.0.0"
-
 	arg.javaVersion         (Optional) The minimum Java version.
 	                        Must be one of "1.5", "5", "1.6", "6", "1.7", "7", "1.8", "8", "1.9", "9"
 
 	arg.javaeeVersion       (Optional) The minimum Java EE version.
 	                        Must be one of "5", "6", "7", "8"
+
+	arg.semanticVersioning  (Optional) The semantic versioning version.
+	                        Must be one of "2.0.0"
 
 	arg.license             (Optional) The software license.
 	                        Must be one of "lgpl-3.0"
@@ -58,9 +58,9 @@ Arguments:
 		!empty arg.projectStatus
 		or !empty arg.managementStatus
 		or !empty arg.packagingStatus
-		or !empty arg.semanticVersioning
 		or !empty arg.javaVersion
 		or !empty arg.javaeeVersion
+		or !empty arg.semanticVersioning
 		or !empty arg.license
 	}">
 		<!-- TODO: Default styles included via semanticcms-registered CSS?
@@ -136,27 +136,13 @@ Arguments:
 					or !empty arg.managementStatus
 					or !empty arg.packagingStatus
 				) and (
-					!empty arg.semanticVersioning
-					or !empty arg.javaVersion
+					!empty arg.javaVersion
 					or !empty arg.javaeeVersion
+					or !empty arg.semanticVersioning
 					or !empty arg.license
 				)
 			}">
 				<br />
-			</c:if>
-			<c:if test="${!empty arg.semanticVersioning}">
-				<ao:choose>
-					<ao:when test="#{arg.semanticVersioning=='2.0.0'}">
-						<ao:a rel="nofollow" href="http://semver.org/spec/v2.0.0.html">
-							<ao:img src="/ao-badges/semver-2.0.0.svg" width="90" height="20" alt="semantic versioning: 2.0.0" />
-						</ao:a>
-					</ao:when>
-					<ao:otherwise>
-						<ao:a rel="nofollow" href="http://semver.org/">
-							<ao:img src="/ao-badges/semver-unknown.svg" width="112" height="20" alt="semantic versioning: unknown" />
-						</ao:a>
-					</ao:otherwise>
-				</ao:choose>
 			</c:if>
 			<c:if test="${!empty arg.javaVersion}">
 				<ao:choose>
@@ -217,6 +203,20 @@ Arguments:
 					<ao:otherwise>
 						<ao:a rel="nofollow" href="http://www.oracle.com/technetwork/java/javaee/overview/index.html">
 							<ao:img src="/ao-badges/javaee-unknown.svg" width="112" height="20" alt="java ee: unknown" />
+						</ao:a>
+					</ao:otherwise>
+				</ao:choose>
+			</c:if>
+			<c:if test="${!empty arg.semanticVersioning}">
+				<ao:choose>
+					<ao:when test="#{arg.semanticVersioning=='2.0.0'}">
+						<ao:a rel="nofollow" href="http://semver.org/spec/v2.0.0.html">
+							<ao:img src="/ao-badges/semver-2.0.0.svg" width="90" height="20" alt="semantic versioning: 2.0.0" />
+						</ao:a>
+					</ao:when>
+					<ao:otherwise>
+						<ao:a rel="nofollow" href="http://semver.org/">
+							<ao:img src="/ao-badges/semver-unknown.svg" width="112" height="20" alt="semantic versioning: unknown" />
 						</ao:a>
 					</ao:otherwise>
 				</ao:choose>
