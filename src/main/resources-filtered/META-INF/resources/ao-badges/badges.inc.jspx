@@ -1,0 +1,241 @@
+<!--
+ao-badges - Badges from shields.io bundled into a reusable JSP-based web component.
+Copyright (C) 2017  AO Industries, Inc.
+	support@aoindustries.com
+	7262 Bull Pen Cir
+	Mobile, AL 36695
+
+This file is part of ao-badges.
+
+ao-badges is free software: you can redistribute it and/or modify
+it under the terms of the GNU Lesser General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+ao-badges is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Lesser General Public License for more details.
+
+You should have received a copy of the GNU Lesser General Public License
+along with ao-badges.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<!--
+Creates a "p" tag of class "ao-badges" containing all of the enabled
+badges.  When there are no enabled badges, the "p" tag is not created.
+
+Arguments:
+	arg.projectStatus       (Optional) The project status.
+	                        Must be one of "beta", "current-stable", "old-stable", "end-of-life"
+
+	arg.managementStatus    (Optional) The management status.
+	                        Must be one of "preview", "production", "migration", "cleanup"
+
+	arg.packagingStatus     (Optional) The packaging status.
+	                        Must be one of "developmental", "active", "unsupported"
+
+	arg.semanticVersioning  (Optional) The semantic versioning version.
+	                        Must be one of "2.0.0"
+
+	arg.javaVersion         (Optional) The minimum Java version.
+	                        Must be one of "1.5", "5", "1.6", "6", "1.7", "7", "1.8", "8", "1.9", "9"
+
+	arg.javaeeVersion       (Optional) The minimum Java EE version.
+	                        Must be one of "5", "6", "7", "8"
+
+	arg.license             (Optional) The software license.
+	                        Must be one of "lgpl-3.0"
+-->
+<jsp:root
+	xmlns:ao="https://aoindustries.com/ao-taglib/"
+	xmlns:c="http://java.sun.com/jsp/jstl/core"
+	xmlns:jsp="http://java.sun.com/JSP/Page"
+	version="2.1"
+>
+	<jsp:directive.page language="java" pageEncoding="UTF-8" session="false" />
+	<c:if test="${
+		!empty arg.projectStatus
+		or !empty arg.managementStatus
+		or !empty arg.packagingStatus
+		or !empty arg.semanticVersioning
+		or !empty arg.javaVersion
+		or !empty arg.javaeeVersion
+		or !empty arg.license
+	}">
+		<!-- TODO: Default styles included via semanticcms-registered CSS?
+			This currently has lean dependencies so might not be worth it?
+			See global.css on aoindustries.com for default style.
+		-->
+		<!-- TODO: Intra-site core:link page links when on ao site? -->
+		<p class="ao-badges">
+			<c:if test="${!empty arg.projectStatus}">
+				<ao:a href="https://aoindustries.com/life-cycle#project">
+					<ao:choose>
+						<ao:when test="#{arg.projectStatus=='beta'}">
+							<ao:img src="/ao-badges/project-beta.svg" width="84" height="20" alt="project: beta" />
+						</ao:when>
+						<ao:when test="#{arg.projectStatus=='current-stable'}">
+							<ao:img src="/ao-badges/project-current-stable.svg" width="136" height="20" alt="project: current stable" />
+						</ao:when>
+						<ao:when test="#{arg.projectStatus=='old-stable'}">
+							<ao:img src="/ao-badges/project-old-stable.svg" width="112" height="20" alt="project: old stable" />
+						</ao:when>
+						<ao:when test="#{arg.projectStatus=='end-of-life'}">
+							<ao:img src="/ao-badges/project-end-of-life.svg" width="114" height="20" alt="project: end of life" />
+						</ao:when>
+						<ao:otherwise>
+							<ao:img src="/ao-badges/project-unknown.svg" width="110" height="20" alt="project: unknown" />
+						</ao:otherwise>
+					</ao:choose>
+				</ao:a>
+			</c:if>
+			<c:if test="${!empty arg.managementStatus}">
+				<ao:a href="https://aoindustries.com/life-cycle#management">
+					<ao:choose>
+						<ao:when test="#{arg.managementStatus=='preview'}">
+							<ao:img src="/ao-badges/management-preview.svg" width="136" height="20" alt="management: preview" />
+						</ao:when>
+						<ao:when test="#{arg.managementStatus=='production'}">
+							<ao:img src="/ao-badges/management-production.svg" width="152" height="20" alt="management: production" />
+						</ao:when>
+						<ao:when test="#{arg.managementStatus=='migration'}">
+							<ao:img src="/ao-badges/management-migration.svg" width="146" height="20" alt="management: migration" />
+						</ao:when>
+						<ao:when test="#{arg.managementStatus=='cleanup'}">
+							<ao:img src="/ao-badges/management-cleanup.svg" width="136" height="20" alt="management: cleanup" />
+						</ao:when>
+						<ao:otherwise>
+							<ao:img src="/ao-badges/management-unknown.svg" width="144" height="20" alt="management: unknown" />
+						</ao:otherwise>
+					</ao:choose>
+				</ao:a>
+			</c:if>
+			<c:if test="${!empty arg.packagingStatus}">
+				<ao:a href="https://aoindustries.com/life-cycle#packaging">
+					<ao:choose>
+						<ao:when test="#{arg.packagingStatus=='developmental'}">
+							<ao:img src="/ao-badges/packaging-developmental.svg" width="156" height="20" alt="packaging: developmental" />
+						</ao:when>
+						<ao:when test="#{arg.packagingStatus=='active'}">
+							<ao:img src="/ao-badges/packaging-active.svg" width="108" height="20" alt="packaging: active" />
+						</ao:when>
+						<ao:when test="#{arg.packagingStatus=='unsupported'}">
+							<ao:img src="/ao-badges/packaging-unsupported.svg" width="144" height="20" alt="packaging: unsupported" />
+						</ao:when>
+						<ao:otherwise>
+							<ao:img src="/ao-badges/packaging-unknown.svg" width="126" height="20" alt="packaging: unknown" />
+						</ao:otherwise>
+					</ao:choose>
+				</ao:a>
+			</c:if>
+			<!-- Selectively split into two lines -->
+			<c:if test="${
+				(
+					!empty arg.projectStatus
+					or !empty arg.managementStatus
+					or !empty arg.packagingStatus
+				) and (
+					!empty arg.semanticVersioning
+					or !empty arg.javaVersion
+					or !empty arg.javaeeVersion
+					or !empty arg.license
+				)
+			}">
+				<br />
+			</c:if>
+			<c:if test="${!empty arg.semanticVersioning}">
+				<ao:choose>
+					<ao:when test="#{arg.semanticVersioning=='2.0.0'}">
+						<ao:a rel="nofollow" href="http://semver.org/spec/v2.0.0.html">
+							<ao:img src="/ao-badges/semver-2.0.0.svg" width="90" height="20" alt="semantic versioning: 2.0.0" />
+						</ao:a>
+					</ao:when>
+					<ao:otherwise>
+						<ao:a rel="nofollow" href="http://semver.org/">
+							<ao:img src="/ao-badges/semver-unknown.svg" width="112" height="20" alt="semantic versioning: unknown" />
+						</ao:a>
+					</ao:otherwise>
+				</ao:a>
+			</c:if>
+			<c:if test="${!empty arg.javaVersion}">
+				<ao:choose>
+					<ao:when test="#{arg.javaVersion=='1.5' or arg.javaVersion=='5'}">
+						<ao:a rel="nofollow" href="@{javac.link.javaApi.jdk15}">
+							<ao:img src="/ao-badges/java-5.svg" width="72" height="20" alt="java: >= 5" />
+						</ao:a>
+					</ao:when>
+					<ao:when test="#{arg.javaVersion=='1.6' or arg.javaVersion=='6'}">
+						<ao:a rel="nofollow" href="@{javac.link.javaApi.jdk16}">
+							<ao:img src="/ao-badges/java-6.svg" width="72" height="20" alt="java: >= 6" />
+						</ao:a>
+					</ao:when>
+					<ao:when test="#{arg.javaVersion=='1.7' or arg.javaVersion=='7'}">
+						<ao:a rel="nofollow" href="@{javac.link.javaApi.jdk17}">
+							<ao:img src="/ao-badges/java-7.svg" width="72" height="20" alt="java: >= 7" />
+						</ao:a>
+					</ao:when>
+					<ao:when test="#{arg.javaVersion=='1.8' or arg.javaVersion=='8'}">
+						<ao:a rel="nofollow" href="@{javac.link.javaApi.jdk18}">
+							<ao:img src="/ao-badges/java-8.svg" width="72" height="20" alt="java: >= 8" />
+						</ao:a>
+					</ao:when>
+					<ao:when test="#{arg.javaVersion=='1.9' or arg.javaVersion=='9'}">
+						<ao:a rel="nofollow" href="@{javac.link.javaApi.jdk19}">
+							<ao:img src="/ao-badges/java-9.svg" width="72" height="20" alt="java: >= 9" />
+						</ao:a>
+					</ao:when>
+					<ao:otherwise>
+						<ao:a rel="nofollow" href="https://www.java.com/">
+							<ao:img src="/ao-badges/java-unknown.svg" width="94" height="20" alt="java: unknown" />
+						</ao:a>
+					</ao:otherwise>
+				</ao:a>
+			</c:if>
+			<c:if test="${!empty arg.javaeeVersion}">
+				<ao:choose>
+					<ao:when test="#{arg.javaeeVersion=='5'}">
+						<ao:a rel="nofollow" href="@{javac.link.javaeeApi.5}">
+							<ao:img src="/ao-badges/javaee-5.svg" width="90" height="20" alt="java ee: >= 5" />
+						</ao:a>
+					</ao:when>
+					<ao:when test="#{arg.javaeeVersion=='6'}">
+						<ao:a rel="nofollow" href="@{javac.link.javaeeApi.6}">
+							<ao:img src="/ao-badges/javaee-6.svg" width="90" height="20" alt="java ee: >= 6" />
+						</ao:a>
+					</ao:when>
+					<ao:when test="#{arg.javaeeVersion=='7'}">
+						<ao:a rel="nofollow" href="@{javac.link.javaeeApi.7}">
+							<ao:img src="/ao-badges/javaee-7.svg" width="90" height="20" alt="java ee: >= 7" />
+						</ao:a>
+					</ao:when>
+					<ao:when test="#{arg.javaeeVersion=='8'}">
+						<ao:a rel="nofollow" href="@{javac.link.javaeeApi.8}">
+							<ao:img src="/ao-badges/javaee-8.svg" width="90" height="20" alt="java ee: >= 8" />
+						</ao:a>
+					</ao:when>
+					<ao:otherwise>
+						<ao:a rel="nofollow" href="http://www.oracle.com/technetwork/java/javaee/overview/index.html">
+							<ao:img src="/ao-badges/javaee-unknown.svg" width="112" height="20" alt="java ee: unknown" />
+						</ao:a>
+					</ao:otherwise>
+				</ao:a>
+			</c:if>
+			<c:if test="${!empty arg.license}">
+				<ao:choose>
+					<ao:when test="#{arg.license=='lgpl-3.0'}">
+						<ao:a rel="nofollow" href="https://www.gnu.org/licenses/lgpl-3.0">
+							<ao:img src="/ao-badges/license-lgpl-3.0.svg" width="102" height="20" alt="license: LGPL v3" />
+						</ao:a>
+					</ao:when>
+					<ao:otherwise>
+						<ao:img src="/ao-badges/license-unknown.svg" width="108" height="20" alt="license: unknown" />
+					</ao:otherwise>
+				</ao:choose>
+			</c:if>
+			<!-- TODO: Snapshot version as yellow dynamic from changelog, direct from shield.io? -->
+			<!-- TODO: Latest release version as green dynamic from changelog, direct from shield.io? -->
+			<!-- TODO: Latest package from Maven dynamic from changelog, direct from shield.io? -->
+		</p>
+	</c:if>
+</jsp:root>
