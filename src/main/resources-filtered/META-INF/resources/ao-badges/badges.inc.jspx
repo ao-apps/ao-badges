@@ -156,7 +156,7 @@ Arguments:
 							<ao:img src="/ao-badges/semver-unknown.svg" width="112" height="20" alt="semantic versioning: unknown" />
 						</ao:a>
 					</ao:otherwise>
-				</ao:a>
+				</ao:choose>
 			</c:if>
 			<c:if test="${!empty arg.javaVersion}">
 				<ao:choose>
@@ -190,7 +190,7 @@ Arguments:
 							<ao:img src="/ao-badges/java-unknown.svg" width="94" height="20" alt="java: unknown" />
 						</ao:a>
 					</ao:otherwise>
-				</ao:a>
+				</ao:choose>
 			</c:if>
 			<c:if test="${!empty arg.javaeeVersion}">
 				<ao:choose>
@@ -219,7 +219,7 @@ Arguments:
 							<ao:img src="/ao-badges/javaee-unknown.svg" width="112" height="20" alt="java ee: unknown" />
 						</ao:a>
 					</ao:otherwise>
-				</ao:a>
+				</ao:choose>
 			</c:if>
 			<c:if test="${!empty arg.license}">
 				<ao:choose>
