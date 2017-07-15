@@ -41,6 +41,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 			arg.packagingStatus="${currentPage.properties.packagingStatus}"
 			arg.semanticVersioning="${currentPage.properties.semanticVersioning}"
 			arg.javaVersion="${currentPage.properties.javaVersion}"
+			arg.javaeeVersion="${currentPage.properties.javaeeVersion}"
 			arg.license="${currentPage.properties.license}"
 		/>
 		<p>
