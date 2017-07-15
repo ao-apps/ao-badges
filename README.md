@@ -23,6 +23,7 @@
 		<img src="https://aoindustries.com/ao-badges/license-lgpl-3.0.svg" alt="license: LGPL v3" />
 	</a>
 </p>
+
 Badges from [shields.io](https://shields.io/) bundled into a reusable JSP-based web component.
 
 ## Project Links
