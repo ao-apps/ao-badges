@@ -1,5 +1,4 @@
 # [<img src="ao-logo.png" alt="AO Logo" width="35" height="40">](https://aoindustries.com/) [AO Badges](https://aoindustries.com/ao-badges/)
-Badges from [shields.io](https://shields.io/) bundled into a reusable JSP-based web component.
 <p>
 	<a href="https://aoindustries.com/life-cycle.jspx#project">
 		<img src="https://aoindustries.com/ao-badges/project-beta.svg" alt="project: beta" />
@@ -24,6 +23,7 @@ Badges from [shields.io](https://shields.io/) bundled into a reusable JSP-based 
 		<img src="https://aoindustries.com/ao-badges/license-lgpl-3.0.svg" alt="license: LGPL v3" />
 	</a>
 </p>
+Badges from [shields.io](https://shields.io/) bundled into a reusable JSP-based web component.
 
 ## Project Links
 * [Project Home](https://aoindustries.com/ao-badges/)
