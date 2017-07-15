@@ -41,7 +41,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 			arg.packagingStatus="${currentPage.properties.packagingStatus}"
 			arg.semanticVersioning="${currentPage.properties.semanticVersioning}"
 			arg.javaVersion="${currentPage.properties.javaVersion}"
-			arg.license="lgpl-3.0"
+			arg.license="${currentPage.properties.license}"
 		/>
 		<p>
 			Badges from <ao:a rel="nofollow" href="https://shields.io/">shields.io</ao:a> bundled into a reusable JSP-based web component.
