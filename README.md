@@ -1,5 +1,29 @@
 # [<img src="ao-logo.png" alt="AO Logo" width="35" height="40">](https://aoindustries.com/) [AO Badges](https://aoindustries.com/ao-badges/)
 Badges from [shields.io](https://shields.io/) bundled into a reusable JSP-based web component.
+<p>
+	<a href="https://aoindustries.com/life-cycle.jspx#project">
+		<img src="https://aoindustries.com/ao-badges/project-beta.svg" alt="project: beta" />
+	</a>
+	<a href="https://aoindustries.com/life-cycle.jspx#management">
+		<img src="https://aoindustries.com/ao-badges/management-preview.svg" alt="management: preview" />
+	</a>
+	<a href="https://aoindustries.com/life-cycle.jspx#packaging">
+		<img src="https://aoindustries.com/ao-badges/packaging-developmental.svg" alt="packaging: developmental" />
+	</a>
+	<br />
+	<a href="https://docs.oracle.com/javase/6/docs/api/">
+		<img src="https://aoindustries.com/ao-badges/java-6.svg" alt="java: &gt;= 6" />
+	</a>
+	<a href="https://docs.oracle.com/javaee/6/api/">
+		<img src="https://aoindustries.com/ao-badges/javaee-6.svg" alt="java ee: &gt;= 6" />
+	</a>
+	<a href="http://semver.org/spec/v2.0.0.html">
+		<img src="https://aoindustries.com/ao-badges/semver-2.0.0.svg" alt="semantic versioning: 2.0.0" />
+	</a>
+	<a href="https://www.gnu.org/licenses/lgpl-3.0">
+		<img src="https://aoindustries.com/ao-badges/license-lgpl-3.0.svg" alt="license: LGPL v3" />
+	</a>
+</p>
 
 ## Project Links
 * [Project Home](https://aoindustries.com/ao-badges/)
