@@ -70,64 +70,86 @@ Arguments:
 		<!-- TODO: Intra-site core:link page links when on ao site? -->
 		<p class="ao-badges">
 			<c:if test="${!empty arg.projectStatus}">
-				<ao:a href="https://aoindustries.com/life-cycle#project">
-					<ao:choose>
-						<ao:when test="#{arg.projectStatus=='beta'}">
+				<ao:choose>
+					<ao:when test="#{arg.projectStatus=='beta'}">
+						<ao:a href="https://aoindustries.com/life-cycle#project-beta">
 							<ao:img src="/ao-badges/project-beta.svg" width="84" height="20" alt="project: beta" />
-						</ao:when>
-						<ao:when test="#{arg.projectStatus=='current-stable'}">
+						</ao:a>
+					</ao:when>
+					<ao:when test="#{arg.projectStatus=='current-stable'}">
+						<ao:a href="https://aoindustries.com/life-cycle#project-current-stable">
 							<ao:img src="/ao-badges/project-current-stable.svg" width="136" height="20" alt="project: current stable" />
-						</ao:when>
-						<ao:when test="#{arg.projectStatus=='old-stable'}">
+						</ao:a>
+					</ao:when>
+					<ao:when test="#{arg.projectStatus=='old-stable'}">
+						<ao:a href="https://aoindustries.com/life-cycle#project-old-stable">
 							<ao:img src="/ao-badges/project-old-stable.svg" width="112" height="20" alt="project: old stable" />
-						</ao:when>
-						<ao:when test="#{arg.projectStatus=='end-of-life'}">
+						</ao:a>
+					</ao:when>
+					<ao:when test="#{arg.projectStatus=='end-of-life'}">
+						<ao:a href="https://aoindustries.com/life-cycle#project-end-of-life">
 							<ao:img src="/ao-badges/project-end-of-life.svg" width="114" height="20" alt="project: end of life" />
-						</ao:when>
-						<ao:otherwise>
+						</ao:a>
+					</ao:when>
+					<ao:otherwise>
+						<ao:a href="https://aoindustries.com/life-cycle#project">
 							<ao:img src="/ao-badges/project-unknown.svg" width="110" height="20" alt="project: unknown" />
-						</ao:otherwise>
-					</ao:choose>
-				</ao:a>
+						</ao:a>
+					</ao:otherwise>
+				</ao:choose>
 			</c:if>
 			<c:if test="${!empty arg.managementStatus}">
-				<ao:a href="https://aoindustries.com/life-cycle#management">
-					<ao:choose>
-						<ao:when test="#{arg.managementStatus=='preview'}">
+				<ao:choose>
+					<ao:when test="#{arg.managementStatus=='preview'}">
+						<ao:a href="https://aoindustries.com/life-cycle#management-preview">
 							<ao:img src="/ao-badges/management-preview.svg" width="136" height="20" alt="management: preview" />
-						</ao:when>
-						<ao:when test="#{arg.managementStatus=='production'}">
+						</ao:a>
+					</ao:when>
+					<ao:when test="#{arg.managementStatus=='production'}">
+						<ao:a href="https://aoindustries.com/life-cycle#management-production">
 							<ao:img src="/ao-badges/management-production.svg" width="152" height="20" alt="management: production" />
-						</ao:when>
-						<ao:when test="#{arg.managementStatus=='migration'}">
+						</ao:a>
+					</ao:when>
+					<ao:when test="#{arg.managementStatus=='migration'}">
+						<ao:a href="https://aoindustries.com/life-cycle#management-migration">
 							<ao:img src="/ao-badges/management-migration.svg" width="146" height="20" alt="management: migration" />
-						</ao:when>
-						<ao:when test="#{arg.managementStatus=='cleanup'}">
+						</ao:a>
+					</ao:when>
+					<ao:when test="#{arg.managementStatus=='cleanup'}">
+						<ao:a href="https://aoindustries.com/life-cycle#management-cleanup">
 							<ao:img src="/ao-badges/management-cleanup.svg" width="136" height="20" alt="management: cleanup" />
-						</ao:when>
-						<ao:otherwise>
+						</ao:a>
+					</ao:when>
+					<ao:otherwise>
+						<ao:a href="https://aoindustries.com/life-cycle#management">
 							<ao:img src="/ao-badges/management-unknown.svg" width="144" height="20" alt="management: unknown" />
-						</ao:otherwise>
-					</ao:choose>
-				</ao:a>
+						</ao:a>
+					</ao:otherwise>
+				</ao:choose>
 			</c:if>
 			<c:if test="${!empty arg.packagingStatus}">
-				<ao:a href="https://aoindustries.com/life-cycle#packaging">
-					<ao:choose>
-						<ao:when test="#{arg.packagingStatus=='developmental'}">
+				<ao:choose>
+					<ao:when test="#{arg.packagingStatus=='developmental'}">
+						<ao:a href="https://aoindustries.com/life-cycle#packaging-developmental">
 							<ao:img src="/ao-badges/packaging-developmental.svg" width="156" height="20" alt="packaging: developmental" />
-						</ao:when>
-						<ao:when test="#{arg.packagingStatus=='active'}">
+						</ao:a>
+					</ao:when>
+					<ao:when test="#{arg.packagingStatus=='active'}">
+						<ao:a href="https://aoindustries.com/life-cycle#packaging-active">
 							<ao:img src="/ao-badges/packaging-active.svg" width="108" height="20" alt="packaging: active" />
-						</ao:when>
-						<ao:when test="#{arg.packagingStatus=='unsupported'}">
+						</ao:a>
+					</ao:when>
+					<ao:when test="#{arg.packagingStatus=='unsupported'}">
+						<ao:a href="https://aoindustries.com/life-cycle#packaging-unsupported">
 							<ao:img src="/ao-badges/packaging-unsupported.svg" width="144" height="20" alt="packaging: unsupported" />
-						</ao:when>
-						<ao:otherwise>
+						</ao:a>
+					</ao:when>
+					<ao:otherwise>
+						<ao:a href="https://aoindustries.com/life-cycle#packaging">
 							<ao:img src="/ao-badges/packaging-unknown.svg" width="126" height="20" alt="packaging: unknown" />
-						</ao:otherwise>
-					</ao:choose>
-				</ao:a>
+						</ao:a>
+					</ao:otherwise>
+				</ao:choose>
 			</c:if>
 			<!-- Selectively split into two lines -->
 			<c:if test="${
