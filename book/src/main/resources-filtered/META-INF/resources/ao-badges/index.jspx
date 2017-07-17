@@ -40,7 +40,6 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 			TODO: developer guide (for developers of this project, including a pragmatickm-based task to review
 			accuracy of versions and colors over time, and procedure for refetching images from shields.io.
 		-->
-		<!-- TODO: Rename .properties to .property -->
 		<!-- TODO: Add new core:property tag to set properties on elements -->
 		<ao:include
 			page="/ao-badges/badges.inc.jspx"
