@@ -29,6 +29,7 @@ Badges from [shields.io](https://shields.io/) bundled into a reusable JSP-based 
 ## Project Links
 * [Project Home](https://aoindustries.com/ao-badges/)
 * [Changelog](https://aoindustries.com/ao-badges/changelog)
+* [User Guide](https://aoindustries.com/ao-badges/user-guide)
 * [Maven Central Repository](https://search.maven.org/#search%7Cgav%7C1%7Cg:%22com.aoindustries%22%20AND%20a:%22ao-badges%22)
 * [GitHub](https://github.com/aoindustries/ao-badges)
 
