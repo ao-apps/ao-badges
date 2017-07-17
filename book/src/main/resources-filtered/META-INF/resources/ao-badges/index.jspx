@@ -44,13 +44,13 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 		<!-- TODO: Add new core:property tag to set properties on elements -->
 		<ao:include
 			page="/ao-badges/badges.inc.jspx"
-			arg.projectStatus="${currentPage.properties.projectStatus}"
-			arg.managementStatus="${currentPage.properties.managementStatus}"
-			arg.packagingStatus="${currentPage.properties.packagingStatus}"
-			arg.javaVersion="${currentPage.properties.javaVersion}"
-			arg.javaeeVersion="${currentPage.properties.javaeeVersion}"
-			arg.semanticVersioning="${currentPage.properties.semanticVersioning}"
-			arg.license="${currentPage.properties.license}"
+			arg.projectStatus="${currentPage.property.projectStatus}"
+			arg.managementStatus="${currentPage.property.managementStatus}"
+			arg.packagingStatus="${currentPage.property.packagingStatus}"
+			arg.javaVersion="${currentPage.property.javaVersion}"
+			arg.javaeeVersion="${currentPage.property.javaeeVersion}"
+			arg.semanticVersioning="${currentPage.property.semanticVersioning}"
+			arg.license="${currentPage.property.license}"
 		/>
 		<p>
 			Badges from <ao:a rel="nofollow" href="https://shields.io/">shields.io</ao:a> bundled into a reusable JSP-based web component.
