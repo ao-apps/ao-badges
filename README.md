@@ -1,12 +1,12 @@
 # [<img src="ao-logo.png" alt="AO Logo" width="35" height="40">](https://aoindustries.com/) [AO Badges](https://aoindustries.com/ao-badges/)
 <p>
-	<a href="https://aoindustries.com/life-cycle.jspx#project">
+	<a href="https://aoindustries.com/life-cycle#project-beta">
 		<img src="https://aoindustries.com/ao-badges/project-beta.svg" alt="project: beta" />
 	</a>
-	<a href="https://aoindustries.com/life-cycle.jspx#management">
+	<a href="https://aoindustries.com/life-cycle#management-preview">
 		<img src="https://aoindustries.com/ao-badges/management-preview.svg" alt="management: preview" />
 	</a>
-	<a href="https://aoindustries.com/life-cycle.jspx#packaging">
+	<a href="https://aoindustries.com/life-cycle#packaging-developmental">
 		<img src="https://aoindustries.com/ao-badges/packaging-developmental.svg" alt="packaging: developmental" />
 	</a>
 	<br />
@@ -28,6 +28,7 @@ Badges from [shields.io](https://shields.io/) bundled into a reusable JSP-based 
 
 ## Project Links
 * [Project Home](https://aoindustries.com/ao-badges/)
+** [Badges](https://aoindustries.com/ao-badges/#badges)
 * [Changelog](https://aoindustries.com/ao-badges/changelog)
 * [User Guide](https://aoindustries.com/ao-badges/user-guide)
 * [Maven Central Repository](https://search.maven.org/#search%7Cgav%7C1%7Cg:%22com.aoindustries%22%20AND%20a:%22ao-badges%22)
