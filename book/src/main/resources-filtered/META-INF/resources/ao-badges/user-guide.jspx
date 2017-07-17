@@ -69,7 +69,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 	arg.license="gpl-3.0"
 /&gt;]]></pre>
 				<p>
-					See also <core:link page="index.jspx" element="badges">the full set of supported
+					See also the <core:link page="index.jspx" element="badges">full set of supported
 					arguments and values</core:link>.
 				</p>
 			</section:section>
