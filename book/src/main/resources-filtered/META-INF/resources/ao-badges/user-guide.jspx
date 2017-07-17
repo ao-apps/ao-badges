@@ -33,9 +33,8 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 	<core:page
 		title="@{documented.name} User Guide"
 		shortTitle="User Guide"
-		datePublished="2017-07-17T15:44:47-0500"
+		datePublished="2017-07-17T16:30:06-0500"
 	>
-		<!-- TODO: Present instructions as a <ol>? -->
 		<section:section label="Add Dependencies to Project">
 			<!-- TODO: Support deferred arguments via args? -->
 			<!-- TODO: Set release as property on changelog page instead of finding it? -->
