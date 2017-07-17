@@ -32,7 +32,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 		title="@{documented.name}"
 		description="@{documented.description}"
 		datePublished="2017-07-15T16:39:07-0500"
-		dateModified="2017-07-17T11:50:54-0500"
+		dateModified="2017-07-17T14:46:42-0500"
 	>
 		<core:child page="changelog.jspx" />
 		<core:child page="user-guide.jspx" />
@@ -57,12 +57,354 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 		</p>
 		<section:section label="Project Links">
 			<ul>
-				<li><core:link page="index.jspx">Project Home</core:link></li>
+				<li><core:link page="index.jspx">Project Home</core:link>
+					<ul>
+						<li><core:link element="badges" /></li>
+					</ul>
+				</li>
 				<li><core:link page="changelog.jspx">Changelog</core:link></li>
 				<li><core:link page="user-guide.jspx">User Guide</core:link></li>
 				<li><ao:a href="https://search.maven.org/#search%7Cgav%7C1%7Cg:%22@{documented.groupId}%22%20AND%20a:%22@{documented.artifactId}%22">Maven Central Repository</ao:a></li>
 				<li><ao:a href="@{documented.scm.url}">GitHub</ao:a></li>
 			</ul>
+		</section:section>
+		<section:section id="badges" label="Badges">
+			<!-- TODO: Links in section labels to /life-cycle.jspx -->
+			<section:section label="Project Management">
+				<!-- TODO: Link to /life-cycle.jspx#project -->
+				<section:section id="project" label="Project Life Cycle">
+					<table class="thinTable">
+						<thead>
+							<tr>
+								<th><core:link book="/" page="/life-cycle.jspx" element="project">Project Status</core:link></th>
+								<th>Include Argument</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<core:link book="/" page="/life-cycle.jspx" anchor="project-beta">
+										<ao:img src="/ao-badges/project-beta.svg" width="84" height="20" alt="project: beta" />
+									</core:link>
+								</td>
+								<td><code>arg.projectStatus="beta"</code></td>
+							</tr>
+							<tr>
+								<td>
+									<core:link book="/" page="/life-cycle.jspx" anchor="project-current-stable">
+										<ao:img src="/ao-badges/project-current-stable.svg" width="136" height="20" alt="project: current stable" />
+									</core:link>
+								</td>
+								<td><code>arg.projectStatus="current-stable"</code></td>
+							</tr>
+							<tr>
+								<td>
+									<core:link book="/" page="/life-cycle.jspx" anchor="project-old-stable">
+										<ao:img src="/ao-badges/project-old-stable.svg" width="112" height="20" alt="project: old stable" />
+									</core:link>
+								</td>
+								<td><code>arg.projectStatus="old-stable"</code></td>
+							</tr>
+							<tr>
+								<td>
+									<core:link book="/" page="/life-cycle.jspx" anchor="project-end-of-life">
+										<ao:img src="/ao-badges/project-end-of-life.svg" width="114" height="20" alt="project: end of life" />
+									</core:link>
+								</td>
+								<td><code>arg.projectStatus="end-of-life"</code></td>
+							</tr>
+							<tr>
+								<td>
+									<core:link book="/" page="/life-cycle.jspx" element="project">
+										<ao:img src="/ao-badges/project-unknown.svg" width="110" height="20" alt="project: unknown" />
+									</core:link>
+								</td>
+								<td><code>arg.projectStatus="unknown"</code></td>
+							</tr>
+						</tbody>
+					</table>
+				</section:section>
+				<section:section id="management" label="Management Life Cycle">
+					<table class="thinTable">
+						<thead>
+							<tr>
+								<th><core:link book="/" page="/life-cycle.jspx" element="management">Management Status</core:link></th>
+								<th>Include Argument</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<core:link book="/" page="/life-cycle.jspx" anchor="management-preview">
+										<ao:img src="/ao-badges/management-preview.svg" width="136" height="20" alt="management: preview" />
+									</core:link>
+								</td>
+								<td><code>arg.managementStatus="preview"</code></td>
+							</tr>
+							<tr>
+								<td>
+									<core:link book="/" page="/life-cycle.jspx" anchor="management-production">
+										<ao:img src="/ao-badges/management-production.svg" width="152" height="20" alt="management: production" />
+									</core:link>
+								</td>
+								<td><code>arg.managementStatus="production"</code></td>
+							</tr>
+							<tr>
+								<td>
+									<core:link book="/" page="/life-cycle.jspx" anchor="management-migration">
+										<ao:img src="/ao-badges/management-migration.svg" width="146" height="20" alt="management: migration" />
+									</core:link>
+								</td>
+								<td><code>arg.managementStatus="migration"</code></td>
+							</tr>
+							<tr>
+								<td>
+									<core:link book="/" page="/life-cycle.jspx" anchor="management-cleanup">
+										<ao:img src="/ao-badges/management-cleanup.svg" width="136" height="20" alt="management: cleanup" />
+									</core:link>
+								</td>
+								<td><code>arg.managementStatus="cleanup"</code></td>
+							</tr>
+							<tr>
+								<td>
+									<core:link book="/" page="/life-cycle.jspx" element="management">
+										<ao:img src="/ao-badges/management-unknown.svg" width="144" height="20" alt="management: unknown" />
+									</core:link>
+								</td>
+								<td><code>arg.managementStatus="unknown"</code></td>
+							</tr>
+						</tbody>
+					</table>
+				</section:section>
+				<section:section id="packaging" label="Packaging Life Cycle">
+					<table class="thinTable">
+						<thead>
+							<tr>
+								<th><core:link book="/" page="/life-cycle.jspx" element="packaging">Packaging Status</core:link></th>
+								<th>Include Argument</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<core:link book="/" page="/life-cycle.jspx" anchor="packaging-developmental">
+										<ao:img src="/ao-badges/packaging-developmental.svg" width="156" height="20" alt="packaging: developmental" />
+									</core:link>
+								</td>
+								<td><code>arg.packagingStatus="developmental"</code></td>
+							</tr>
+							<tr>
+								<td>
+									<core:link book="/" page="/life-cycle.jspx" anchor="packaging-active">
+										<ao:img src="/ao-badges/packaging-active.svg" width="108" height="20" alt="packaging: active" />
+									</core:link>
+								</td>
+								<td><code>arg.packagingStatus="active"</code></td>
+							</tr>
+							<tr>
+								<td>
+									<core:link book="/" page="/life-cycle.jspx" anchor="packaging-unsupported">
+										<ao:img src="/ao-badges/packaging-unsupported.svg" width="144" height="20" alt="packaging: unsupported" />
+									</core:link>
+								</td>
+								<td><code>arg.packagingStatus="unsupported"</code></td>
+							</tr>
+							<tr>
+								<td>
+									<core:link book="/" page="/life-cycle.jspx" element="packaging">
+										<ao:img src="/ao-badges/packaging-unknown.svg" width="126" height="20" alt="packaging: unknown" />
+									</core:link>
+								</td>
+								<td><code>arg.packagingStatus="unknown"</code></td>
+							</tr>
+						</tbody>
+					</table>
+				</section:section>
+			</section:section>
+			<section:section label="Languages &amp; Frameworks">
+				<!-- TODO: Link in section header -->
+				<section:section label="Java">
+					<table class="thinTable">
+						<thead>
+							<tr>
+								<th><ao:a rel="nofollow" href="https://www.java.com/">Java</ao:a> Version</th>
+								<th>Include Argument</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<ao:a rel="nofollow" href="@{javac.link.javaApi.jdk15}">
+										<ao:img src="/ao-badges/java-5.svg" width="72" height="20" alt="java: >= 5" />
+									</ao:a>
+								</td>
+								<td>
+									<code>arg.javaVersion="1.5"</code>
+									or <code>arg.javaVersion="5"</code>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<ao:a rel="nofollow" href="@{javac.link.javaApi.jdk16}">
+										<ao:img src="/ao-badges/java-6.svg" width="72" height="20" alt="java: >= 6" />
+									</ao:a>
+								</td>
+								<td>
+									<code>arg.javaVersion="1.6"</code>
+									or <code>arg.javaVersion="6"</code>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<ao:a rel="nofollow" href="@{javac.link.javaApi.jdk17}">
+										<ao:img src="/ao-badges/java-7.svg" width="72" height="20" alt="java: >= 7" />
+									</ao:a>
+								</td>
+								<td>
+									<code>arg.javaVersion="1.7"</code>
+									or <code>arg.javaVersion="7"</code>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<ao:a rel="nofollow" href="@{javac.link.javaApi.jdk18}">
+										<ao:img src="/ao-badges/java-8.svg" width="72" height="20" alt="java: >= 8" />
+									</ao:a>
+								</td>
+								<td>
+									<code>arg.javaVersion="1.8"</code>
+									or <code>arg.javaVersion="8"</code>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<ao:a rel="nofollow" href="@{javac.link.javaApi.jdk19}">
+										<ao:img src="/ao-badges/java-9.svg" width="72" height="20" alt="java: >= 9" />
+									</ao:a>
+								</td>
+								<td>
+									<code>arg.javaVersion="1.9"</code>
+									or <code>arg.javaVersion="9"</code>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<ao:a rel="nofollow" href="https://www.java.com/">
+										<ao:img src="/ao-badges/java-unknown.svg" width="94" height="20" alt="java: unknown" />
+									</ao:a>
+								</td>
+								<td><code>arg.javaVersion="unknown"</code></td>
+							</tr>
+						</tbody>
+					</table>
+				</section:section>
+				<!-- TODO: Link in section header -->
+				<section:section label="Java EE">
+					<table class="thinTable">
+						<thead>
+							<tr>
+								<th><ao:a rel="nofollow" href="http://www.oracle.com/technetwork/java/javaee/overview/index.html">Java EE</ao:a> Version</th>
+								<th>Include Argument</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<ao:a rel="nofollow" href="@{javac.link.javaeeApi.5}">
+										<ao:img src="/ao-badges/javaee-5.svg" width="90" height="20" alt="java ee: >= 5" />
+									</ao:a>
+								</td>
+								<td><code>arg.javaeeVersion="5"</code></td>
+							</tr>
+							<tr>
+								<td>
+									<ao:a rel="nofollow" href="@{javac.link.javaeeApi.6}">
+										<ao:img src="/ao-badges/javaee-6.svg" width="90" height="20" alt="java ee: >= 6" />
+									</ao:a>
+								</td>
+								<td><code>arg.javaeeVersion="6"</code></td>
+							</tr>
+							<tr>
+								<td>
+									<ao:a rel="nofollow" href="@{javac.link.javaeeApi.7}">
+										<ao:img src="/ao-badges/javaee-7.svg" width="90" height="20" alt="java ee: >= 7" />
+									</ao:a>
+								</td>
+								<td><code>arg.javaeeVersion="7"</code></td>
+							</tr>
+							<tr>
+								<td>
+									<ao:a rel="nofollow" href="@{javac.link.javaeeApi.8}">
+										<ao:img src="/ao-badges/javaee-8.svg" width="90" height="20" alt="java ee: >= 8" />
+									</ao:a>
+								</td>
+								<td><code>arg.javaeeVersion="8"</code></td>
+							</tr>
+							<tr>
+								<td>
+									<ao:a rel="nofollow" href="http://www.oracle.com/technetwork/java/javaee/overview/index.html">
+										<ao:img src="/ao-badges/javaee-unknown.svg" width="112" height="20" alt="java ee: unknown" />
+									</ao:a>
+								</td>
+								<td><code>arg.javaeeVersion="unknown"</code></td>
+							</tr>
+						</tbody>
+					</table>
+				</section:section>
+			</section:section>
+			<!-- TODO: Link in section header -->
+			<section:section label="Semantic Versioning">
+				<table class="thinTable">
+					<thead>
+						<tr>
+							<th><ao:a rel="nofollow" href="http://semver.org/">Semantic Versioning</ao:a> Version</th>
+							<th>Include Argument</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<ao:a rel="nofollow" href="http://semver.org/spec/v2.0.0.html">
+									<ao:img src="/ao-badges/semver-2.0.0.svg" width="90" height="20" alt="semantic versioning: 2.0.0" />
+								</ao:a>
+							</td>
+							<td><code>arg.semanticVersioning="2.0.0"</code></td>
+						</tr>
+						<tr>
+							<td>
+								<ao:a rel="nofollow" href="http://semver.org/">
+									<ao:img src="/ao-badges/semver-unknown.svg" width="112" height="20" alt="semantic versioning: unknown" />
+								</ao:a>
+							</td>
+							<td><code>arg.semanticVersioning="unknown"</code></td>
+						</tr>
+					</tbody>
+				</table>
+			</section:section>
+			<section:section label="Licenses">
+				<table class="thinTable">
+					<thead>
+						<tr>
+							<th>License</th>
+							<th>Include Argument</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<ao:a rel="nofollow" href="https://www.gnu.org/licenses/lgpl-3.0">
+									<ao:img src="/ao-badges/license-lgpl-3.0.svg" width="102" height="20" alt="license: LGPL v3" />
+								</ao:a>
+							</td>
+							<td><code>arg.license="lgpl-3.0"</code></td>
+						</tr>
+						<tr>
+							<td><ao:img src="/ao-badges/license-unknown.svg" width="108" height="20" alt="license: unknown" /></td>
+							<td><code>arg.license="unknown"</code></td>
+						</tr>
+					</tbody>
+				</table>
+			</section:section>
 		</section:section>
 	</core:page>
 </jsp:root>
