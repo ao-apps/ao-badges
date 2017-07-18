@@ -31,7 +31,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 	<core:page
 		title="Badge Reference"
 		datePublished="2017-07-17T17:00:17-0500"
-		dateModified="2017-07-18T10:05:19-0500"
+		dateModified="2017-07-18T18:13:27-0500"
 	>
 		<!-- TODO: Links in section labels to /life-cycle.jspx -->
 		<section:section label="Project Management">
@@ -475,7 +475,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 						<tr>
 							<td>
 								<ao:a rel="nofollow" href="https://api.jquery.com/">
-									<ao:img src="/ao-badges/jquery-1.x.svg" width="112" height="20" alt="jquery: >= 1.x" />
+									<ao:img src="/ao-badges/jquery-1.x.svg" width="94" height="20" alt="jquery: >= 1.x" />
 								</ao:a>
 							</td>
 							<td>
@@ -486,7 +486,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 						<tr>
 							<td>
 								<ao:a rel="nofollow" href="https://api.jquery.com/">
-									<ao:img src="/ao-badges/jquery-2.x.svg" width="112" height="20" alt="jquery: >= 2.x" />
+									<ao:img src="/ao-badges/jquery-2.x.svg" width="94" height="20" alt="jquery: >= 2.x" />
 								</ao:a>
 							</td>
 							<td>
@@ -497,7 +497,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 						<tr>
 							<td>
 								<ao:a rel="nofollow" href="https://api.jquery.com/">
-									<ao:img src="/ao-badges/jquery-3.x.svg" width="112" height="20" alt="jquery: >= 3.x" />
+									<ao:img src="/ao-badges/jquery-3.x.svg" width="94" height="20" alt="jquery: >= 3.x" />
 								</ao:a>
 							</td>
 							<td>

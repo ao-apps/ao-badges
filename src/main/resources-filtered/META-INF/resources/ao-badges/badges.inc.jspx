@@ -324,19 +324,19 @@ Arguments:
 			</c:if>
 			<c:if test="${!empty arg.jqueryVersion}">
 				<ao:choose>
-					<ao:when test="#{arg.jqueryersion=='1.x' || arg.jqueryersion=='1'}">
+					<ao:when test="#{arg.jqueryVersion=='1.x' || arg.jqueryVersion=='1'}">
 						<ao:a rel="nofollow" href="https://api.jquery.com/">
-							<ao:img src="/ao-badges/jquery-1.x.svg" width="112" height="20" alt="jquery: >= 1.x" />
+							<ao:img src="/ao-badges/jquery-1.x.svg" width="94" height="20" alt="jquery: >= 1.x" />
 						</ao:a>
 					</ao:when>
-					<ao:when test="#{arg.jqueryersion=='2.x' || arg.jqueryersion=='2'}">
+					<ao:when test="#{arg.jqueryVersion=='2.x' || arg.jqueryVersion=='2'}">
 						<ao:a rel="nofollow" href="https://api.jquery.com/">
-							<ao:img src="/ao-badges/jquery-2.x.svg" width="112" height="20" alt="jquery: >= 2.x" />
+							<ao:img src="/ao-badges/jquery-2.x.svg" width="94" height="20" alt="jquery: >= 2.x" />
 						</ao:a>
 					</ao:when>
-					<ao:when test="#{arg.jqueryersion=='3.x' || arg.jqueryersion=='3'}">
+					<ao:when test="#{arg.jqueryVersion=='3.x' || arg.jqueryVersion=='3'}">
 						<ao:a rel="nofollow" href="https://api.jquery.com/">
-							<ao:img src="/ao-badges/jquery-3.x.svg" width="112" height="20" alt="jquery: >= 3.x" />
+							<ao:img src="/ao-badges/jquery-3.x.svg" width="94" height="20" alt="jquery: >= 3.x" />
 						</ao:a>
 					</ao:when>
 					<ao:otherwise>
