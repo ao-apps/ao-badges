@@ -31,7 +31,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 	<core:page
 		title="Badge Reference"
 		datePublished="2017-07-17T17:00:17-0500"
-		dateModified="2017-07-17T21:26:09-0500"
+		dateModified="2017-07-18T10:05:19-0500"
 	>
 		<!-- TODO: Links in section labels to /life-cycle.jspx -->
 		<section:section label="Project Management">
@@ -319,6 +319,199 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 								</ao:a>
 							</td>
 							<td><code>arg.javaeeVersion="unknown"</code></td>
+						</tr>
+					</tbody>
+				</table>
+			</section:section>
+			<!-- TODO: Link in section header -->
+			<section:section label="ECMAScript">
+				<table class="thinTable">
+					<thead>
+						<tr>
+							<th><ao:a rel="nofollow" href="http://www.ecma-international.org/publications/standards/Ecma-262.htm">ECMAScript</ao:a> Version</th>
+							<th>Include Argument</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<ao:a rel="nofollow" href="http://www.ecma-international.org/publications/standards/Ecma-262.htm">
+									<ao:img src="/ao-badges/ecmascript-3.svg" width="108" height="20" alt="ecmascript: >= 3" />
+								</ao:a>
+							</td>
+							<td><code>arg.ecmascriptVersion="3"</code></td>
+						</tr>
+						<tr>
+							<td>
+								<ao:a rel="nofollow" href="http://www.ecma-international.org/publications/standards/Ecma-262.htm">
+									<ao:img src="/ao-badges/ecmascript-5.svg" width="108" height="20" alt="ecmascript: >= 5" />
+								</ao:a>
+							</td>
+							<td><code>arg.ecmascriptVersion="5"</code></td>
+						</tr>
+						<tr>
+							<td>
+								<ao:a rel="nofollow" href="http://www.ecma-international.org/publications/standards/Ecma-262.htm">
+									<ao:img src="/ao-badges/ecmascript-6.svg" width="128" height="20" alt="ecmascript: >= 2015" />
+								</ao:a>
+							</td>
+							<td>
+								<code>arg.ecmascriptVersion="6"</code>
+								or <code>arg.ecmascriptVersion="2015"</code>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<ao:a rel="nofollow" href="http://www.ecma-international.org/publications/standards/Ecma-262.htm">
+									<ao:img src="/ao-badges/ecmascript-7.svg" width="128" height="20" alt="ecmascript: >= 2016" />
+								</ao:a>
+							</td>
+							<td>
+								<code>arg.ecmascriptVersion="7"</code>
+								or <code>arg.ecmascriptVersion="2016"</code>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<ao:a rel="nofollow" href="http://www.ecma-international.org/publications/standards/Ecma-262.htm">
+									<ao:img src="/ao-badges/ecmascript-8.svg" width="128" height="20" alt="ecmascript: >= 2017" />
+								</ao:a>
+							</td>
+							<td>
+								<code>arg.ecmascriptVersion="8"</code>
+								or <code>arg.ecmascriptVersion="2017"</code>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<ao:a rel="nofollow" href="http://www.ecma-international.org/publications/standards/Ecma-262.htm">
+									<ao:img src="/ao-badges/ecmascript-unknown.svg" width="130" height="20" alt="ecmascript: unknown" />
+								</ao:a>
+							</td>
+							<td><code>arg.ecmascriptVersion="unknown"</code></td>
+						</tr>
+					</tbody>
+				</table>
+			</section:section>
+			<!-- TODO: Link in section header -->
+			<section:section label="JavaScript">
+				<table class="thinTable">
+					<thead>
+						<tr>
+							<th><ao:a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</ao:a> Version</th>
+							<th>Include Argument</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<ao:a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/1.5">
+									<ao:img src="/ao-badges/javascript-1.5.svg" width="112" height="20" alt="javascript: >= 1.5" />
+								</ao:a>
+							</td>
+							<td><code>arg.javascriptVersion="1.5"</code></td>
+						</tr>
+						<tr>
+							<td>
+								<ao:a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/1.6">
+									<ao:img src="/ao-badges/javascript-1.6.svg" width="112" height="20" alt="javascript: >= 1.6" />
+								</ao:a>
+							</td>
+							<td><code>arg.javascriptVersion="1.6"</code></td>
+						</tr>
+						<tr>
+							<td>
+								<ao:a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/1.7">
+									<ao:img src="/ao-badges/javascript-1.7.svg" width="112" height="20" alt="javascript: >= 1.7" />
+								</ao:a>
+							</td>
+							<td><code>arg.javascriptVersion="1.7"</code></td>
+						</tr>
+						<tr>
+							<td>
+								<ao:a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/1.8">
+									<ao:img src="/ao-badges/javascript-1.8.svg" width="112" height="20" alt="javascript: >= 1.8" />
+								</ao:a>
+							</td>
+							<td><code>arg.javascriptVersion="1.8"</code></td>
+						</tr>
+						<tr>
+							<td>
+								<ao:a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/1.8.1">
+									<ao:img src="/ao-badges/javascript-1.8.1.svg" width="124" height="20" alt="javascript: >= 1.8.1" />
+								</ao:a>
+							</td>
+							<td><code>arg.javascriptVersion="1.8.1"</code></td>
+						</tr>
+						<tr>
+							<td>
+								<ao:a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/1.8.5">
+									<ao:img src="/ao-badges/javascript-1.8.5.svg" width="124" height="20" alt="javascript: >= 1.8.5" />
+								</ao:a>
+							</td>
+							<td><code>arg.javascriptVersion="1.8.5"</code></td>
+						</tr>
+						<tr>
+							<td>
+								<ao:a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
+									<ao:img src="/ao-badges/javascript-unknown.svg" width="124" height="20" alt="javascript: unknown" />
+								</ao:a>
+							</td>
+							<td><code>arg.javascriptVersion="unknown"</code></td>
+						</tr>
+					</tbody>
+				</table>
+			</section:section>
+			<!-- TODO: Link in section header -->
+			<section:section label="jQuery">
+				<table class="thinTable">
+					<thead>
+						<tr>
+							<th><ao:a rel="nofollow" href="https://jquery.com/">jQuery</ao:a> Version</th>
+							<th>Include Argument</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<ao:a rel="nofollow" href="https://api.jquery.com/">
+									<ao:img src="/ao-badges/jquery-1.x.svg" width="112" height="20" alt="jquery: >= 1.x" />
+								</ao:a>
+							</td>
+							<td>
+								<code>arg.jqueryVersion="1.x"</code>
+								or <code>arg.jqueryVersion="1"</code>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<ao:a rel="nofollow" href="https://api.jquery.com/">
+									<ao:img src="/ao-badges/jquery-2.x.svg" width="112" height="20" alt="jquery: >= 2.x" />
+								</ao:a>
+							</td>
+							<td>
+								<code>arg.jqueryVersion="2.x"</code>
+								or <code>arg.jqueryVersion="2"</code>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<ao:a rel="nofollow" href="https://api.jquery.com/">
+									<ao:img src="/ao-badges/jquery-3.x.svg" width="112" height="20" alt="jquery: >= 3.x" />
+								</ao:a>
+							</td>
+							<td>
+								<code>arg.jqueryVersion="3.x"</code>
+								or <code>arg.jqueryVersion="3"</code>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<ao:a rel="nofollow" href="https://jquery.com/">
+									<ao:img src="/ao-badges/jquery-unknown.svg" width="106" height="20" alt="jquery: unknown" />
+								</ao:a>
+							</td>
+							<td><code>arg.jqueryVersion="unknown"</code></td>
 						</tr>
 					</tbody>
 				</table>

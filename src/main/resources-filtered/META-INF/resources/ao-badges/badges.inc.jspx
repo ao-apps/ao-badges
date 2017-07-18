@@ -41,6 +41,15 @@ Arguments:
 	arg.javaeeVersion       (Optional) The minimum Java EE version.
 	                        Must be one of "5", "6", "7", "8"
 
+	arg.ecmascriptVersion   (Optional) The minimum ECMAScript version.
+	                        Must be one of "3", "5", "6", "2015", "7", "2016", "8", "2017"
+
+	arg.javascriptVersion   (Optional) The minimum JavaScript version.
+	                        Must be one of "1.5", "1.6", "1.7", "1.8", "1.8.1", "1.8.5"
+
+	arg.jqueryVersion       (Optional) The minimum jQuery version.
+	                        Must be one of "1.x", "1", "2.x", "2", "3.x", "3"
+
 	arg.semanticVersioning  (Optional) The semantic versioning version.
 	                        Must be one of "2.0.0"
 
@@ -60,6 +69,9 @@ Arguments:
 		or !empty arg.packagingStatus
 		or !empty arg.javaVersion
 		or !empty arg.javaeeVersion
+		or !empty arg.ecmascriptVersion
+		or !empty arg.javascriptVersion
+		or !empty arg.jqueryVersion
 		or !empty arg.semanticVersioning
 		or !empty arg.license
 	}">
@@ -165,6 +177,9 @@ Arguments:
 				) and (
 					!empty arg.javaVersion
 					or !empty arg.javaeeVersion
+					or !empty arg.ecmascriptVersion
+					or !empty arg.javascriptVersion
+					or !empty arg.jqueryVersion
 					or !empty arg.semanticVersioning
 					or !empty arg.license
 				)
@@ -230,6 +245,103 @@ Arguments:
 					<ao:otherwise>
 						<ao:a rel="nofollow" href="http://www.oracle.com/technetwork/java/javaee/overview/index.html">
 							<ao:img src="/ao-badges/javaee-unknown.svg" width="112" height="20" alt="java ee: unknown" />
+						</ao:a>
+					</ao:otherwise>
+				</ao:choose>
+			</c:if>
+			<c:if test="${!empty arg.ecmascriptVersion}">
+				<ao:choose>
+					<ao:when test="#{arg.ecmascriptVersion=='3'}">
+						<ao:a rel="nofollow" href="http://www.ecma-international.org/publications/standards/Ecma-262.htm">
+							<ao:img src="/ao-badges/ecmascript-3.svg" width="108" height="20" alt="ecmascript: >= 3" />
+						</ao:a>
+					</ao:when>
+					<ao:when test="#{arg.ecmascriptVersion=='5'}">
+						<ao:a rel="nofollow" href="http://www.ecma-international.org/publications/standards/Ecma-262.htm">
+							<ao:img src="/ao-badges/ecmascript-5.svg" width="108" height="20" alt="ecmascript: >= 5" />
+						</ao:a>
+					</ao:when>
+					<ao:when test="#{arg.ecmascriptVersion=='6' || arg.ecmascriptVersion=='2015'}">
+						<ao:a rel="nofollow" href="http://www.ecma-international.org/publications/standards/Ecma-262.htm">
+							<ao:img src="/ao-badges/ecmascript-6.svg" width="128" height="20" alt="ecmascript: >= 2015" />
+						</ao:a>
+					</ao:when>
+					<ao:when test="#{arg.ecmascriptVersion=='7' || arg.ecmascriptVersion=='2016'}">
+						<ao:a rel="nofollow" href="http://www.ecma-international.org/publications/standards/Ecma-262.htm">
+							<ao:img src="/ao-badges/ecmascript-7.svg" width="128" height="20" alt="ecmascript: >= 2016" />
+						</ao:a>
+					</ao:when>
+					<ao:when test="#{arg.ecmascriptVersion=='8' || arg.ecmascriptVersion=='2017'}">
+						<ao:a rel="nofollow" href="http://www.ecma-international.org/publications/standards/Ecma-262.htm">
+							<ao:img src="/ao-badges/ecmascript-8.svg" width="128" height="20" alt="ecmascript: >= 2017" />
+						</ao:a>
+					</ao:when>
+					<ao:otherwise>
+						<ao:a rel="nofollow" href="http://www.ecma-international.org/publications/standards/Ecma-262.htm">
+							<ao:img src="/ao-badges/ecmascript-unknown.svg" width="130" height="20" alt="ecmascript: unknown" />
+						</ao:a>
+					</ao:otherwise>
+				</ao:choose>
+			</c:if>
+			<c:if test="${!empty arg.javascriptVersion}">
+				<ao:choose>
+					<ao:when test="#{arg.javascriptVersion=='1.5'}">
+						<ao:a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/1.5">
+							<ao:img src="/ao-badges/javascript-1.5.svg" width="112" height="20" alt="javascript: >= 1.5" />
+						</ao:a>
+					</ao:when>
+					<ao:when test="#{arg.javascriptVersion=='1.6'}">
+						<ao:a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/1.6">
+							<ao:img src="/ao-badges/javascript-1.6.svg" width="112" height="20" alt="javascript: >= 1.6" />
+						</ao:a>
+					</ao:when>
+					<ao:when test="#{arg.javascriptVersion=='1.7'}">
+						<ao:a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/1.7">
+							<ao:img src="/ao-badges/javascript-1.7.svg" width="112" height="20" alt="javascript: >= 1.7" />
+						</ao:a>
+					</ao:when>
+					<ao:when test="#{arg.javascriptVersion=='1.8'}">
+						<ao:a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/1.8">
+							<ao:img src="/ao-badges/javascript-1.8.svg" width="112" height="20" alt="javascript: >= 1.8" />
+						</ao:a>
+					</ao:when>
+					<ao:when test="#{arg.javascriptVersion=='1.8.1'}">
+						<ao:a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/1.8.1">
+							<ao:img src="/ao-badges/javascript-1.8.1.svg" width="124" height="20" alt="javascript: >= 1.8.1" />
+						</ao:a>
+					</ao:when>
+					<ao:when test="#{arg.javascriptVersion=='1.8.5'}">
+						<ao:a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/1.8.5">
+							<ao:img src="/ao-badges/javascript-1.8.5.svg" width="124" height="20" alt="javascript: >= 1.8.5" />
+						</ao:a>
+					</ao:when>
+					<ao:otherwise>
+						<ao:a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
+							<ao:img src="/ao-badges/javascript-unknown.svg" width="124" height="20" alt="javascript: unknown" />
+						</ao:a>
+					</ao:otherwise>
+				</ao:choose>
+			</c:if>
+			<c:if test="${!empty arg.jqueryVersion}">
+				<ao:choose>
+					<ao:when test="#{arg.jqueryersion=='1.x' || arg.jqueryersion=='1'}">
+						<ao:a rel="nofollow" href="https://api.jquery.com/">
+							<ao:img src="/ao-badges/jquery-1.x.svg" width="112" height="20" alt="jquery: >= 1.x" />
+						</ao:a>
+					</ao:when>
+					<ao:when test="#{arg.jqueryersion=='2.x' || arg.jqueryersion=='2'}">
+						<ao:a rel="nofollow" href="https://api.jquery.com/">
+							<ao:img src="/ao-badges/jquery-2.x.svg" width="112" height="20" alt="jquery: >= 2.x" />
+						</ao:a>
+					</ao:when>
+					<ao:when test="#{arg.jqueryersion=='3.x' || arg.jqueryersion=='3'}">
+						<ao:a rel="nofollow" href="https://api.jquery.com/">
+							<ao:img src="/ao-badges/jquery-3.x.svg" width="112" height="20" alt="jquery: >= 3.x" />
+						</ao:a>
+					</ao:when>
+					<ao:otherwise>
+						<ao:a rel="nofollow" href="https://jquery.com/">
+							<ao:img src="/ao-badges/jquery-unknown.svg" width="106" height="20" alt="jquery: unknown" />
 						</ao:a>
 					</ao:otherwise>
 				</ao:choose>
