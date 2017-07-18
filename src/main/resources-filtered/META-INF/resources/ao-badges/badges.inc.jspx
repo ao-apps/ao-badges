@@ -27,7 +27,7 @@ badges.  When there are no enabled badges, the "p" tag is not created.
 
 Arguments:
 	arg.projectStatus       (Optional) The project status.
-	                        Must be one of "beta", "current-stable", "old-stable", "end-of-life"
+	                        Must be one of "alpha", "beta", "current-stable", "old-stable", "end-of-life"
 
 	arg.managementStatus    (Optional) The management status.
 	                        Must be one of "preview", "production", "migration", "cleanup"
@@ -71,6 +71,11 @@ Arguments:
 		<p class="ao-badges">
 			<c:if test="${!empty arg.projectStatus}">
 				<ao:choose>
+					<ao:when test="#{arg.projectStatus=='alpha'}">
+						<ao:a href="https://aoindustries.com/life-cycle#project-alpha">
+							<ao:img src="/ao-badges/project-alpha.svg" width="90" height="20" alt="project: alpha" />
+						</ao:a>
+					</ao:when>
 					<ao:when test="#{arg.projectStatus=='beta'}">
 						<ao:a href="https://aoindustries.com/life-cycle#project-beta">
 							<ao:img src="/ao-badges/project-beta.svg" width="84" height="20" alt="project: beta" />

@@ -31,6 +31,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 	<core:page
 		title="Badge Reference"
 		datePublished="2017-07-17T17:00:17-0500"
+		dateModified="2017-07-17T21:26:09-0500"
 	>
 		<!-- TODO: Links in section labels to /life-cycle.jspx -->
 		<section:section label="Project Management">
@@ -44,6 +45,14 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 						</tr>
 					</thead>
 					<tbody>
+						<tr>
+							<td>
+								<core:link book="/" page="/life-cycle.jspx" anchor="project-alpha">
+									<ao:img src="/ao-badges/project-alpha.svg" width="90" height="20" alt="project: alpha" />
+								</core:link>
+							</td>
+							<td><code>arg.projectStatus="alpha"</code></td>
+						</tr>
 						<tr>
 							<td>
 								<core:link book="/" page="/life-cycle.jspx" anchor="project-beta">
