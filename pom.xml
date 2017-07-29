@@ -33,7 +33,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 
 	<groupId>com.aoindustries</groupId>
 	<artifactId>ao-badges</artifactId>
-	<version>1.0.1-SNAPSHOT</version>
+	<version>1.0.1-validation-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>AO Badges</name>
