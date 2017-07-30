@@ -27,7 +27,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 	<parent>
 		<groupId>com.aoindustries</groupId>
 		<artifactId>ao-oss-parent</artifactId>
-		<version>1.0.3</version>
+		<version>1.0.4-validation-SNAPSHOT</version>
 		<relativePath>../ao-oss-parent/pom.xml</relativePath>
 	</parent>
 
@@ -90,12 +90,12 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 		<dependency>
 			<groupId>com.aoindustries</groupId>
 			<artifactId>ao-servlet-filter</artifactId>
-			<version>1.5.0</version>
+			<version>1.5.1-validation-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.aoindustries</groupId>
 			<artifactId>ao-taglib</artifactId>
-			<version>2.3.1</version>
+			<version>2.3.2-validation-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
 </project>
