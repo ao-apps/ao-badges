@@ -71,7 +71,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 	arg.license="gpl-3.0"
 /&gt;]]></pre>
 				<p>
-					See also the <core:link page="badge-reference.jspx">full set of supported badges</core:link>.
+					See also the <core:link page="badge-reference">full set of supported badges</core:link>.
 				</p>
 			</section:section>
 		</section:section>

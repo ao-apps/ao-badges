@@ -41,14 +41,14 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 				<table class="thinTable">
 					<thead>
 						<tr>
-							<th><core:link book="/" page="/life-cycle.jspx" element="project">Project Status</core:link></th>
+							<th><core:link book="/" page="/life-cycle" element="project">Project Status</core:link></th>
 							<th>Include Argument</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
 							<td>
-								<core:link book="/" page="/life-cycle.jspx" anchor="project-alpha">
+								<core:link book="/" page="/life-cycle" anchor="project-alpha">
 									<ao:img src="/ao-badges/project-alpha.svg" width="90" height="20" alt="project: alpha" />
 								</core:link>
 							</td>
@@ -56,7 +56,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 						</tr>
 						<tr>
 							<td>
-								<core:link book="/" page="/life-cycle.jspx" anchor="project-beta">
+								<core:link book="/" page="/life-cycle" anchor="project-beta">
 									<ao:img src="/ao-badges/project-beta.svg" width="84" height="20" alt="project: beta" />
 								</core:link>
 							</td>
@@ -64,7 +64,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 						</tr>
 						<tr>
 							<td>
-								<core:link book="/" page="/life-cycle.jspx" anchor="project-current-stable">
+								<core:link book="/" page="/life-cycle" anchor="project-current-stable">
 									<ao:img src="/ao-badges/project-current-stable.svg" width="136" height="20" alt="project: current stable" />
 								</core:link>
 							</td>
@@ -72,7 +72,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 						</tr>
 						<tr>
 							<td>
-								<core:link book="/" page="/life-cycle.jspx" anchor="project-old-stable">
+								<core:link book="/" page="/life-cycle" anchor="project-old-stable">
 									<ao:img src="/ao-badges/project-old-stable.svg" width="112" height="20" alt="project: old stable" />
 								</core:link>
 							</td>
@@ -80,7 +80,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 						</tr>
 						<tr>
 							<td>
-								<core:link book="/" page="/life-cycle.jspx" anchor="project-end-of-life">
+								<core:link book="/" page="/life-cycle" anchor="project-end-of-life">
 									<ao:img src="/ao-badges/project-end-of-life.svg" width="114" height="20" alt="project: end of life" />
 								</core:link>
 							</td>
@@ -88,7 +88,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 						</tr>
 						<tr>
 							<td>
-								<core:link book="/" page="/life-cycle.jspx" element="project">
+								<core:link book="/" page="/life-cycle" element="project">
 									<ao:img src="/ao-badges/project-unknown.svg" width="110" height="20" alt="project: unknown" />
 								</core:link>
 							</td>
@@ -101,14 +101,14 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 				<table class="thinTable">
 					<thead>
 						<tr>
-							<th><core:link book="/" page="/life-cycle.jspx" element="management">Management Status</core:link></th>
+							<th><core:link book="/" page="/life-cycle" element="management">Management Status</core:link></th>
 							<th>Include Argument</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
 							<td>
-								<core:link book="/" page="/life-cycle.jspx" anchor="management-preview">
+								<core:link book="/" page="/life-cycle" anchor="management-preview">
 									<ao:img src="/ao-badges/management-preview.svg" width="136" height="20" alt="management: preview" />
 								</core:link>
 							</td>
@@ -116,7 +116,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 						</tr>
 						<tr>
 							<td>
-								<core:link book="/" page="/life-cycle.jspx" anchor="management-production">
+								<core:link book="/" page="/life-cycle" anchor="management-production">
 									<ao:img src="/ao-badges/management-production.svg" width="152" height="20" alt="management: production" />
 								</core:link>
 							</td>
@@ -124,7 +124,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 						</tr>
 						<tr>
 							<td>
-								<core:link book="/" page="/life-cycle.jspx" anchor="management-migration">
+								<core:link book="/" page="/life-cycle" anchor="management-migration">
 									<ao:img src="/ao-badges/management-migration.svg" width="146" height="20" alt="management: migration" />
 								</core:link>
 							</td>
@@ -132,7 +132,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 						</tr>
 						<tr>
 							<td>
-								<core:link book="/" page="/life-cycle.jspx" anchor="management-cleanup">
+								<core:link book="/" page="/life-cycle" anchor="management-cleanup">
 									<ao:img src="/ao-badges/management-cleanup.svg" width="136" height="20" alt="management: cleanup" />
 								</core:link>
 							</td>
@@ -140,7 +140,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 						</tr>
 						<tr>
 							<td>
-								<core:link book="/" page="/life-cycle.jspx" element="management">
+								<core:link book="/" page="/life-cycle" element="management">
 									<ao:img src="/ao-badges/management-unknown.svg" width="144" height="20" alt="management: unknown" />
 								</core:link>
 							</td>
@@ -153,14 +153,14 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 				<table class="thinTable">
 					<thead>
 						<tr>
-							<th><core:link book="/" page="/life-cycle.jspx" element="packaging">Packaging Status</core:link></th>
+							<th><core:link book="/" page="/life-cycle" element="packaging">Packaging Status</core:link></th>
 							<th>Include Argument</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
 							<td>
-								<core:link book="/" page="/life-cycle.jspx" anchor="packaging-developmental">
+								<core:link book="/" page="/life-cycle" anchor="packaging-developmental">
 									<ao:img src="/ao-badges/packaging-developmental.svg" width="156" height="20" alt="packaging: developmental" />
 								</core:link>
 							</td>
@@ -168,7 +168,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 						</tr>
 						<tr>
 							<td>
-								<core:link book="/" page="/life-cycle.jspx" anchor="packaging-active">
+								<core:link book="/" page="/life-cycle" anchor="packaging-active">
 									<ao:img src="/ao-badges/packaging-active.svg" width="108" height="20" alt="packaging: active" />
 								</core:link>
 							</td>
@@ -176,7 +176,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 						</tr>
 						<tr>
 							<td>
-								<core:link book="/" page="/life-cycle.jspx" anchor="packaging-unsupported">
+								<core:link book="/" page="/life-cycle" anchor="packaging-unsupported">
 									<ao:img src="/ao-badges/packaging-unsupported.svg" width="144" height="20" alt="packaging: unsupported" />
 								</core:link>
 							</td>
@@ -184,7 +184,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 						</tr>
 						<tr>
 							<td>
-								<core:link book="/" page="/life-cycle.jspx" element="packaging">
+								<core:link book="/" page="/life-cycle" element="packaging">
 									<ao:img src="/ao-badges/packaging-unknown.svg" width="126" height="20" alt="packaging: unknown" />
 								</core:link>
 							</td>
