@@ -30,7 +30,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 	</parent>
 
 	<groupId>com.aoindustries</groupId><artifactId>ao-badges</artifactId><version>1.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<packaging>bundle</packaging>
 
 	<name>AO Badges 1</name>
 	<url>https://aoindustries.com/${project.artifactId}/</url>
