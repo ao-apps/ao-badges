@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 ao-badges - Badges from shields.io bundled into a reusable JSP-based web component.
-Copyright (C) 2017  AO Industries, Inc.
+Copyright (C) 2017, 2019  AO Industries, Inc.
     support@aoindustries.com
     7262 Bull Pen Cir
     Mobile, AL 36695
@@ -207,7 +207,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 					<tbody>
 						<tr>
 							<td>
-								<ao:a rel="nofollow" href="@{javac.link.javaApi.jdk15}">
+								<ao:a rel="nofollow" href="@{javac.link.javaApi.jdk15}/">
 									<ao:img src="/ao-badges/java-5.svg" width="72" height="20" alt="java: >= 5" />
 								</ao:a>
 							</td>
@@ -218,7 +218,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 						</tr>
 						<tr>
 							<td>
-								<ao:a rel="nofollow" href="@{javac.link.javaApi.jdk16}">
+								<ao:a rel="nofollow" href="@{javac.link.javaApi.jdk16}/">
 									<ao:img src="/ao-badges/java-6.svg" width="72" height="20" alt="java: >= 6" />
 								</ao:a>
 							</td>
@@ -229,7 +229,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 						</tr>
 						<tr>
 							<td>
-								<ao:a rel="nofollow" href="@{javac.link.javaApi.jdk17}">
+								<ao:a rel="nofollow" href="@{javac.link.javaApi.jdk17}/">
 									<ao:img src="/ao-badges/java-7.svg" width="72" height="20" alt="java: >= 7" />
 								</ao:a>
 							</td>
@@ -240,7 +240,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 						</tr>
 						<tr>
 							<td>
-								<ao:a rel="nofollow" href="@{javac.link.javaApi.jdk18}">
+								<ao:a rel="nofollow" href="@{javac.link.javaApi.jdk18}/">
 									<ao:img src="/ao-badges/java-8.svg" width="72" height="20" alt="java: >= 8" />
 								</ao:a>
 							</td>
@@ -251,7 +251,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 						</tr>
 						<tr>
 							<td>
-								<ao:a rel="nofollow" href="@{javac.link.javaApi.jdk19}">
+								<ao:a rel="nofollow" href="@{javac.link.javaApi.jdk19}/">
 									<ao:img src="/ao-badges/java-9.svg" width="72" height="20" alt="java: >= 9" />
 								</ao:a>
 							</td>
@@ -283,7 +283,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 					<tbody>
 						<tr>
 							<td>
-								<ao:a rel="nofollow" href="@{javac.link.javaeeApi.5}">
+								<ao:a rel="nofollow" href="@{javac.link.javaeeApi.5}/">
 									<ao:img src="/ao-badges/javaee-5.svg" width="90" height="20" alt="java ee: >= 5" />
 								</ao:a>
 							</td>
@@ -291,7 +291,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 						</tr>
 						<tr>
 							<td>
-								<ao:a rel="nofollow" href="@{javac.link.javaeeApi.6}">
+								<ao:a rel="nofollow" href="@{javac.link.javaeeApi.6}/">
 									<ao:img src="/ao-badges/javaee-6.svg" width="90" height="20" alt="java ee: >= 6" />
 								</ao:a>
 							</td>
@@ -299,7 +299,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 						</tr>
 						<tr>
 							<td>
-								<ao:a rel="nofollow" href="@{javac.link.javaeeApi.7}">
+								<ao:a rel="nofollow" href="@{javac.link.javaeeApi.7}/">
 									<ao:img src="/ao-badges/javaee-7.svg" width="90" height="20" alt="java ee: >= 7" />
 								</ao:a>
 							</td>
@@ -307,7 +307,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 						</tr>
 						<tr>
 							<td>
-								<ao:a rel="nofollow" href="@{javac.link.javaeeApi.8}">
+								<ao:a rel="nofollow" href="@{javac.link.javaeeApi.8}/">
 									<ao:img src="/ao-badges/javaee-8.svg" width="90" height="20" alt="java ee: >= 8" />
 								</ao:a>
 							</td>
