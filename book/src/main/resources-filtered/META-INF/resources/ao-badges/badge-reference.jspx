@@ -207,7 +207,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 					<tbody>
 						<tr>
 							<td>
-								<ao:a rel="nofollow" href="@{javac.link.javaApi.jdk15}/">
+								<ao:a rel="nofollow" href="@{javac.link.javaApi.jdk5}/">
 									<ao:img src="/ao-badges/java-5.svg" width="72" height="20" alt="java: >= 5" />
 								</ao:a>
 							</td>
@@ -218,7 +218,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 						</tr>
 						<tr>
 							<td>
-								<ao:a rel="nofollow" href="@{javac.link.javaApi.jdk16}/">
+								<ao:a rel="nofollow" href="@{javac.link.javaApi.jdk6}/">
 									<ao:img src="/ao-badges/java-6.svg" width="72" height="20" alt="java: >= 6" />
 								</ao:a>
 							</td>
@@ -229,7 +229,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 						</tr>
 						<tr>
 							<td>
-								<ao:a rel="nofollow" href="@{javac.link.javaApi.jdk17}/">
+								<ao:a rel="nofollow" href="@{javac.link.javaApi.jdk7}/">
 									<ao:img src="/ao-badges/java-7.svg" width="72" height="20" alt="java: >= 7" />
 								</ao:a>
 							</td>
@@ -240,7 +240,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 						</tr>
 						<tr>
 							<td>
-								<ao:a rel="nofollow" href="@{javac.link.javaApi.jdk18}/">
+								<ao:a rel="nofollow" href="@{javac.link.javaApi.jdk8}/">
 									<ao:img src="/ao-badges/java-8.svg" width="72" height="20" alt="java: >= 8" />
 								</ao:a>
 							</td>
@@ -251,14 +251,43 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 						</tr>
 						<tr>
 							<td>
-								<ao:a rel="nofollow" href="@{javac.link.javaApi.jdk19}/">
+								<ao:a rel="nofollow" href="@{javac.link.javaApi.jdk9}/">
 									<ao:img src="/ao-badges/java-9.svg" width="72" height="20" alt="java: >= 9" />
 								</ao:a>
 							</td>
+							<td><code>arg.javaVersion="9"</code></td>
+						</tr>
+						<tr>
 							<td>
-								<code>arg.javaVersion="1.9"</code>
-								or <code>arg.javaVersion="9"</code>
+								<ao:a rel="nofollow" href="@{javac.link.javaApi.jdk10}/">
+									<ao:img src="/ao-badges/java-10.svg" width="72" height="20" alt="java: >= 10" />
+								</ao:a>
 							</td>
+							<td><code>arg.javaVersion="10"</code></td>
+						</tr>
+						<tr>
+							<td>
+								<ao:a rel="nofollow" href="@{javac.link.javaApi.jdk11}/">
+									<ao:img src="/ao-badges/java-11.svg" width="72" height="20" alt="java: >= 11" />
+								</ao:a>
+							</td>
+							<td><code>arg.javaVersion="11"</code></td>
+						</tr>
+						<tr>
+							<td>
+								<ao:a rel="nofollow" href="@{javac.link.javaApi.jdk12}/">
+									<ao:img src="/ao-badges/java-12.svg" width="72" height="20" alt="java: >= 12" />
+								</ao:a>
+							</td>
+							<td><code>arg.javaVersion="12"</code></td>
+						</tr>
+						<tr>
+							<td>
+								<ao:a rel="nofollow" href="@{javac.link.javaApi.jdk13}/">
+									<ao:img src="/ao-badges/java-13.svg" width="72" height="20" alt="java: >= 13" />
+								</ao:a>
+							</td>
+							<td><code>arg.javaVersion="13"</code></td>
 						</tr>
 						<tr>
 							<td>
