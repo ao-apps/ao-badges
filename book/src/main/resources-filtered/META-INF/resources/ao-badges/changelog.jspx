@@ -37,7 +37,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 		shortTitle="Changelog"
 		tocLevels="1"
 		datePublished="2017-07-15T16:36:26-0500"
-		dateModified="2019-04-15T06:11:25-0500"
+		dateModified="2019-04-15T06:37:15-0500"
 	>
 		<!-- The current snapshot, unreleased version -->
 		<c:set var="version" value="@{com.aoindustries:ao-badges:pom.version}" />
@@ -94,6 +94,14 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 							<li><code>javaVersion="9"</code>:
 								<core:link book="/" page="/life-cycle.jspx" anchor="project-beta"><span class="life-cycle project beta">Beta</span></core:link>
 								-&gt; <core:link book="/" page="/life-cycle.jspx" anchor="project-current-stable"><span class="life-cycle project current-stable">Current Stable</span></core:link>
+							</li>
+							<li><code>jqueryVersion="1.x"</code> or <code>jqueryVersion="1"</code>:
+								<core:link book="/" page="/life-cycle.jspx" anchor="project-old-stable"><span class="life-cycle project old-stable">Old Stable</span></core:link>
+								-&gt; <core:link book="/" page="/life-cycle.jspx" anchor="project-end-of-life"><span class="life-cycle project end-of-life">End of Life</span></core:link>
+							</li>
+							<li><code>jqueryVersion="2.x"</code> or <code>jqueryVersion="2"</code>:
+								<core:link book="/" page="/life-cycle.jspx" anchor="project-old-stable"><span class="life-cycle project old-stable">Old Stable</span></core:link>
+								-&gt; <core:link book="/" page="/life-cycle.jspx" anchor="project-end-of-life"><span class="life-cycle project end-of-life">End of Life</span></core:link>
 							</li>
 						</ol>
 					</li>
