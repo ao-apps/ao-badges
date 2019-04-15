@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 ao-badges - Badges from shields.io bundled into a reusable JSP-based web component.
-Copyright (C) 2017  AO Industries, Inc.
+Copyright (C) 2017, 2019  AO Industries, Inc.
     support@aoindustries.com
     7262 Bull Pen Cir
     Mobile, AL 36695
@@ -37,7 +37,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 		shortTitle="Changelog"
 		tocLevels="1"
 		datePublished="2017-07-15T16:36:26-0500"
-		dateModified="2017-07-19T19:34:20-0500"
+		dateModified="2019-04-15T05:29:01-0500"
 	>
 		<!-- The current snapshot, unreleased version -->
 		<c:set var="version" value="@{com.aoindustries:ao-badges:pom.version}" />
@@ -52,7 +52,54 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 				groupId="@{documented.groupId}"
 				artifactId="@{documented.artifactId}"
 				scmUrl="@{documented.scm.url}"
-			/>
+			>
+				<ul>
+					<li>Updated for <ao:a href="https://semanticcms.com/">SemanticCMS</ao:a> 2 compatibility.</li>
+					<li>Removed:
+						<ol>
+							<li><code>javaVersion="1.9"</code>:
+								<code>javaVersion="9"</code> remains and should be used.
+							</li>
+						</ol>
+					</li>
+					<li>Added:
+						<ol>
+							<li><code>javaVersion="10"</code>:
+								<core:link book="/" page="/life-cycle" anchor="project-end-of-life"><span class="life-cycle project end-of-life">End of Life</span></core:link>
+							</li>
+							<li><code>javaVersion="11"</code>:
+								<core:link book="/" page="/life-cycle" anchor="project-current-stable"><span class="life-cycle project current-stable">Current Stable</span></core:link>
+							</li>
+							<li><code>javaVersion="12"</code>:
+								<core:link book="/" page="/life-cycle" anchor="project-current-stable"><span class="life-cycle project current-stable">Current Stable</span></core:link>
+							</li>
+							<li><code>javaVersion="13"</code>:
+								<core:link book="/" page="/life-cycle" anchor="project-beta"><span class="life-cycle project beta">Beta</span></core:link>
+							</li>
+						</ol>
+					</li>
+					<li>Changed:
+						<ol>
+							<li><code>javaVersion="1.5"</code> or <code>javaVersion="5"</code>:
+								<core:link book="/" page="/life-cycle" anchor="project-old-stable"><span class="life-cycle project old-stable">Old Stable</span></core:link>
+								-&gt; <core:link book="/" page="/life-cycle" anchor="project-end-of-life"><span class="life-cycle project end-of-life">End of Life</span></core:link>
+							</li>
+							<li><code>javaVersion="1.6"</code> or <code>javaVersion="6"</code>:
+								<core:link book="/" page="/life-cycle" anchor="project-old-stable"><span class="life-cycle project old-stable">Old Stable</span></core:link>
+								-&gt; <core:link book="/" page="/life-cycle" anchor="project-end-of-life"><span class="life-cycle project end-of-life">End of Life</span></core:link>
+							</li>
+							<li><code>javaVersion="1.8"</code> or <code>javaVersion="8"</code>:
+								<core:link book="/" page="/life-cycle" anchor="project-current-stable"><span class="life-cycle project current-stable">Current Stable</span></core:link>
+								-&gt; <core:link book="/" page="/life-cycle" anchor="project-old-stable"><span class="life-cycle project old-stable">Old Stable</span></core:link>
+							</li>
+							<li><code>javaVersion="9"</code>:
+								<core:link book="/" page="/life-cycle" anchor="project-beta"><span class="life-cycle project beta">Beta</span></core:link>
+								-&gt; <core:link book="/" page="/life-cycle" anchor="project-current-stable"><span class="life-cycle project current-stable">Current Stable</span></core:link>
+							</li>
+						</ol>
+					</li>
+				</ul>
+			</changelog:release>
 		</c:if>
 
 		<changelog:release

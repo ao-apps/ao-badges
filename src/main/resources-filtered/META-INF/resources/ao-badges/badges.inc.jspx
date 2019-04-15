@@ -37,7 +37,7 @@ Arguments:
 	                        Must be one of "developmental", "active", "unsupported"
 
 	arg.javaVersion         (Optional) The minimum Java version.
-	                        Must be one of "1.5", "5", "1.6", "6", "1.7", "7", "1.8", "8", "1.9", "9"
+	                        Must be one of "1.5", "5", "1.6", "6", "1.7", "7", "1.8", "8", "9", "10", "11", "12", "13"
 
 	arg.javaeeVersion       (Optional) The minimum Java EE version.
 	                        Must be one of "5", "6", "7", "8"
@@ -190,28 +190,48 @@ Arguments:
 			<c:if test="${!empty arg.javaVersion}">
 				<ao:choose>
 					<ao:when test="#{arg.javaVersion=='1.5' or arg.javaVersion=='5'}">
-						<ao:a rel="nofollow" href="@{javac.link.javaApi.jdk15}/">
+						<ao:a rel="nofollow" href="@{javac.link.javaApi.jdk5}/">
 							<ao:img src="/ao-badges/java-5.svg" width="72" height="20" alt="java: >= 5" />
 						</ao:a>
 					</ao:when>
 					<ao:when test="#{arg.javaVersion=='1.6' or arg.javaVersion=='6'}">
-						<ao:a rel="nofollow" href="@{javac.link.javaApi.jdk16}/">
+						<ao:a rel="nofollow" href="@{javac.link.javaApi.jdk6}/">
 							<ao:img src="/ao-badges/java-6.svg" width="72" height="20" alt="java: >= 6" />
 						</ao:a>
 					</ao:when>
 					<ao:when test="#{arg.javaVersion=='1.7' or arg.javaVersion=='7'}">
-						<ao:a rel="nofollow" href="@{javac.link.javaApi.jdk17}/">
+						<ao:a rel="nofollow" href="@{javac.link.javaApi.jdk7}/">
 							<ao:img src="/ao-badges/java-7.svg" width="72" height="20" alt="java: >= 7" />
 						</ao:a>
 					</ao:when>
 					<ao:when test="#{arg.javaVersion=='1.8' or arg.javaVersion=='8'}">
-						<ao:a rel="nofollow" href="@{javac.link.javaApi.jdk18}/">
+						<ao:a rel="nofollow" href="@{javac.link.javaApi.jdk8}/">
 							<ao:img src="/ao-badges/java-8.svg" width="72" height="20" alt="java: >= 8" />
 						</ao:a>
 					</ao:when>
-					<ao:when test="#{arg.javaVersion=='1.9' or arg.javaVersion=='9'}">
-						<ao:a rel="nofollow" href="@{javac.link.javaApi.jdk19}/">
+					<ao:when test="#{arg.javaVersion=='9'}">
+						<ao:a rel="nofollow" href="@{javac.link.javaApi.jdk9}/">
 							<ao:img src="/ao-badges/java-9.svg" width="72" height="20" alt="java: >= 9" />
+						</ao:a>
+					</ao:when>
+					<ao:when test="#{arg.javaVersion=='10'}">
+						<ao:a rel="nofollow" href="@{javac.link.javaApi.jdk10}/">
+							<ao:img src="/ao-badges/java-10.svg" width="78" height="20" alt="java: >= 10" />
+						</ao:a>
+					</ao:when>
+					<ao:when test="#{arg.javaVersion=='11'}">
+						<ao:a rel="nofollow" href="@{javac.link.javaApi.jdk11}/">
+							<ao:img src="/ao-badges/java-11.svg" width="78" height="20" alt="java: >= 11" />
+						</ao:a>
+					</ao:when>
+					<ao:when test="#{arg.javaVersion=='12'}">
+						<ao:a rel="nofollow" href="@{javac.link.javaApi.jdk12}/">
+							<ao:img src="/ao-badges/java-12.svg" width="78" height="20" alt="java: >= 12" />
+						</ao:a>
+					</ao:when>
+					<ao:when test="#{arg.javaVersion=='13'}">
+						<ao:a rel="nofollow" href="@{javac.link.javaApi.jdk13}/">
+							<ao:img src="/ao-badges/java-13.svg" width="78" height="20" alt="java: >= 13" />
 						</ao:a>
 					</ao:when>
 					<ao:otherwise>

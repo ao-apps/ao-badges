@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 ao-badges - Badges from shields.io bundled into a reusable JSP-based web component.
-Copyright (C) 2017  AO Industries, Inc.
+Copyright (C) 2017, 2019  AO Industries, Inc.
     support@aoindustries.com
     7262 Bull Pen Cir
     Mobile, AL 36695
@@ -35,18 +35,18 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 		title="@{documented.name} User Guide"
 		shortTitle="User Guide"
 		datePublished="2017-07-17T16:30:06-0500"
-		dateModified="2017-07-17T19:12:48-0500"
+		dateModified="2017-07-19T19:34:20-0500"
 	>
 		<section:section label="Add Dependencies to Project">
 			<!-- TODO: Support deferred arguments via args? -->
 			<!-- TODO: Set release as property on changelog page instead of finding it? -->
 			<ao:include
 				page="/semanticcms-changelog-taglib/generated-dependencies.inc.jspx"
-				arg.release="${changelog:findRelease(core:capturePage('changelog.jspx', 'meta'))}"
+				arg.release="${changelog:findRelease(core:capturePage('changelog', 'meta'))}"
 				arg.dependencies="${
 					empty semanticCMS.books['/ao-taglib']
 					? null
-					: changelog:findRelease(core:capturePageInBook('/ao-taglib', '/changelog.jspx', 'meta'))
+					: changelog:findRelease(core:capturePageInBook('/ao-taglib', '/changelog', 'meta'))
 				}"
 			/>
 		</section:section>
@@ -65,7 +65,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 	arg.projectStatus="current-stable"
 	arg.managementStatus="production"
 	arg.packagingStatus="active"
-	arg.javaVersion="1.8"
+	arg.javaVersion="11"
 	arg.javaeeVersion="6"
 	arg.semanticVersioning="2.0.0"
 	arg.license="gpl-3.0"
