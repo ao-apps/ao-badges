@@ -190,47 +190,47 @@ Arguments:
 			<c:if test="${!empty arg.javaVersion}">
 				<ao:choose>
 					<ao:when test="#{arg.javaVersion=='1.5' or arg.javaVersion=='5'}">
-						<ao:a rel="nofollow" href="@{javac.link.javaApi.jdk5}/">
+						<ao:a rel="nofollow" href="@{javac.link.javaApi.jdk5}">
 							<ao:img src="/ao-badges/java-5.svg" width="72" height="20" alt="java: >= 5" />
 						</ao:a>
 					</ao:when>
 					<ao:when test="#{arg.javaVersion=='1.6' or arg.javaVersion=='6'}">
-						<ao:a rel="nofollow" href="@{javac.link.javaApi.jdk6}/">
+						<ao:a rel="nofollow" href="@{javac.link.javaApi.jdk6}">
 							<ao:img src="/ao-badges/java-6.svg" width="72" height="20" alt="java: >= 6" />
 						</ao:a>
 					</ao:when>
 					<ao:when test="#{arg.javaVersion=='1.7' or arg.javaVersion=='7'}">
-						<ao:a rel="nofollow" href="@{javac.link.javaApi.jdk7}/">
+						<ao:a rel="nofollow" href="@{javac.link.javaApi.jdk7}">
 							<ao:img src="/ao-badges/java-7.svg" width="72" height="20" alt="java: >= 7" />
 						</ao:a>
 					</ao:when>
 					<ao:when test="#{arg.javaVersion=='1.8' or arg.javaVersion=='8'}">
-						<ao:a rel="nofollow" href="@{javac.link.javaApi.jdk8}/">
+						<ao:a rel="nofollow" href="@{javac.link.javaApi.jdk8}">
 							<ao:img src="/ao-badges/java-8.svg" width="72" height="20" alt="java: >= 8" />
 						</ao:a>
 					</ao:when>
 					<ao:when test="#{arg.javaVersion=='9'}">
-						<ao:a rel="nofollow" href="@{javac.link.javaApi.jdk9}/">
+						<ao:a rel="nofollow" href="@{javac.link.javaApi.jdk9}">
 							<ao:img src="/ao-badges/java-9.svg" width="72" height="20" alt="java: >= 9" />
 						</ao:a>
 					</ao:when>
 					<ao:when test="#{arg.javaVersion=='10'}">
-						<ao:a rel="nofollow" href="@{javac.link.javaApi.jdk10}/">
+						<ao:a rel="nofollow" href="@{javac.link.javaApi.jdk10}">
 							<ao:img src="/ao-badges/java-10.svg" width="78" height="20" alt="java: >= 10" />
 						</ao:a>
 					</ao:when>
 					<ao:when test="#{arg.javaVersion=='11'}">
-						<ao:a rel="nofollow" href="@{javac.link.javaApi.jdk11}/">
+						<ao:a rel="nofollow" href="@{javac.link.javaApi.jdk11}">
 							<ao:img src="/ao-badges/java-11.svg" width="78" height="20" alt="java: >= 11" />
 						</ao:a>
 					</ao:when>
 					<ao:when test="#{arg.javaVersion=='12'}">
-						<ao:a rel="nofollow" href="@{javac.link.javaApi.jdk12}/">
+						<ao:a rel="nofollow" href="@{javac.link.javaApi.jdk12}">
 							<ao:img src="/ao-badges/java-12.svg" width="78" height="20" alt="java: >= 12" />
 						</ao:a>
 					</ao:when>
 					<ao:when test="#{arg.javaVersion=='13'}">
-						<ao:a rel="nofollow" href="@{javac.link.javaApi.jdk13}/">
+						<ao:a rel="nofollow" href="@{javac.link.javaApi.jdk13}">
 							<ao:img src="/ao-badges/java-13.svg" width="78" height="20" alt="java: >= 13" />
 						</ao:a>
 					</ao:when>
@@ -244,22 +244,22 @@ Arguments:
 			<c:if test="${!empty arg.javaeeVersion}">
 				<ao:choose>
 					<ao:when test="#{arg.javaeeVersion=='5'}">
-						<ao:a rel="nofollow" href="@{javac.link.javaeeApi.5}/">
+						<ao:a rel="nofollow" href="@{javac.link.javaeeApi.5}">
 							<ao:img src="/ao-badges/javaee-5.svg" width="90" height="20" alt="java ee: >= 5" />
 						</ao:a>
 					</ao:when>
 					<ao:when test="#{arg.javaeeVersion=='6'}">
-						<ao:a rel="nofollow" href="@{javac.link.javaeeApi.6}/">
+						<ao:a rel="nofollow" href="@{javac.link.javaeeApi.6}">
 							<ao:img src="/ao-badges/javaee-6.svg" width="90" height="20" alt="java ee: >= 6" />
 						</ao:a>
 					</ao:when>
 					<ao:when test="#{arg.javaeeVersion=='7'}">
-						<ao:a rel="nofollow" href="@{javac.link.javaeeApi.7}/">
+						<ao:a rel="nofollow" href="@{javac.link.javaeeApi.7}">
 							<ao:img src="/ao-badges/javaee-7.svg" width="90" height="20" alt="java ee: >= 7" />
 						</ao:a>
 					</ao:when>
 					<ao:when test="#{arg.javaeeVersion=='8'}">
-						<ao:a rel="nofollow" href="@{javac.link.javaeeApi.8}/">
+						<ao:a rel="nofollow" href="@{javac.link.javaeeApi.8}">
 							<ao:img src="/ao-badges/javaee-8.svg" width="90" height="20" alt="java ee: >= 8" />
 						</ao:a>
 					</ao:when>
