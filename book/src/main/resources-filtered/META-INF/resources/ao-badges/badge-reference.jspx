@@ -32,7 +32,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 	<core:page
 		title="Badge Reference"
 		datePublished="2017-07-17T17:00:17-0500"
-		dateModified="2019-04-15T06:11:25-0500"
+		dateModified="2019-04-16T20:33:13-0500"
 	>
 		<!-- TODO: Links in section labels to /life-cycle.jspx -->
 		<section:section label="Project Management">
@@ -260,7 +260,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 						<tr>
 							<td>
 								<ao:a rel="nofollow" href="@{javac.link.javaApi.jdk10}">
-									<ao:img src="/ao-badges/java-10.svg" width="72" height="20" alt="java: >= 10" />
+									<ao:img src="/ao-badges/java-10.svg" width="78" height="20" alt="java: >= 10" />
 								</ao:a>
 							</td>
 							<td><code>arg.javaVersion="10"</code></td>
@@ -268,7 +268,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 						<tr>
 							<td>
 								<ao:a rel="nofollow" href="@{javac.link.javaApi.jdk11}">
-									<ao:img src="/ao-badges/java-11.svg" width="72" height="20" alt="java: >= 11" />
+									<ao:img src="/ao-badges/java-11.svg" width="78" height="20" alt="java: >= 11" />
 								</ao:a>
 							</td>
 							<td><code>arg.javaVersion="11"</code></td>
@@ -276,7 +276,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 						<tr>
 							<td>
 								<ao:a rel="nofollow" href="@{javac.link.javaApi.jdk12}">
-									<ao:img src="/ao-badges/java-12.svg" width="72" height="20" alt="java: >= 12" />
+									<ao:img src="/ao-badges/java-12.svg" width="78" height="20" alt="java: >= 12" />
 								</ao:a>
 							</td>
 							<td><code>arg.javaVersion="12"</code></td>
@@ -284,7 +284,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 						<tr>
 							<td>
 								<ao:a rel="nofollow" href="@{javac.link.javaApi.jdk13}">
-									<ao:img src="/ao-badges/java-13.svg" width="72" height="20" alt="java: >= 13" />
+									<ao:img src="/ao-badges/java-13.svg" width="78" height="20" alt="java: >= 13" />
 								</ao:a>
 							</td>
 							<td><code>arg.javaVersion="13"</code></td>
