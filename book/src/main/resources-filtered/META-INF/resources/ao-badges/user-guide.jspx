@@ -35,7 +35,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 		title="@{documented.name} User Guide"
 		shortTitle="User Guide"
 		datePublished="2017-07-17T16:30:06-0500"
-		dateModified="2017-07-19T19:34:20-0500"
+		dateModified="2019-06-01T00:46:53-0500"
 	>
 		<section:section label="Add Dependencies to Project">
 			<!-- TODO: Support deferred arguments via args? -->
@@ -60,16 +60,18 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 				</section:section>
 			</section:section>
 			<section:section label="Include badges.inc.jspx">
-<pre><![CDATA[&lt;ao:include
-	page="/ao-badges/badges.inc.jspx"
-	arg.projectStatus="current-stable"
-	arg.managementStatus="production"
-	arg.packagingStatus="active"
-	arg.javaVersion="11"
-	arg.javaeeVersion="6"
-	arg.semanticVersioning="2.0.0"
-	arg.license="gpl-3.0"
-/&gt;]]></pre>
+<pre><![CDATA[&lt;header&gt;
+	&lt;ao:include
+		page="/ao-badges/badges.inc.jspx"
+		arg.projectStatus="current-stable"
+		arg.managementStatus="production"
+		arg.packagingStatus="active"
+		arg.javaVersion="11"
+		arg.javaeeVersion="6"
+		arg.semanticVersioning="2.0.0"
+		arg.license="gpl-3.0"
+	/&gt;
+&lt;/header&gt;]]></pre>
 				<p>
 					See also the <core:link page="badge-reference">full set of supported badges</core:link>.
 				</p>

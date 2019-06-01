@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 ao-badges - Badges from shields.io bundled into a reusable JSP-based web component.
-Copyright (C) 2017  AO Industries, Inc.
+Copyright (C) 2017, 2019  AO Industries, Inc.
     support@aoindustries.com
     7262 Bull Pen Cir
     Mobile, AL 36695
@@ -33,7 +33,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 		title="@{documented.name}"
 		description="@{documented.description}"
 		datePublished="2017-07-15T16:39:07-0500"
-		dateModified="2017-07-19T19:34:20-0500"
+		dateModified="2019-06-01T00:46:53-0500"
 	>
 		<core:child page="changelog" />
 		<core:child page="user-guide" />
@@ -43,15 +43,17 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 			accuracy of versions and colors over time, and procedure for refetching images from shields.io.
 		-->
 		<!-- TODO: Add new core:property tag to set properties on elements -->
-		<ao:include
-			page="/ao-badges/badges.inc.jspx"
-			arg.projectStatus="${currentPage.property.projectStatus}"
-			arg.managementStatus="${currentPage.property.managementStatus}"
-			arg.packagingStatus="${currentPage.property.packagingStatus}"
-			arg.javaeeVersion="${currentPage.property.javaeeVersion}"
-			arg.semanticVersioning="${currentPage.property.semanticVersioning}"
-			arg.license="${currentPage.property.license}"
-		/>
+		<header>
+			<ao:include
+				page="/ao-badges/badges.inc.jspx"
+				arg.projectStatus="${currentPage.property.projectStatus}"
+				arg.managementStatus="${currentPage.property.managementStatus}"
+				arg.packagingStatus="${currentPage.property.packagingStatus}"
+				arg.javaeeVersion="${currentPage.property.javaeeVersion}"
+				arg.semanticVersioning="${currentPage.property.semanticVersioning}"
+				arg.license="${currentPage.property.license}"
+			/>
+		</header>
 		<p>
 			Badges from <ao:a rel="nofollow" href="https://shields.io/">shields.io</ao:a> bundled into a reusable JSP-based web component.
 		</p>
