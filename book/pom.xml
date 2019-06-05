@@ -35,7 +35,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 	<properties>
 		<!-- These values are copied from the project being documented -->
 		<documented.groupId>com.aoindustries</documented.groupId><documented.artifactId>ao-badges</documented.artifactId>
-		<documented.name>AO Badges 2</documented.name>
+		<documented.name>AO Badges²</documented.name>
 		<documented.url>https://aoindustries.com/${documented.artifactId}/</documented.url>
 		<documented.description>Badges from shields.io bundled into a reusable JSP-based web component.</documented.description>
 		<documented.inceptionYear>2017</documented.inceptionYear>
