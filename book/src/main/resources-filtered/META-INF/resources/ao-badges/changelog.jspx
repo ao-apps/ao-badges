@@ -36,7 +36,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 		shortTitle="Changelog"
 		tocLevels="1"
 		datePublished="2017-07-15T16:36:26-0500"
-		dateModified="2019-06-19T09:48:11-0500"
+		dateModified="2019-07-06T00:50:34-0500"
 	>
 		<!-- The current snapshot, unreleased version -->
 		<c:set var="version" value="@{com.aoindustries:ao-badges:pom.version}" />
@@ -51,7 +51,17 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 				groupId="@{documented.groupId}"
 				artifactId="@{documented.artifactId}"
 				scmUrl="@{documented.scm.url}"
-			/>
+			>
+				<ul>
+					<li>Added:
+						<ol>
+							<li><code>license="gpl-2.0"</code>:
+								<ao:a rel="nofollow" href="https://www.gnu.org/licenses/old-licenses/gpl-2.0"><ao:img src="/ao-badges/license-gpl-2.0.svg" width="96" height="20" alt="license: GPL v2" /></ao:a>
+							</li>
+						</ol>
+					</li>
+				</ul>
+			</changelog:release>
 		</c:if>
 
 		<changelog:release

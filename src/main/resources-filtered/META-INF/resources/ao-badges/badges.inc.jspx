@@ -55,7 +55,7 @@ Arguments:
 	                        Must be one of "2.0.0"
 
 	arg.license             (Optional) The software license.
-	                        Must be one of "lgpl-3.0"
+	                        Must be one of "gpl-2.0", "lgpl-3.0"
 -->
 <jsp:root
 	xmlns:ao="https://aoindustries.com/ao-taglib/"
@@ -383,6 +383,11 @@ Arguments:
 			</c:if>
 			<c:if test="${!empty arg.license}">
 				<ao:choose>
+					<ao:when test="#{arg.license=='gpl-2.0'}">
+						<ao:a rel="nofollow" href="https://www.gnu.org/licenses/old-licenses/gpl-2.0">
+							<ao:img src="/ao-badges/license-gpl-2.0.svg" width="96" height="20" alt="license: GPL v2" />
+						</ao:a>
+					</ao:when>
 					<ao:when test="#{arg.license=='lgpl-3.0'}">
 						<ao:a rel="nofollow" href="https://www.gnu.org/licenses/lgpl-3.0">
 							<ao:img src="/ao-badges/license-lgpl-3.0.svg" width="102" height="20" alt="license: LGPL v3" />

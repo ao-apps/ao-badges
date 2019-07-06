@@ -32,7 +32,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 	<core:page
 		title="Badge Reference"
 		datePublished="2017-07-17T17:00:17-0500"
-		dateModified="2019-04-16T20:33:13-0500"
+		dateModified="2019-07-06T00:43:00-0500"
 	>
 		<!-- TODO: Links in section labels to /life-cycle.jspx -->
 		<section:section label="Project Management">
@@ -585,6 +585,14 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 					</tr>
 				</thead>
 				<tbody>
+					<tr>
+						<td>
+							<ao:a rel="nofollow" href="https://www.gnu.org/licenses/old-licenses/gpl-2.0">
+								<ao:img src="/ao-badges/license-gpl-2.0.svg" width="96" height="20" alt="license: GPL v2" />
+							</ao:a>
+						</td>
+						<td><code>arg.license="gpl-2.0"</code></td>
+					</tr>
 					<tr>
 						<td>
 							<ao:a rel="nofollow" href="https://www.gnu.org/licenses/lgpl-3.0">
