@@ -291,6 +291,14 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 						</tr>
 						<tr>
 							<td>
+								<ao:a rel="nofollow" href="@{javac.link.javaApi.jdk14}">
+									<ao:img src="/ao-badges/java-14.svg" width="78" height="20" alt="java: >= 14" />
+								</ao:a>
+							</td>
+							<td><code>arg.javaVersion="14"</code></td>
+						</tr>
+						<tr>
+							<td>
 								<ao:a rel="nofollow" href="https://www.java.com/">
 									<ao:img src="/ao-badges/java-unknown.svg" width="94" height="20" alt="java: unknown" />
 								</ao:a>

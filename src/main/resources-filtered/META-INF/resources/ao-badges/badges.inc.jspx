@@ -37,7 +37,7 @@ Arguments:
 	                        Must be one of "developmental", "active", "unsupported"
 
 	arg.javaVersion         (Optional) The minimum Java version.
-	                        Must be one of "1.5", "5", "1.6", "6", "1.7", "7", "1.8", "8", "9", "10", "11", "12", "13"
+	                        Must be one of "1.5", "5", "1.6", "6", "1.7", "7", "1.8", "8", "9", "10", "11", "12", "13", "14"
 
 	arg.javaeeVersion       (Optional) The minimum Java EE version.
 	                        Must be one of "5", "6", "7", "8"
@@ -232,6 +232,11 @@ Arguments:
 					<ao:when test="#{arg.javaVersion=='13'}">
 						<ao:a rel="nofollow" href="@{javac.link.javaApi.jdk13}">
 							<ao:img src="/ao-badges/java-13.svg" width="78" height="20" alt="java: >= 13" />
+						</ao:a>
+					</ao:when>
+					<ao:when test="#{arg.javaVersion=='14'}">
+						<ao:a rel="nofollow" href="@{javac.link.javaApi.jdk14}">
+							<ao:img src="/ao-badges/java-14.svg" width="78" height="20" alt="java: >= 14" />
 						</ao:a>
 					</ao:when>
 					<ao:otherwise>
