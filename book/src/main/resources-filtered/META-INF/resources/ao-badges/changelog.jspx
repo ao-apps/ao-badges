@@ -36,7 +36,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 		shortTitle="Changelog"
 		tocLevels="1"
 		datePublished="2017-07-15T16:36:26-0500"
-		dateModified="2019-07-06T00:50:34-0500"
+		dateModified="2019-09-24T21:09:15-0500"
 	>
 		<!-- The current snapshot, unreleased version -->
 		<c:set var="version" value="@{com.aoindustries:ao-badges:pom.version}" />
@@ -58,6 +58,13 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 							<li><code>license="gpl-2.0"</code>:
 								<ao:a rel="nofollow" href="https://www.gnu.org/licenses/old-licenses/gpl-2.0"><ao:img src="/ao-badges/license-gpl-2.0.svg" width="96" height="20" alt="license: GPL v2" /></ao:a>
 							</li>
+						</ol>
+					</li>
+					<li>Java updates:
+						<ol type="a">
+							<li>Java 12 is now end-of-life</li>
+							<li>Java 13 is now current stable</li>
+							<li>Java 14 is new beta</li>
 						</ol>
 					</li>
 				</ul>
