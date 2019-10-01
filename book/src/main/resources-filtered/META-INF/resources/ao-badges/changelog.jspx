@@ -61,7 +61,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 						</ol>
 					</li>
 					<li>Java updates:
-						<ol type="a">
+						<ol>
 							<li>Java 12 is now end-of-life</li>
 							<li>Java 13 is now current stable</li>
 							<li>Java 14 is new beta</li>
