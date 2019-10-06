@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 ao-badges - Badges from shields.io bundled into a reusable JSP-based web component.
-Copyright (C) 2017  AO Industries, Inc.
+Copyright (C) 2017, 2019  AO Industries, Inc.
     support@aoindustries.com
     7262 Bull Pen Cir
     Mobile, AL 36695
@@ -33,6 +33,10 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 	<filter>
 		<filter-name>ao-badges-max-age-one-day-filter</filter-name>
 		<filter-class>com.aoindustries.servlet.filter.AddResponseHeaderFilter</filter-class>
+		<init-param>
+			<param-name>allowMultiple</param-name>
+			<param-value>false</param-value>
+		</init-param>
 		<init-param>
 			<param-name>Cache-Control</param-name>
 			<param-value>max-age=86400</param-value>
