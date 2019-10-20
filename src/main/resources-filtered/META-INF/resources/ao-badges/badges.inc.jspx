@@ -185,7 +185,7 @@ Arguments:
 					or !empty arg.license
 				)
 			}">
-				<br />
+				<ao:br />
 			</c:if>
 			<c:if test="${!empty arg.javaVersion}">
 				<ao:choose>
