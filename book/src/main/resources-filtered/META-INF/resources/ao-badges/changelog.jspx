@@ -36,7 +36,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 		shortTitle="Changelog"
 		tocLevels="1"
 		datePublished="2017-07-15T16:36:26-0500"
-		dateModified="2019-09-24T21:09:15-0500"
+		dateModified="2019-11-02T16:41:06-0500"
 	>
 		<!-- The current snapshot, unreleased version -->
 		<c:set var="version" value="@{com.aoindustries:ao-badges:pom.version}" />
@@ -54,22 +54,58 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 			>
 				<ul>
 					<li>Updated for <ao:a href="https://semanticcms.com/">SemanticCMS</ao:a> 2 compatibility.</li>
-					<li>Using managed dependencies:
-						<ol>
-							<li>This project uses managed dependencies.</li>
-							<li>This project's managed dependencies may also be imported by other projects.</li>
-						</ol>
-					</li>
-					<li>Java updates:
-						<ol>
-							<li>Java 12 is now end-of-life</li>
-							<li>Java 13 is now current stable</li>
-							<li>Java 14 is new beta</li>
-						</ol>
+					<li>Minimum Java version changed from 1.6 to 1.7.</li>
+					<li>
+						Now outputting HTML or XHTML based on the current response content type.
+						This should eliminate validator warnings when used as HTML.
 					</li>
 				</ul>
 			</changelog:release>
 		</c:if>
+
+		<changelog:release
+			projectName="@{documented.name}"
+			version="1.2.0"
+			datePublished="2019-10-11T16:57:11-0500"
+			groupId="@{documented.groupId}"
+			artifactId="@{documented.artifactId}"
+			scmUrl="@{documented.scm.url}"
+		>
+			<ul>
+				<li>Added:
+					<ol>
+						<li><code>license="gpl-2.0"</code>:
+							<ao:a rel="nofollow" href="https://www.gnu.org/licenses/old-licenses/gpl-2.0"><ao:img src="/ao-badges/license-gpl-2.0.svg" width="96" height="20" alt="license: GPL v2" /></ao:a>
+						</li>
+					</ol>
+				</li>
+				<li>Java updates:
+					<ol>
+						<li>Java 12 is now end-of-life</li>
+						<li>Java 13 is now current stable</li>
+						<li>Java 14 is new beta</li>
+					</ol>
+				</li>
+			</ul>
+		</changelog:release>
+
+		<changelog:release
+			projectName="@{documented.name}"
+			version="1.1.1"
+			datePublished="2019-06-19T08:13:34-0500"
+			groupId="@{documented.groupId}"
+			artifactId="@{documented.artifactId}"
+			scmUrl="@{documented.scm.url}"
+		>
+			<ul>
+				<li>Using managed dependencies:
+					<ol>
+						<li>This project uses managed dependencies.</li>
+						<li>This project's managed dependencies may also be imported by other projects.</li>
+					</ol>
+				</li>
+			</ul>
+		</changelog:release>
 
 		<changelog:release
 			projectName="@{documented.name}"
