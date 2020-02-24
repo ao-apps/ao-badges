@@ -32,7 +32,9 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 	<display-name>@{project.name}</display-name>
 	-->
 	<description>@{project.description}</description>
+
 	<!-- Filter to set max-age header for badges -->
+	<!-- TODO: Remove this and add *.svg to the handling of auto lastModified and associated cache control -->
 	<filter>
 		<filter-name>ao-badges-max-age-one-day-filter</filter-name>
 		<filter-class>com.aoindustries.servlet.filter.AddResponseHeaderFilter</filter-class>
@@ -54,4 +56,5 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 		<url-pattern>/ao-badges/*</url-pattern>
 		<dispatcher>REQUEST</dispatcher>
 	</filter-mapping>
+
 </web-fragment>
