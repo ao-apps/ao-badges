@@ -33,8 +33,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 	-->
 	<description>@{project.description}</description>
 
-	<!-- Filter to set max-age header for badges -->
-	<!-- TODO: Remove this and add *.svg to the handling of auto lastModified and associated cache control -->
+	<!-- Filter to set max-age header for badges (enables GitHub README.md proxy caches) -->
 	<filter>
 		<filter-name>ao-badges-max-age-one-day-filter</filter-name>
 		<filter-class>com.aoindustries.servlet.filter.AddResponseHeaderFilter</filter-class>
