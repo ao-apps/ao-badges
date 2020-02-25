@@ -33,13 +33,13 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 	<core:page
 		title="Badge Reference"
 		datePublished="2017-07-17T17:00:17-0500"
-		dateModified="2019-07-06T00:43:00-0500"
+		dateModified="2020-02-25T12:59:46-0600"
 	>
 		<!-- TODO: Links in section labels to /life-cycle.jspx -->
 		<section:section label="Project Management">
 			<!-- TODO: Link to /life-cycle.jspx#project -->
 			<section:section id="project" label="Project Life Cycle">
-				<table class="thinTable">
+				<table class="ao-grid">
 					<thead>
 						<tr>
 							<th><core:link book="/" page="/life-cycle.jspx" element="project">Project Status</core:link></th>
@@ -99,7 +99,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 				</table>
 			</section:section>
 			<section:section id="management" label="Management Life Cycle">
-				<table class="thinTable">
+				<table class="ao-grid">
 					<thead>
 						<tr>
 							<th><core:link book="/" page="/life-cycle.jspx" element="management">Management Status</core:link></th>
@@ -151,7 +151,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 				</table>
 			</section:section>
 			<section:section id="packaging" label="Packaging Life Cycle">
-				<table class="thinTable">
+				<table class="ao-grid">
 					<thead>
 						<tr>
 							<th><core:link book="/" page="/life-cycle.jspx" element="packaging">Packaging Status</core:link></th>
@@ -198,7 +198,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 		<section:section label="Languages &amp; Frameworks">
 			<!-- TODO: Link in section header -->
 			<section:section label="Java">
-				<table class="thinTable">
+				<table class="ao-grid">
 					<thead>
 						<tr>
 							<th><ao:a rel="nofollow" href="https://www.java.com/">Java</ao:a> Version</th>
@@ -311,7 +311,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 			</section:section>
 			<!-- TODO: Link in section header -->
 			<section:section label="Java EE">
-				<table class="thinTable">
+				<table class="ao-grid">
 					<thead>
 						<tr>
 							<th><ao:a rel="nofollow" href="http://www.oracle.com/technetwork/java/javaee/overview/index.html">Java EE</ao:a> Version</th>
@@ -364,7 +364,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 			</section:section>
 			<!-- TODO: Link in section header -->
 			<section:section label="ECMAScript">
-				<table class="thinTable">
+				<table class="ao-grid">
 					<thead>
 						<tr>
 							<th><ao:a rel="nofollow" href="http://www.ecma-international.org/publications/standards/Ecma-262.htm">ECMAScript</ao:a> Version</th>
@@ -434,7 +434,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 			</section:section>
 			<!-- TODO: Link in section header -->
 			<section:section label="JavaScript">
-				<table class="thinTable">
+				<table class="ao-grid">
 					<thead>
 						<tr>
 							<th><ao:a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</ao:a> Version</th>
@@ -503,7 +503,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 			</section:section>
 			<!-- TODO: Link in section header -->
 			<section:section label="jQuery">
-				<table class="thinTable">
+				<table class="ao-grid">
 					<thead>
 						<tr>
 							<th><ao:a rel="nofollow" href="https://jquery.com/">jQuery</ao:a> Version</th>
@@ -558,7 +558,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 		</section:section>
 		<!-- TODO: Link in section header -->
 		<section:section label="Semantic Versioning">
-			<table class="thinTable">
+			<table class="ao-grid">
 				<thead>
 					<tr>
 						<th><ao:a rel="nofollow" href="http://semver.org/">Semantic Versioning</ao:a> Version</th>
@@ -586,7 +586,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 			</table>
 		</section:section>
 		<section:section label="Licenses">
-			<table class="thinTable">
+			<table class="ao-grid">
 				<thead>
 					<tr>
 						<th>License</th>
