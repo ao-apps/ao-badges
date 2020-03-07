@@ -208,95 +208,95 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 					<tbody>
 						<tr>
 							<td>
-								<ao:a rel="nofollow" href="@{javac.link.javaApi.jdk5}">
+								<ao:a rel="nofollow" href="@{javadoc.link.javase.5}">
 									<ao:img src="/ao-badges/java-5.svg" width="72" height="20" alt="java: >= 5" />
 								</ao:a>
 							</td>
 							<td>
-								<code>arg.javaVersion="1.5"</code>
-								or <code>arg.javaVersion="5"</code>
+								<code>arg.javaseVersion="1.5"</code>
+								or <code>arg.javaseVersion="5"</code>
 							</td>
 						</tr>
 						<tr>
 							<td>
-								<ao:a rel="nofollow" href="@{javac.link.javaApi.jdk6}">
+								<ao:a rel="nofollow" href="@{javadoc.link.javase.6}">
 									<ao:img src="/ao-badges/java-6.svg" width="72" height="20" alt="java: >= 6" />
 								</ao:a>
 							</td>
 							<td>
-								<code>arg.javaVersion="1.6"</code>
-								or <code>arg.javaVersion="6"</code>
+								<code>arg.javaseVersion="1.6"</code>
+								or <code>arg.javaseVersion="6"</code>
 							</td>
 						</tr>
 						<tr>
 							<td>
-								<ao:a rel="nofollow" href="@{javac.link.javaApi.jdk7}">
+								<ao:a rel="nofollow" href="@{javadoc.link.javase.7}">
 									<ao:img src="/ao-badges/java-7.svg" width="72" height="20" alt="java: >= 7" />
 								</ao:a>
 							</td>
 							<td>
-								<code>arg.javaVersion="1.7"</code>
-								or <code>arg.javaVersion="7"</code>
+								<code>arg.javaseVersion="1.7"</code>
+								or <code>arg.javaseVersion="7"</code>
 							</td>
 						</tr>
 						<tr>
 							<td>
-								<ao:a rel="nofollow" href="@{javac.link.javaApi.jdk8}">
+								<ao:a rel="nofollow" href="@{javadoc.link.javase.8}">
 									<ao:img src="/ao-badges/java-8.svg" width="72" height="20" alt="java: >= 8" />
 								</ao:a>
 							</td>
 							<td>
-								<code>arg.javaVersion="1.8"</code>
-								or <code>arg.javaVersion="8"</code>
+								<code>arg.javaseVersion="1.8"</code>
+								or <code>arg.javaseVersion="8"</code>
 							</td>
 						</tr>
 						<tr>
 							<td>
-								<ao:a rel="nofollow" href="@{javac.link.javaApi.jdk9}">
+								<ao:a rel="nofollow" href="@{javadoc.link.javase.9}">
 									<ao:img src="/ao-badges/java-9.svg" width="72" height="20" alt="java: >= 9" />
 								</ao:a>
 							</td>
-							<td><code>arg.javaVersion="9"</code></td>
+							<td><code>arg.javaseVersion="9"</code></td>
 						</tr>
 						<tr>
 							<td>
-								<ao:a rel="nofollow" href="@{javac.link.javaApi.jdk10}">
+								<ao:a rel="nofollow" href="@{javadoc.link.javase.10}">
 									<ao:img src="/ao-badges/java-10.svg" width="78" height="20" alt="java: >= 10" />
 								</ao:a>
 							</td>
-							<td><code>arg.javaVersion="10"</code></td>
+							<td><code>arg.javaseVersion="10"</code></td>
 						</tr>
 						<tr>
 							<td>
-								<ao:a rel="nofollow" href="@{javac.link.javaApi.jdk11}">
+								<ao:a rel="nofollow" href="@{javadoc.link.javase.11}">
 									<ao:img src="/ao-badges/java-11.svg" width="78" height="20" alt="java: >= 11" />
 								</ao:a>
 							</td>
-							<td><code>arg.javaVersion="11"</code></td>
+							<td><code>arg.javaseVersion="11"</code></td>
 						</tr>
 						<tr>
 							<td>
-								<ao:a rel="nofollow" href="@{javac.link.javaApi.jdk12}">
+								<ao:a rel="nofollow" href="@{javadoc.link.javase.12}">
 									<ao:img src="/ao-badges/java-12.svg" width="78" height="20" alt="java: >= 12" />
 								</ao:a>
 							</td>
-							<td><code>arg.javaVersion="12"</code></td>
+							<td><code>arg.javaseVersion="12"</code></td>
 						</tr>
 						<tr>
 							<td>
-								<ao:a rel="nofollow" href="@{javac.link.javaApi.jdk13}">
+								<ao:a rel="nofollow" href="@{javadoc.link.javase.13}">
 									<ao:img src="/ao-badges/java-13.svg" width="78" height="20" alt="java: >= 13" />
 								</ao:a>
 							</td>
-							<td><code>arg.javaVersion="13"</code></td>
+							<td><code>arg.javaseVersion="13"</code></td>
 						</tr>
 						<tr>
 							<td>
-								<ao:a rel="nofollow" href="@{javac.link.javaApi.jdk14}">
+								<ao:a rel="nofollow" href="@{javadoc.link.javase.14}">
 									<ao:img src="/ao-badges/java-14.svg" width="78" height="20" alt="java: >= 14" />
 								</ao:a>
 							</td>
-							<td><code>arg.javaVersion="14"</code></td>
+							<td><code>arg.javaseVersion="14"</code></td>
 						</tr>
 						<tr>
 							<td>
@@ -304,7 +304,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 									<ao:img src="/ao-badges/java-unknown.svg" width="94" height="20" alt="java: unknown" />
 								</ao:a>
 							</td>
-							<td><code>arg.javaVersion="unknown"</code></td>
+							<td><code>arg.javaseVersion="unknown"</code></td>
 						</tr>
 					</tbody>
 				</table>
@@ -321,7 +321,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 					<tbody>
 						<tr>
 							<td>
-								<ao:a rel="nofollow" href="@{javac.link.javaeeApi.5}">
+								<ao:a rel="nofollow" href="@{javadoc.link.javaee.5}">
 									<ao:img src="/ao-badges/javaee-5.svg" width="90" height="20" alt="java ee: >= 5" />
 								</ao:a>
 							</td>
@@ -329,7 +329,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 						</tr>
 						<tr>
 							<td>
-								<ao:a rel="nofollow" href="@{javac.link.javaeeApi.6}">
+								<ao:a rel="nofollow" href="@{javadoc.link.javaee.6}">
 									<ao:img src="/ao-badges/javaee-6.svg" width="90" height="20" alt="java ee: >= 6" />
 								</ao:a>
 							</td>
@@ -337,7 +337,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 						</tr>
 						<tr>
 							<td>
-								<ao:a rel="nofollow" href="@{javac.link.javaeeApi.7}">
+								<ao:a rel="nofollow" href="@{javadoc.link.javaee.7}">
 									<ao:img src="/ao-badges/javaee-7.svg" width="90" height="20" alt="java ee: >= 7" />
 								</ao:a>
 							</td>
@@ -345,7 +345,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 						</tr>
 						<tr>
 							<td>
-								<ao:a rel="nofollow" href="@{javac.link.javaeeApi.8}">
+								<ao:a rel="nofollow" href="@{javadoc.link.javaee.8}">
 									<ao:img src="/ao-badges/javaee-8.svg" width="90" height="20" alt="java ee: >= 8" />
 								</ao:a>
 							</td>

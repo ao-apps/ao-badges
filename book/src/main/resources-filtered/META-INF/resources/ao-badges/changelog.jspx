@@ -125,42 +125,42 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 				<li>Minimum Java version changed from 1.6 to 1.7.</li>
 				<li>Removed:
 					<ol>
-						<li><code>javaVersion="1.9"</code>:
-							<code>javaVersion="9"</code> remains and should be used.
+						<li><code>javaseVersion="1.9"</code>:
+							<code>javaseVersion="9"</code> remains and should be used.
 						</li>
 					</ol>
 				</li>
 				<li>Added:
 					<ol>
-						<li><code>javaVersion="10"</code>:
+						<li><code>javaseVersion="10"</code>:
 							<core:link book="/" page="/life-cycle" anchor="project-old-stable"><span class="life-cycle project old-stable">Old Stable</span></core:link>
 						</li>
-						<li><code>javaVersion="11"</code>:
+						<li><code>javaseVersion="11"</code>:
 							<core:link book="/" page="/life-cycle" anchor="project-current-stable"><span class="life-cycle project current-stable">Current Stable</span></core:link>
 						</li>
-						<li><code>javaVersion="12"</code>:
+						<li><code>javaseVersion="12"</code>:
 							<core:link book="/" page="/life-cycle" anchor="project-current-stable"><span class="life-cycle project current-stable">Current Stable</span></core:link>
 						</li>
-						<li><code>javaVersion="13"</code>:
+						<li><code>javaseVersion="13"</code>:
 							<core:link book="/" page="/life-cycle" anchor="project-beta"><span class="life-cycle project beta">Beta</span></core:link>
 						</li>
 					</ol>
 				</li>
 				<li>Changed:
 					<ol>
-						<li><code>javaVersion="1.5"</code> or <code>javaVersion="5"</code>:
+						<li><code>javaseVersion="1.5"</code> or <code>javaseVersion="5"</code>:
 							<core:link book="/" page="/life-cycle" anchor="project-old-stable"><span class="life-cycle project old-stable">Old Stable</span></core:link>
 							-&gt; <core:link book="/" page="/life-cycle" anchor="project-end-of-life"><span class="life-cycle project end-of-life">End of Life</span></core:link>
 						</li>
-						<li><code>javaVersion="1.6"</code> or <code>javaVersion="6"</code>:
+						<li><code>javaseVersion="1.6"</code> or <code>javaseVersion="6"</code>:
 							<core:link book="/" page="/life-cycle" anchor="project-old-stable"><span class="life-cycle project old-stable">Old Stable</span></core:link>
 							-&gt; <core:link book="/" page="/life-cycle" anchor="project-end-of-life"><span class="life-cycle project end-of-life">End of Life</span></core:link>
 						</li>
-						<li><code>javaVersion="1.8"</code> or <code>javaVersion="8"</code>:
+						<li><code>javaseVersion="1.8"</code> or <code>javaseVersion="8"</code>:
 							<core:link book="/" page="/life-cycle" anchor="project-current-stable"><span class="life-cycle project current-stable">Current Stable</span></core:link>
 							-&gt; <core:link book="/" page="/life-cycle" anchor="project-old-stable"><span class="life-cycle project old-stable">Old Stable</span></core:link>
 						</li>
-						<li><code>javaVersion="9"</code>:
+						<li><code>javaseVersion="9"</code>:
 							<core:link book="/" page="/life-cycle" anchor="project-beta"><span class="life-cycle project beta">Beta</span></core:link>
 							-&gt; <core:link book="/" page="/life-cycle" anchor="project-current-stable"><span class="life-cycle project current-stable">Current Stable</span></core:link>
 						</li>

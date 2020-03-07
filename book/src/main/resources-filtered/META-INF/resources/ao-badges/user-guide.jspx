@@ -67,8 +67,8 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 		arg.projectStatus="current-stable"
 		arg.managementStatus="production"
 		arg.packagingStatus="active"
-		arg.javaVersion="11"
-		arg.javaeeVersion="6"
+		arg.javaseVersion="@{javase.version}"
+		arg.javaeeVersion="@{javaee.version}"
 		arg.semanticVersioning="2.0.0"
 		arg.license="gpl-3.0"
 	/&gt;
