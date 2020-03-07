@@ -20,6 +20,7 @@
  * You should have received a copy of the GNU Lesser General Public License
  * along with ao-badges.  If not, see <http://www.gnu.org/licenses/>.
  */
+p.ao-badges > a > img,
 p.ao-badges > img {
 	display: inline-block;
 	margin-right: 4px;
