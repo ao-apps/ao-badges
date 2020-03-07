@@ -34,11 +34,12 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 		title="@{documented.name}"
 		description="@{documented.description}"
 		datePublished="2017-07-15T16:39:07-0500"
-		dateModified="2019-06-01T18:51:51-0500"
+		dateModified="2020-03-07T02:28:18-0600"
 	>
 		<core:child page="changelog.jspx" />
 		<core:child page="user-guide.jspx" />
 		<core:child page="badge-reference.jspx" />
+		<core:child page="apidocs/index.jspx" />
 		<!--
 			TODO: developer guide (for developers of this project, including a pragmatickm-based task to review
 			accuracy of versions and colors over time, and procedure for refetching images from shields.io.
@@ -50,6 +51,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 				arg.projectStatus="current-stable"
 				arg.managementStatus="production"
 				arg.packagingStatus="active"
+				arg.javaVersion="@{documented.javaVersion}"
 				arg.javaeeVersion="6"
 				arg.semanticVersioning="2.0.0"
 				arg.license="lgpl-3.0"
@@ -64,6 +66,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 				<li><core:link page="changelog.jspx">Changelog</core:link></li>
 				<li><core:link page="user-guide.jspx">User Guide</core:link></li>
 				<li><core:link page="badge-reference.jspx" /></li>
+				<li><core:link page="apidocs/index.jspx">API Docs</core:link></li>
 				<li><ao:a href="https://search.maven.org/#search%7Cgav%7C1%7Cg:%22@{documented.groupId}%22%20AND%20a:%22@{documented.artifactId}%22">Maven Central Repository</ao:a></li>
 				<li><ao:a href="@{documented.scm.url}">GitHub</ao:a></li>
 			</ul>
