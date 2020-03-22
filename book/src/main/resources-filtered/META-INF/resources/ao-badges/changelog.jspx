@@ -37,7 +37,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 		shortTitle="Changelog"
 		tocLevels="1"
 		datePublished="2017-07-15T16:36:26-0500"
-		dateModified="2020-03-07T06:01:29-0600"
+		dateModified="2020-03-22T07:10:16-05:00"
 	>
 		<!-- The current snapshot, unreleased version -->
 		<c:set var="version" value="@{com.aoindustries:ao-badges:pom.version}" />
@@ -64,6 +64,13 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 						This should eliminate validator warnings when used as HTML.
 					</li>
 					<li>Registers itself with <core:link book="/ao-web-resources/servlet" page="/index.jspx" />.</li>
+					<li>Java updates:
+						<ol>
+							<li>Java 13 is now end-of-life</li>
+							<li>Java 14 is now current stable</li>
+							<li>Java 15 is new beta</li>
+						</ol>
+					</li>
 				</ul>
 			</changelog:release>
 		</c:if>
