@@ -32,7 +32,7 @@ Badges from [shields.io](https://shields.io/) bundled into a reusable JSP-based 
 * [User Guide](https://aoindustries.com/ao-badges/user-guide)
 * [Badge Reference](https://aoindustries.com/ao-badges/badge-reference)
 * [API Docs](https://aoindustries.com/ao-badges/apidocs/)
-* [Maven Central Repository](https://search.maven.org/#search%7Cgav%7C1%7Cg:%22com.aoindustries%22%20AND%20a:%22ao-badges%22)
+* [Maven Central Repository](https://search.maven.org/artifact/com.aoindustries/ao-badges)
 * [GitHub](https://github.com/aoindustries/ao-badges)
 
 ## Contact Us
