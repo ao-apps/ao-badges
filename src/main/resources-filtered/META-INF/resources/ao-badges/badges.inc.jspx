@@ -77,10 +77,6 @@ Arguments:
 		or !empty arg.semanticVersioning
 		or !empty arg.license
 	}">
-		<!-- TODO: Default styles included via semanticcms-registered CSS?
-			This currently has lean dependencies so might not be worth it?
-			See global.css on aoindustries.com for default style.
-		-->
 		<!-- TODO: Intra-site core:link page links when on ao site? -->
 		<p class="ao-badges">
 			<c:if test="${!empty arg.projectStatus}">
