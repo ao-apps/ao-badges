@@ -77,6 +77,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 											<classifier>javadoc</classifier><includes>element-list, package-list</includes>
 											<outputDirectory>${project.build.directory}/offlineLinks/com.aoindustries/ao-web-resources-servlet</outputDirectory>
 										</artifactItem>
+										<!-- ao-javadoc-offline: <groupId>javax.servlet</groupId><artifactId>javax.servlet-api</artifactId> -->
 									</artifactItems>
 								</configuration>
 							</execution>
@@ -86,15 +87,6 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 						<groupId>org.apache.maven.plugins</groupId><artifactId>maven-javadoc-plugin</artifactId>
 						<configuration>
 							<offlineLinks>
-								<offlineLink>
-									<url>${javadoc.link.javase}</url>
-									<location>${project.build.directory}/offlineLinks/com/aoindustries/javadoc/offline/javase/${javase.release}</location>
-								</offlineLink>
-								<!-- Java EE -->
-								<offlineLink>
-									<url>${javadoc.link.javaee}</url>
-									<location>${project.build.directory}/offlineLinks/com/aoindustries/javadoc/offline/javaee/${javaee.version}</location>
-								</offlineLink>
 								<!-- Direct -->
 								<offlineLink>
 									<url>https://aoindustries.com/ao-web-resources/registry/apidocs/</url>
@@ -103,6 +95,17 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 								<offlineLink>
 									<url>https://aoindustries.com/ao-web-resources/servlet/apidocs/</url>
 									<location>${project.build.directory}/offlineLinks/com.aoindustries/ao-web-resources-servlet</location>
+								</offlineLink>
+								<!-- Java EE: <groupId>javax.servlet</groupId><artifactId>javax.servlet-api</artifactId> -->
+								<!-- Java SE -->
+								<offlineLink>
+									<url>${javadoc.link.javase}</url>
+									<location>${project.build.directory}/offlineLinks/com/aoindustries/javadoc/offline/javase/${javase.release}</location>
+								</offlineLink>
+								<!-- Java EE -->
+								<offlineLink>
+									<url>${javadoc.link.javaee}</url>
+									<location>${project.build.directory}/offlineLinks/com/aoindustries/javadoc/offline/javaee/${javaee.version}</location>
 								</offlineLink>
 							</offlineLinks>
 						</configuration>
@@ -114,12 +117,6 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 
 	<dependencyManagement>
 		<dependencies>
-			<!-- Java EE -->
-			<dependency>
-				<groupId>com.aoindustries</groupId><artifactId>javaee-web-api-bom</artifactId><version>6.0.1${POST-SNAPSHOT}</version>
-				<type>pom</type>
-				<scope>import</scope>
-			</dependency>
 			<!-- Direct -->
 			<dependency>
 				<groupId>com.aoindustries</groupId><artifactId>ao-web-resources-registry</artifactId><version>0.1.0${POST-SNAPSHOT}</version>
@@ -127,6 +124,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 			<dependency>
 				<groupId>com.aoindustries</groupId><artifactId>ao-web-resources-servlet</artifactId><version>0.1.0${POST-SNAPSHOT}</version>
 			</dependency>
+			<!-- javaee-web-api-bom: <groupId>javax.servlet</groupId><artifactId>javax.servlet-api</artifactId> -->
 			<!-- Transitive -->
 			<dependency>
 				<groupId>com.aoindustries</groupId><artifactId>ao-collections</artifactId><version>1.1.0${POST-SNAPSHOT}</version>
@@ -150,6 +148,8 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 			<dependency>
 				<groupId>com.aoindustries</groupId><artifactId>ao-taglib</artifactId><version>5.0.1${POST-SNAPSHOT}</version>
 			</dependency>
+			<!-- javaee-web-api-bom: <groupId>javax.servlet</groupId><artifactId>jstl</artifactId> -->
+			<!-- javaee-web-api-bom: <groupId>org.glassfish.web</groupId><artifactId>jstl-impl</artifactId> -->
 			<!-- Runtime Transitive -->
 			<dependency>
 				<groupId>com.aoindustries</groupId><artifactId>ao-encoding</artifactId><version>3.0.0${POST-SNAPSHOT}</version>
@@ -184,25 +184,25 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 			<dependency>
 				<groupId>org.apache.commons</groupId><artifactId>commons-lang3</artifactId><version>${commons-lang3.version}</version>
 			</dependency>
+			<!-- BOM -->
+			<dependency>
+				<groupId>com.aoindustries</groupId><artifactId>javaee-web-api-bom</artifactId><version>6.0.1${POST-SNAPSHOT}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 
 	<dependencies>
-		<!-- Java EE -->
-		<dependency>
-			<groupId>javax.servlet</groupId><artifactId>javax.servlet-api</artifactId>
-			<scope>provided</scope>
-		</dependency>
-		<dependency>
-			<groupId>javax.servlet.jsp</groupId><artifactId>javax.servlet.jsp-api</artifactId>
-			<scope>provided</scope>
-		</dependency>
 		<!-- Direct -->
 		<dependency>
 			<groupId>com.aoindustries</groupId><artifactId>ao-web-resources-registry</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>com.aoindustries</groupId><artifactId>ao-web-resources-servlet</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId><artifactId>javax.servlet-api</artifactId>
 		</dependency>
 		<!-- Runtime Direct -->
 		<dependency>
