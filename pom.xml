@@ -32,11 +32,6 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 	<groupId>com.aoindustries</groupId><artifactId>ao-badges</artifactId><version>2.0.0-SNAPSHOT</version>
 	<packaging>bundle</packaging>
 
-	<properties>
-		<!-- Dependencies -->
-		<commons-lang3.version>3.10</commons-lang3.version>
-	</properties>
-
 	<name>AO Badges²</name>
 	<url>https://aoindustries.com/ao-badges/</url>
 	<description>Badges from shields.io bundled into a reusable JSP-based web component.</description>
@@ -182,7 +177,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 				<groupId>com.aoindustries</groupId><artifactId>ao-tlds</artifactId><version>1.1.3${POST-SNAPSHOT}</version>
 			</dependency>
 			<dependency>
-				<groupId>org.apache.commons</groupId><artifactId>commons-lang3</artifactId><version>${commons-lang3.version}</version>
+				<groupId>org.apache.commons</groupId><artifactId>commons-lang3</artifactId><version>3.10</version>
 			</dependency>
 			<!-- BOM -->
 			<dependency>
