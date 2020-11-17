@@ -37,7 +37,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 		shortTitle="Changelog"
 		tocLevels="1"
 		datePublished="2017-07-15T16:36:26-0500"
-		dateModified="2020-03-27T01:14:29-05:00"
+		dateModified="2020-11-16T23:04:01-06:00"
 	>
 		<!-- The current snapshot, unreleased version -->
 		<c:set var="version" value="@{com.aoindustries:ao-badges:pom.version}" />
@@ -52,7 +52,18 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 				groupId="@{project.groupId}"
 				artifactId="@{documented.artifactId}"
 				scmUrl="@{project.scm.url}"
-			/>
+			>
+				<ul>
+					<li>Java updates:
+						<ol>
+							<li>Java 14 is now end-of-life</li>
+							<li>Java 15 is now current stable</li>
+							<li>Java 16 is new beta</li>
+						</ol>
+					</li>
+					<li>Recreated all badges.</li>
+				</ul>
+			</changelog:release>
 		</c:if>
 
 		<changelog:release
