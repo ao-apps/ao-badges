@@ -29,7 +29,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 		<relativePath>../ao-oss-parent/pom.xml</relativePath>
 	</parent>
 
-	<groupId>com.aoindustries</groupId><artifactId>ao-badges</artifactId><version>1.4.0-SNAPSHOT</version>
+	<groupId>com.aoindustries</groupId><artifactId>ao-badges</artifactId><version>1.4.0</version>
 	<packaging>bundle</packaging>
 
 	<name>AO Badges</name>
@@ -41,7 +41,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 		<connection>scm:git:git://github.com/aoindustries/ao-badges.git</connection>
 		<developerConnection>scm:git:git@github.com:aoindustries/ao-badges.git</developerConnection>
 		<url>https://github.com/aoindustries/ao-badges</url>
-		<tag>HEAD</tag>
+		<tag>ao-badges-1.4.0</tag>
 	</scm>
 
 	<issueManagement>
