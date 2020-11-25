@@ -76,6 +76,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 						<dependency>com.semanticcms:semanticcms-core-pages-jspx</dependency>
 					</usedDependencies>
 					<ignoredUnusedDeclaredDependencies>
+						<dependency>com.aoindustries:ao-badges:jar</dependency><!-- Required because is both :jar and :pom? -->
 						<!-- Dependency for dependencyversion-maven-plugin only -->
 						<dependency>com.aoindustries:ao-badges:pom</dependency>
 					</ignoredUnusedDeclaredDependencies>
