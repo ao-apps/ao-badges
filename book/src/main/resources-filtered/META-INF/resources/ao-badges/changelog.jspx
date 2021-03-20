@@ -37,7 +37,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 		shortTitle="Changelog"
 		tocLevels="1"
 		datePublished="2017-07-15T16:36:26-0500"
-		dateModified="2021-01-17T14:05:00-06:00"
+		dateModified="2021-03-20T08:30:22-05:00"
 	>
 		<c:if test="${fn:endsWith('@{project.version}', '-SNAPSHOT') and !fn:endsWith('@{project.version}', '-POST-SNAPSHOT')}">
 			<changelog:release
@@ -49,6 +49,13 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 			>
 				<ul>
 					<li>Updated for <ao:a href="https://semanticcms.com/">SemanticCMS</ao:a> 2 compatibility.</li>
+					<li>Java updates:
+						<ol>
+							<li>Java 15 is now end-of-life</li>
+							<li>Java 16 is now current stable</li>
+							<li>Java 17 is new beta</li>
+						</ol>
+					</li>
 				</ul>
 			</changelog:release>
 		</c:if>
