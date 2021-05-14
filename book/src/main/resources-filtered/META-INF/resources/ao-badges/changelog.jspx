@@ -37,7 +37,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 		shortTitle="Changelog"
 		tocLevels="1"
 		datePublished="2017-07-15T16:36:26-0500"
-		dateModified="2021-03-20T08:30:22-05:00"
+		dateModified="2021-05-13T21:21:00-05:00"
 	>
 		<c:if test="${fn:endsWith('@{project.version}', '-SNAPSHOT') and !fn:endsWith('@{project.version}', '-POST-SNAPSHOT')}">
 			<changelog:release
@@ -203,27 +203,27 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 					<ol>
 						<li><code>javaseVersion="1.5"</code> or <code>javaseVersion="5"</code>:
 							<core:link book="/" page="/life-cycle" anchor="project-old-stable"><span class="life-cycle project old-stable">Old Stable</span></core:link>
-							-&gt; <core:link book="/" page="/life-cycle" anchor="project-end-of-life"><span class="life-cycle project end-of-life">End of Life</span></core:link>
+							→ <core:link book="/" page="/life-cycle" anchor="project-end-of-life"><span class="life-cycle project end-of-life">End of Life</span></core:link>
 						</li>
 						<li><code>javaseVersion="1.6"</code> or <code>javaseVersion="6"</code>:
 							<core:link book="/" page="/life-cycle" anchor="project-old-stable"><span class="life-cycle project old-stable">Old Stable</span></core:link>
-							-&gt; <core:link book="/" page="/life-cycle" anchor="project-end-of-life"><span class="life-cycle project end-of-life">End of Life</span></core:link>
+							→ <core:link book="/" page="/life-cycle" anchor="project-end-of-life"><span class="life-cycle project end-of-life">End of Life</span></core:link>
 						</li>
 						<li><code>javaseVersion="1.8"</code> or <code>javaseVersion="8"</code>:
 							<core:link book="/" page="/life-cycle" anchor="project-current-stable"><span class="life-cycle project current-stable">Current Stable</span></core:link>
-							-&gt; <core:link book="/" page="/life-cycle" anchor="project-old-stable"><span class="life-cycle project old-stable">Old Stable</span></core:link>
+							→ <core:link book="/" page="/life-cycle" anchor="project-old-stable"><span class="life-cycle project old-stable">Old Stable</span></core:link>
 						</li>
 						<li><code>javaseVersion="9"</code>:
 							<core:link book="/" page="/life-cycle" anchor="project-beta"><span class="life-cycle project beta">Beta</span></core:link>
-							-&gt; <core:link book="/" page="/life-cycle" anchor="project-current-stable"><span class="life-cycle project current-stable">Current Stable</span></core:link>
+							→ <core:link book="/" page="/life-cycle" anchor="project-current-stable"><span class="life-cycle project current-stable">Current Stable</span></core:link>
 						</li>
 						<li><code>jqueryVersion="1.x"</code> or <code>jqueryVersion="1"</code>:
 							<core:link book="/" page="/life-cycle" anchor="project-old-stable"><span class="life-cycle project old-stable">Old Stable</span></core:link>
-							-&gt; <core:link book="/" page="/life-cycle" anchor="project-end-of-life"><span class="life-cycle project end-of-life">End of Life</span></core:link>
+							→ <core:link book="/" page="/life-cycle" anchor="project-end-of-life"><span class="life-cycle project end-of-life">End of Life</span></core:link>
 						</li>
 						<li><code>jqueryVersion="2.x"</code> or <code>jqueryVersion="2"</code>:
 							<core:link book="/" page="/life-cycle" anchor="project-old-stable"><span class="life-cycle project old-stable">Old Stable</span></core:link>
-							-&gt; <core:link book="/" page="/life-cycle" anchor="project-end-of-life"><span class="life-cycle project end-of-life">End of Life</span></core:link>
+							→ <core:link book="/" page="/life-cycle" anchor="project-end-of-life"><span class="life-cycle project end-of-life">End of Life</span></core:link>
 						</li>
 					</ol>
 				</li>
