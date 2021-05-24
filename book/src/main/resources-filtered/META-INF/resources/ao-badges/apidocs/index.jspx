@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 ao-badges - Badges from shields.io bundled into a reusable JSP-based web component.
-Copyright (C) 2017, 2019, 2020  AO Industries, Inc.
+Copyright (C) 2017, 2019, 2020, 2021  AO Industries, Inc.
     support@aoindustries.com
     7262 Bull Pen Cir
     Mobile, AL 36695
@@ -37,7 +37,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 	<core:page
 		title="@{documented.name} ${ao:getProjectVersion('./', 'com.aoindustries', 'ao-badges', '¿@{project.version}?')} API Docs"
 		shortTitle="API Docs"
-		datePublished="2020-03-07T02:28:18-0600"
+		datePublished="2020-03-07T02:28:18-06:00"
 		dateModified="${ao:getLastModified('index.html')}"
 	/>
 </jsp:root>
