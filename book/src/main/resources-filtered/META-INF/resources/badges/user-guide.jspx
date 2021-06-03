@@ -22,7 +22,7 @@ You should have received a copy of the GNU Lesser General Public License
 along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 -->
 <jsp:root
-	xmlns:ao="https://aoindustries.com/ao-taglib/"
+	xmlns:ao="https://oss.aoapps.com/taglib/"
 	xmlns:c="http://java.sun.com/jsp/jstl/core"
 	xmlns:changelog="https://semanticcms.com/changelog/taglib/"
 	xmlns:core="https://semanticcms.com/core/taglib/"
@@ -45,19 +45,19 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 				page="/semanticcms-changelog-taglib/generated-dependencies.inc.jspx"
 				arg.release="${changelog:findRelease(core:capturePage('changelog', 'meta'))}"
 				arg.dependencies="${
-					empty semanticCMS.books['/ao-taglib']
+					empty semanticCMS.books['/taglib']
 					? null
-					: changelog:findRelease(core:capturePageInBook('/ao-taglib', '/changelog', 'meta'))
+					: changelog:findRelease(core:capturePageInBook('/taglib', '/changelog', 'meta'))
 				}"
 			/>
 		</section:section>
 		<section:section label="Add Badges to Your Page">
 			<section:section label="Add AO Taglib">
 				<section:section label="Standard Syntax">
-					<code><![CDATA[&lt;%@ taglib prefix="ao" uri="https://aoindustries.com/ao-taglib/" %&gt;]]></code>
+					<code><![CDATA[&lt;%@ taglib prefix="ao" uri="https://oss.aoapps.com/taglib/" %&gt;]]></code>
 				</section:section>
 				<section:section label="XML Syntax">
-					<code><![CDATA[&lt;anyxmlelement xmlns:ao="https://aoindustries.com/ao-taglib/" /&gt;]]></code>
+					<code><![CDATA[&lt;anyxmlelement xmlns:ao="https://oss.aoapps.com/taglib/" /&gt;]]></code>
 				</section:section>
 			</section:section>
 			<section:section label="Include badges.inc.jspx">

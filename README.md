@@ -1,38 +1,38 @@
-# [<img src="ao-logo.png" alt="AO Logo" width="35" height="40">](https://github.com/aoindustries) [AO Badges](https://github.com/aoindustries/ao-badges)
+# [<img src="ao-logo.png" alt="AO Logo" width="35" height="40">](https://github.com/aoindustries) [AO OSS](https://github.com/aoindustries/ao-oss) / [Badges](https://github.com/aoindustries/ao-badges)
 <p>
 	<a href="https://aoindustries.com/life-cycle#project-current-stable">
-		<img src="https://aoindustries.com/ao-badges/project-current-stable.svg" alt="project: current stable" />
+		<img src="https://oss.aoapps.com/ao-badges/project-current-stable.svg" alt="project: current stable" />
 	</a>
 	<a href="https://aoindustries.com/life-cycle#management-production">
-		<img src="https://aoindustries.com/ao-badges/management-production.svg" alt="management: production" />
+		<img src="https://oss.aoapps.com/ao-badges/management-production.svg" alt="management: production" />
 	</a>
 	<a href="https://aoindustries.com/life-cycle#packaging-active">
-		<img src="https://aoindustries.com/ao-badges/packaging-active.svg" alt="packaging: active" />
+		<img src="https://oss.aoapps.com/ao-badges/packaging-active.svg" alt="packaging: active" />
 	</a>
 	<br />
 	<a href="https://docs.oracle.com/en/java/javase/11/docs/api/">
-		<img src="https://aoindustries.com/ao-badges/java-11.svg" alt="java: &gt;= 11" />
+		<img src="https://oss.aoapps.com/ao-badges/java-11.svg" alt="java: &gt;= 11" />
 	</a>
 	<a href="https://docs.oracle.com/javaee/7/api/">
-		<img src="https://aoindustries.com/ao-badges/javaee-7.svg" alt="java ee: &gt;= 7" />
+		<img src="https://oss.aoapps.com/ao-badges/javaee-7.svg" alt="java ee: &gt;= 7" />
 	</a>
 	<a href="http://semver.org/spec/v2.0.0.html">
-		<img src="https://aoindustries.com/ao-badges/semver-2.0.0.svg" alt="semantic versioning: 2.0.0" />
+		<img src="https://oss.aoapps.com/ao-badges/semver-2.0.0.svg" alt="semantic versioning: 2.0.0" />
 	</a>
 	<a href="https://www.gnu.org/licenses/lgpl-3.0">
-		<img src="https://aoindustries.com/ao-badges/license-lgpl-3.0.svg" alt="license: LGPL v3" />
+		<img src="https://oss.aoapps.com/ao-badges/license-lgpl-3.0.svg" alt="license: LGPL v3" />
 	</a>
 </p>
 
 Badges from [shields.io](https://shields.io/) bundled into a reusable JSP-based web component.
 
 ## Project Links
-* [Project Home](https://aoindustries.com/ao-badges/)
-* [Changelog](https://aoindustries.com/ao-badges/changelog)
-* [User Guide](https://aoindustries.com/ao-badges/user-guide)
-* [Badge Reference](https://aoindustries.com/ao-badges/badge-reference)
-* [API Docs](https://aoindustries.com/ao-badges/apidocs/)
-* [Maven Central Repository](https://search.maven.org/artifact/com.aoindustries/ao-badges)
+* [Project Home](https://oss.aoapps.com/badges/)
+* [Changelog](https://oss.aoapps.com/badges/changelog)
+* [User Guide](https://oss.aoapps.com/badges/user-guide)
+* [Badge Reference](https://oss.aoapps.com/badges/badge-reference)
+* [API Docs](https://oss.aoapps.com/badges/apidocs/)
+* [Maven Central Repository](https://search.maven.org/artifact/com.aoapps/ao-badges)
 * [GitHub](https://github.com/aoindustries/ao-badges)
 
 ## Contact Us

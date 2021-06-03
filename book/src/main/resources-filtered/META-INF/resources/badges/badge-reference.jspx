@@ -22,7 +22,7 @@ You should have received a copy of the GNU Lesser General Public License
 along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 -->
 <jsp:root
-	xmlns:ao="https://aoindustries.com/ao-taglib/"
+	xmlns:ao="https://oss.aoapps.com/taglib/"
 	xmlns:core="https://semanticcms.com/core/taglib/"
 	xmlns:jsp="http://java.sun.com/JSP/Page"
 	xmlns:section="https://semanticcms.com/section/taglib/"
@@ -33,7 +33,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 	<core:page
 		title="Badge Reference"
 		datePublished="2017-07-17T17:00:17-05:00"
-		dateModified="2021-05-22T13:07:02-05:00"
+		dateModified="2021-06-02T03:03:14-05:00"
 	>
 		<!-- TODO: Links in section labels to /life-cycle -->
 		<section:section label="Project Management">
@@ -42,56 +42,56 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 				<table class="ao-grid">
 					<thead>
 						<tr>
-							<th><core:link book="/" page="/life-cycle" element="project">Project Status</core:link></th>
+							<th><ao:a href="https://aoindustries.com/life-cycle#project">Project Status</ao:a></th>
 							<th>Include Argument</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
 							<td>
-								<core:link book="/" page="/life-cycle" anchor="project-alpha">
+								<ao:a href="https://aoindustries.com/life-cycle#project-alpha">
 									<ao:img src="/ao-badges/project-alpha.svg" width="90" height="20" alt="project: alpha" />
-								</core:link>
+								</ao:a>
 							</td>
 							<td><code>arg.projectStatus="alpha"</code></td>
 						</tr>
 						<tr>
 							<td>
-								<core:link book="/" page="/life-cycle" anchor="project-beta">
+								<ao:a href="https://aoindustries.com/life-cycle#project-beta">
 									<ao:img src="/ao-badges/project-beta.svg" width="84" height="20" alt="project: beta" />
-								</core:link>
+								</ao:a>
 							</td>
 							<td><code>arg.projectStatus="beta"</code></td>
 						</tr>
 						<tr>
 							<td>
-								<core:link book="/" page="/life-cycle" anchor="project-current-stable">
+								<ao:a href="https://aoindustries.com/life-cycle#project-current-stable">
 									<ao:img src="/ao-badges/project-current-stable.svg" width="136" height="20" alt="project: current stable" />
-								</core:link>
+								</ao:a>
 							</td>
 							<td><code>arg.projectStatus="current-stable"</code></td>
 						</tr>
 						<tr>
 							<td>
-								<core:link book="/" page="/life-cycle" anchor="project-old-stable">
+								<ao:a href="https://aoindustries.com/life-cycle#project-old-stable">
 									<ao:img src="/ao-badges/project-old-stable.svg" width="112" height="20" alt="project: old stable" />
-								</core:link>
+								</ao:a>
 							</td>
 							<td><code>arg.projectStatus="old-stable"</code></td>
 						</tr>
 						<tr>
 							<td>
-								<core:link book="/" page="/life-cycle" anchor="project-end-of-life">
+								<ao:a href="https://aoindustries.com/life-cycle#project-end-of-life">
 									<ao:img src="/ao-badges/project-end-of-life.svg" width="114" height="20" alt="project: end of life" />
-								</core:link>
+								</ao:a>
 							</td>
 							<td><code>arg.projectStatus="end-of-life"</code></td>
 						</tr>
 						<tr>
 							<td>
-								<core:link book="/" page="/life-cycle" element="project">
+								<ao:a href="https://aoindustries.com/life-cycle#project">
 									<ao:img src="/ao-badges/project-unknown.svg" width="110" height="20" alt="project: unknown" />
-								</core:link>
+								</ao:a>
 							</td>
 							<td><code>arg.projectStatus="unknown"</code></td>
 						</tr>
@@ -102,48 +102,48 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 				<table class="ao-grid">
 					<thead>
 						<tr>
-							<th><core:link book="/" page="/life-cycle" element="management">Management Status</core:link></th>
+							<th><ao:a href="https://aoindustries.com/life-cycle#management">Management Status</ao:a></th>
 							<th>Include Argument</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
 							<td>
-								<core:link book="/" page="/life-cycle" anchor="management-preview">
+								<ao:a href="https://aoindustries.com/life-cycle#management-preview">
 									<ao:img src="/ao-badges/management-preview.svg" width="136" height="20" alt="management: preview" />
-								</core:link>
+								</ao:a>
 							</td>
 							<td><code>arg.managementStatus="preview"</code></td>
 						</tr>
 						<tr>
 							<td>
-								<core:link book="/" page="/life-cycle" anchor="management-production">
+								<ao:a href="https://aoindustries.com/life-cycle#management-production">
 									<ao:img src="/ao-badges/management-production.svg" width="152" height="20" alt="management: production" />
-								</core:link>
+								</ao:a>
 							</td>
 							<td><code>arg.managementStatus="production"</code></td>
 						</tr>
 						<tr>
 							<td>
-								<core:link book="/" page="/life-cycle" anchor="management-migration">
+								<ao:a href="https://aoindustries.com/life-cycle#management-migration">
 									<ao:img src="/ao-badges/management-migration.svg" width="146" height="20" alt="management: migration" />
-								</core:link>
+								</ao:a>
 							</td>
 							<td><code>arg.managementStatus="migration"</code></td>
 						</tr>
 						<tr>
 							<td>
-								<core:link book="/" page="/life-cycle" anchor="management-cleanup">
+								<ao:a href="https://aoindustries.com/life-cycle#management-cleanup">
 									<ao:img src="/ao-badges/management-cleanup.svg" width="136" height="20" alt="management: cleanup" />
-								</core:link>
+								</ao:a>
 							</td>
 							<td><code>arg.managementStatus="cleanup"</code></td>
 						</tr>
 						<tr>
 							<td>
-								<core:link book="/" page="/life-cycle" element="management">
+								<ao:a href="https://aoindustries.com/life-cycle#management">
 									<ao:img src="/ao-badges/management-unknown.svg" width="144" height="20" alt="management: unknown" />
-								</core:link>
+								</ao:a>
 							</td>
 							<td><code>arg.managementStatus="unknown"</code></td>
 						</tr>
@@ -154,40 +154,40 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 				<table class="ao-grid">
 					<thead>
 						<tr>
-							<th><core:link book="/" page="/life-cycle" element="packaging">Packaging Status</core:link></th>
+							<th><ao:a href="https://aoindustries.com/life-cycle#packaging">Packaging Status</ao:a></th>
 							<th>Include Argument</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
 							<td>
-								<core:link book="/" page="/life-cycle" anchor="packaging-developmental">
+								<ao:a href="https://aoindustries.com/life-cycle#packaging-developmental">
 									<ao:img src="/ao-badges/packaging-developmental.svg" width="156" height="20" alt="packaging: developmental" />
-								</core:link>
+								</ao:a>
 							</td>
 							<td><code>arg.packagingStatus="developmental"</code></td>
 						</tr>
 						<tr>
 							<td>
-								<core:link book="/" page="/life-cycle" anchor="packaging-active">
+								<ao:a href="https://aoindustries.com/life-cycle#packaging-active">
 									<ao:img src="/ao-badges/packaging-active.svg" width="108" height="20" alt="packaging: active" />
-								</core:link>
+								</ao:a>
 							</td>
 							<td><code>arg.packagingStatus="active"</code></td>
 						</tr>
 						<tr>
 							<td>
-								<core:link book="/" page="/life-cycle" anchor="packaging-unsupported">
+								<ao:a href="https://aoindustries.com/life-cycle#packaging-unsupported">
 									<ao:img src="/ao-badges/packaging-unsupported.svg" width="144" height="20" alt="packaging: unsupported" />
-								</core:link>
+								</ao:a>
 							</td>
 							<td><code>arg.packagingStatus="unsupported"</code></td>
 						</tr>
 						<tr>
 							<td>
-								<core:link book="/" page="/life-cycle" element="packaging">
+								<ao:a href="https://aoindustries.com/life-cycle#packaging">
 									<ao:img src="/ao-badges/packaging-unknown.svg" width="126" height="20" alt="packaging: unknown" />
-								</core:link>
+								</ao:a>
 							</td>
 							<td><code>arg.packagingStatus="unknown"</code></td>
 						</tr>
