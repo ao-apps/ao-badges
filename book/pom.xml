@@ -29,7 +29,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 		<relativePath>../../parent/pom.xml</relativePath>
 	</parent>
 
-	<groupId>com.aoapps</groupId><artifactId>ao-badges-book</artifactId><version>1.6.0-POST-SNAPSHOT</version>
+	<groupId>com.aoapps</groupId><artifactId>ao-badges-book</artifactId><version>1.7.0-SNAPSHOT</version>
 	<packaging>bundle</packaging>
 
 	<properties>
@@ -149,7 +149,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 		<dependencies>
 			<!-- Direct -->
 			<dependency>
-				<groupId>com.aoapps</groupId><artifactId>ao-badges</artifactId><version>1.6.0${POST-SNAPSHOT}</version>
+				<groupId>com.aoapps</groupId><artifactId>ao-badges</artifactId><version>1.7.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
 			</dependency>
 			<dependency>
 				<groupId>com.aoapps</groupId><artifactId>ao-taglib</artifactId><version>7.0.0${POST-SNAPSHOT}</version>
