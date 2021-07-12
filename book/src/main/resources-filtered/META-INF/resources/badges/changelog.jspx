@@ -37,7 +37,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 		shortTitle="Changelog"
 		tocLevels="1"
 		datePublished="2017-07-15T16:36:26-05:00"
-		dateModified="2021-07-06T02:08:01-05:00"
+		dateModified="2021-07-12T13:25:42-05:00"
 	>
 		<c:if test="${fn:endsWith('@{project.version}', '-SNAPSHOT') and !fn:endsWith('@{project.version}', '-POST-SNAPSHOT')}">
 			<changelog:release
@@ -50,6 +50,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 			>
 				<ul>
 					<li>Updated for <ao:a href="https://semanticcms.com/">SemanticCMS</ao:a> 2 compatibility.</li>
+					<li>Added support for <ao:a href="https://docs.github.com/en/actions/managing-workflow-runs/adding-a-workflow-status-badge">GitHub workflow status badges</ao:a>.</li>
 				</ul>
 			</changelog:release>
 		</c:if>
