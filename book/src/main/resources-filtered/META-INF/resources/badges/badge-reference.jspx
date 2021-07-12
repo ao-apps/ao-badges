@@ -33,7 +33,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 	<core:page
 		title="Badge Reference"
 		datePublished="2017-07-17T17:00:17-05:00"
-		dateModified="2021-06-02T03:03:14-05:00"
+		dateModified="2021-07-12T13:25:42-05:00"
 	>
 		<!-- TODO: Links in section labels to /life-cycle.jspx -->
 		<section:section label="Project Management">
@@ -345,7 +345,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 					<tbody>
 						<tr>
 							<td>
-								<ao:a rel="nofollow" href="@{javadoc.link.javaee.5}>">
+								<ao:a rel="nofollow" href="@{javadoc.link.javaee.5}">
 									<ao:img src="/ao-badges/javaee-5.svg" width="90" height="20" alt="java ee: >= 5" />
 								</ao:a>
 							</td>
@@ -653,6 +653,34 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 					<tr>
 						<td><ao:img src="/ao-badges/license-unknown.svg" width="108" height="20" alt="license: unknown" /></td>
 						<td><code>arg.license="unknown"</code></td>
+					</tr>
+				</tbody>
+			</table>
+		</section:section>
+		<section:section label="Continuous Integration">
+			<table class="ao-grid">
+				<thead>
+					<tr>
+						<th>Build Status</th>
+						<th>Include Arguments</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<ao:a rel="nofollow" href="@{project.scm.url}/actions" param.query="workflow:Build">
+								<ao:img src="@{project.scm.url}/workflows/Build/badge.svg" style="max-width:100%" alt="Build" />
+							</ao:a>
+						</td>
+						<td><code>arg.scmUrl="https://github.com/<var>OWNER</var>/<var>REPOSITORY</var>" arg.githubBuildWorkflow="<var>WORKFLOW</var>"</code></td>
+					</tr>
+					<tr>
+						<td>
+							<ao:a rel="nofollow" href="@{project.scm.url}/actions" param.query="workflow:Build">
+								<ao:img src="@{project.scm.url}/workflows/Build/badge.svg" param.branch="master" style="max-width:100%" alt="Build" />
+							</ao:a>
+						</td>
+						<td><code>arg.scmUrl="https://github.com/<var>OWNER</var>/<var>REPOSITORY</var>" arg.githubBuildWorkflow="<var>WORKFLOW</var>" arg.scmBranch="<var>BRANCH</var>"</code></td>
 					</tr>
 				</tbody>
 			</table>

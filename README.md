@@ -8,6 +8,8 @@
 [![semantic versioning: 2.0.0](https://oss.aoapps.com/ao-badges/semver-2.0.0.svg)](http://semver.org/spec/v2.0.0.html)
 [![license: LGPL v3](https://oss.aoapps.com/ao-badges/license-lgpl-3.0.svg)](https://www.gnu.org/licenses/lgpl-3.0)
 
+[![Build](https://github.com/aoindustries/ao-badges/workflows/Build/badge.svg?branch=1.x)](https://github.com/aoindustries/ao-badges/actions?query=workflow%3ABuild)
+
 Badges from [shields.io](https://shields.io/) bundled into a reusable JSP-based web component.
 
 ## Project Links
