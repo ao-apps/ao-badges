@@ -58,12 +58,22 @@ Arguments:
 	                         Must be one of "gpl-2.0", "lgpl-3.0"
 
 	arg.scmUrl               (Required when using build badges) The base URL of the Software Configuration Management.
-                             Will often be the Maven build property @{project.scm.url}
-                             For GitHub: https://github.com/<OWNER>/<REPOSITORY>
+	                         Will often be the Maven build property @{project.scm.url}
+	                         For GitHub: https://github.com/<OWNER>/<REPOSITORY>
 
 	arg.githubBuildWorkflow  (Optional) Adds a build status badge for the workflow of the given name.
 
 	arg.scmBranch            (Optional) The name of the branch to use for build badges.
+
+	arg.groupId              (Required when using Maven badge) The project's groupId.
+	                         Will typically be the Maven build property @{project.groupId}
+
+	arg.artifactId           (Required when using Maven badge) The project's artifactId.
+	                         Will typically be the Maven build property @{project.artifactId}
+
+	arg.mavenBadge           (Optional) Enables Maven badge for the given repository.
+	                         Currently only "maven-central" supported.
+	                         See https://github.com/softwaremill/maven-badges
 -->
 <jsp:root
 	xmlns:ao="https://oss.aoapps.com/taglib/"
@@ -440,21 +450,40 @@ Arguments:
 	</c:if>
 	<c:if test="${
 		!empty arg.githubBuildWorkflow
+		or !empty arg.mavenBadge
 	}">
 		<p class="ao-badges">
 			<c:if test="${!empty arg.githubBuildWorkflow}">
 				<ao:choose>
 					<ao:when test="#{empty arg.scmBranch}">
 						<ao:a rel="nofollow" href="${arg.scmUrl}/actions" param.query="workflow:${arg.githubBuildWorkflow}">
-							<ao:img src="${arg.scmUrl}/workflows/${arg.githubBuildWorkflow}/badge.svg" style="max-width:100%" alt="${arg.githubBuildWorkflow}" />
+							<ao:img
+								src="${arg.scmUrl}/workflows/${ao:encodeURIComponent(arg.githubBuildWorkflow)}/badge.svg"
+								style="max-width:100%"
+								alt="${arg.githubBuildWorkflow}"
+							/>
 						</ao:a>
 					</ao:when>
 					<ao:otherwise>
 						<ao:a rel="nofollow" href="${arg.scmUrl}/actions" param.query="workflow:${arg.githubBuildWorkflow}">
-							<ao:img src="${arg.scmUrl}/workflows/${arg.githubBuildWorkflow}/badge.svg" param.branch="${arg.scmBranch}" style="max-width:100%" alt="${arg.githubBuildWorkflow}" />
+							<ao:img
+								src="${arg.scmUrl}/workflows/${ao:encodeURIComponent(arg.githubBuildWorkflow)}/badge.svg"
+								param.branch="${arg.scmBranch}"
+								style="max-width:100%"
+								alt="${arg.githubBuildWorkflow}"
+							/>
 						</ao:a>
 					</ao:otherwise>
 				</ao:choose>
+			</c:if>
+			<c:if test="${!empty arg.mavenBadge}">
+				<ao:a rel="nofollow" href="https://maven-badges.herokuapp.com/${ao:encodeURIComponent(arg.mavenBadge)}/${ao:encodeURIComponent(arg.groupId)}/${ao:encodeURIComponent(arg.artifactId)}">
+					<ao:img
+						src="https://maven-badges.herokuapp.com/${ao:encodeURIComponent(arg.mavenBadge)}/${ao:encodeURIComponent(arg.groupId)}/${ao:encodeURIComponent(arg.artifactId)}/badge.svg"
+						style="max-width:100%"
+						alt="${arg.mavenBadge == 'maven-central' ? 'Maven Central' : arg.mavenBadge}"
+					/>
+				</ao:a>
 			</c:if>
 		</p>
 	</c:if>
