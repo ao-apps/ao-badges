@@ -33,7 +33,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 	<core:page
 		title="Badge Reference"
 		datePublished="2017-07-17T17:00:17-05:00"
-		dateModified="2021-07-12T13:25:42-05:00"
+		dateModified="2021-07-15T17:33:32-05:00"
 	>
 		<!-- TODO: Links in section labels to /life-cycle.jspx -->
 		<section:section label="Project Management">
@@ -681,6 +681,31 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 							</ao:a>
 						</td>
 						<td><code>arg.scmUrl="https://github.com/<var>OWNER</var>/<var>REPOSITORY</var>" arg.githubBuildWorkflow="<var>WORKFLOW</var>" arg.scmBranch="<var>BRANCH</var>"</code></td>
+					</tr>
+				</tbody>
+			</table>
+		</section:section>
+		<!-- TODO: Links in section labels to https://github.com/softwaremill/maven-badges -->
+		<section:section label="Maven Badges">
+			<table class="ao-grid">
+				<thead>
+					<tr>
+						<th>Latest Release</th>
+						<th>Include Arguments</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<ao:a rel="nofollow" href="https://maven-badges.herokuapp.com/maven-central/${ao:encodeURIComponent('@{project.groupId}')}/${ao:encodeURIComponent('@{documented.artifactId}')}">
+								<ao:img
+									src="https://maven-badges.herokuapp.com/maven-central/${ao:encodeURIComponent('@{project.groupId}')}/${ao:encodeURIComponent('@{documented.artifactId}')}/badge.svg"
+									style="max-width:100%"
+									alt="Maven Central"
+								/>
+							</ao:a>
+						</td>
+						<td><code>arg.mavenBadge="maven-central" arg.groupId="<var>\${project.groupId}</var>" arg.artifactId="<var>\${project.artifactId}</var>"</code></td>
 					</tr>
 				</tbody>
 			</table>
