@@ -63,17 +63,33 @@ Arguments:
 
 	arg.githubBuildWorkflow  (Optional) Adds a build status badge for the workflow of the given name.
 
-	arg.scmBranch            (Optional) The name of the branch to use for build badges.
+	arg.scmBranch            (Optional) The name of the branch to use for build and SonarCloud badges.
 
-	arg.groupId              (Required when using Maven badge) The project's groupId.
+	arg.groupId              (Required when using Maven badge or for default ${arg.sonarProjectKey}) The project's groupId.
 	                         Will typically be the Maven build property @{project.groupId}
 
-	arg.artifactId           (Required when using Maven badge) The project's artifactId.
+	arg.artifactId           (Required when using Maven badge or for default ${arg.sonarProjectKey}) The project's artifactId.
 	                         Will typically be the Maven build property @{project.artifactId}
 
 	arg.mavenBadge           (Optional) Enables Maven badge for the given repository.
 	                         Currently only "maven-central" supported.
 	                         See https://github.com/softwaremill/maven-badges
+
+	arg.sonarHostUrl         (Optional) Defaults to "https://sonarcloud.io"
+
+	arg.sonarProjectKey      (Optional) Defaults to "${arg.groupId}:${arg.artifactId}"
+
+	arg.sonarQualityGate     (Optional) Boolean to enable the SonarQube "Quality Gate Status" badge.
+
+	arg.sonarLinesOfCode     (Optional) Boolean to enable the SonarQube "Lines of Code" badge.
+
+	arg.sonarReliability     (Optional) Boolean to enable the SonarQube "Reliability Rating" badge.
+
+	arg.sonarSecurity        (Optional) Boolean to enable the SonarQube "Security Rating" badge.
+
+	arg.sonarMaintainability (Optional) Boolean to enable the SonarQube "Maintainability Rating" badge.
+
+	arg.sonarCoverage        (Optional) Boolean to enable the SonarQube "Coverage" badge.
 -->
 <jsp:root
 	xmlns:ao="https://oss.aoapps.com/taglib/"
@@ -84,7 +100,7 @@ Arguments:
 	<jsp:directive.page language="java" pageEncoding="UTF-8" />
 	<jsp:directive.page session="false" />
 	<c:if test="${
-		!empty arg.projectStatus
+		   !empty arg.projectStatus
 		or !empty arg.managementStatus
 		or !empty arg.packagingStatus
 		or !empty arg.javaseVersion
@@ -187,11 +203,11 @@ Arguments:
 			<!-- Selectively split into two lines -->
 			<c:if test="${
 				(
-					!empty arg.projectStatus
+					   !empty arg.projectStatus
 					or !empty arg.managementStatus
 					or !empty arg.packagingStatus
 				) and (
-					!empty arg.javaseVersion
+					   !empty arg.javaseVersion
 					or !empty arg.javaeeVersion
 					or !empty arg.ecmascriptVersion
 					or !empty arg.javascriptVersion
@@ -449,8 +465,14 @@ Arguments:
 		</p>
 	</c:if>
 	<c:if test="${
-		!empty arg.githubBuildWorkflow
+		   !empty arg.githubBuildWorkflow
 		or !empty arg.mavenBadge
+		or !empty arg.sonarQualityGate
+		or !empty arg.sonarLinesOfCode
+		or !empty arg.sonarReliability
+		or !empty arg.sonarSecurity
+		or !empty arg.sonarMaintainability
+		or !empty arg.sonarCoverage
 	}">
 		<p class="ao-badges">
 			<c:if test="${!empty arg.githubBuildWorkflow}">
@@ -484,6 +506,186 @@ Arguments:
 						alt="${arg.mavenBadge == 'maven-central' ? 'Maven Central' : arg.mavenBadge}"
 					/>
 				</ao:a>
+			</c:if>
+			<c:set var="sonarHostUrl" value="${empty arg.sonarHostUrl ? 'https://sonarcloud.io' : arg.sonarHostUrl}" />
+			<c:set var="sonarProjectKey" value="${empty arg.sonarProjectKey ? arg.groupId.concat(':').concat(arg.artifactId) : arg.sonarProjectKey}" />
+			<c:if test="${!empty arg.sonarQualityGate}">
+				<ao:choose>
+					<ao:when test="#{empty arg.scmBranch}">
+						<ao:a rel="nofollow" href="${sonarHostUrl}/dashboard" param.id="${sonarProjectKey}">
+							<ao:img
+								src="${sonarHostUrl}/api/project_badges/measure"
+								param.project="${sonarProjectKey}"
+								param.metric="alert_status"
+								style="max-width:100%"
+								alt="Quality Gate Status"
+							/>
+						</ao:a>
+					</ao:when>
+					<ao:otherwise>
+						<ao:a rel="nofollow" href="${sonarHostUrl}/dashboard" param.id="${sonarProjectKey}" param.branch="${arg.scmBranch}">
+							<ao:img
+								src="${sonarHostUrl}/api/project_badges/measure"
+								param.branch="${arg.scmBranch}"
+								param.project="${sonarProjectKey}"
+								param.metric="alert_status"
+								style="max-width:100%"
+								alt="Quality Gate Status"
+							/>
+						</ao:a>
+					</ao:otherwise>
+				</ao:choose>
+			</c:if>
+			<c:if test="${!empty arg.sonarLinesOfCode}">
+				<ao:choose>
+					<ao:when test="#{empty arg.scmBranch}">
+						<ao:a rel="nofollow" href="${sonarHostUrl}/component_measures" param.id="${sonarProjectKey}" param.metric="ncloc">
+							<ao:img
+								src="${sonarHostUrl}/api/project_badges/measure"
+								param.project="${sonarProjectKey}"
+								param.metric="ncloc"
+								style="max-width:100%"
+								alt="Lines of Code"
+							/>
+						</ao:a>
+					</ao:when>
+					<ao:otherwise>
+						<ao:a rel="nofollow" href="${sonarHostUrl}/component_measures" param.id="${sonarProjectKey}" param.branch="${arg.scmBranch}" param.metric="ncloc">
+							<ao:img
+								src="${sonarHostUrl}/api/project_badges/measure"
+								param.branch="${arg.scmBranch}"
+								param.project="${sonarProjectKey}"
+								param.metric="ncloc"
+								style="max-width:100%"
+								alt="Lines of Code"
+							/>
+						</ao:a>
+					</ao:otherwise>
+				</ao:choose>
+			</c:if>
+			<!-- Selectively split into two lines -->
+			<c:if test="${
+				(
+					   !empty arg.githubBuildWorkflow
+					or !empty arg.mavenBadge
+					or !empty arg.sonarQualityGate
+					or !empty arg.sonarLinesOfCode
+				) and (
+					   !empty arg.sonarReliability
+					or !empty arg.sonarSecurity
+					or !empty arg.sonarMaintainability
+					or !empty arg.sonarCoverage
+				)
+			}">
+				<ao:br />
+			</c:if>
+			<c:if test="${!empty arg.sonarReliability}">
+				<ao:choose>
+					<ao:when test="#{empty arg.scmBranch}">
+						<ao:a rel="nofollow" href="${sonarHostUrl}/component_measures" param.id="${sonarProjectKey}" param.metric="Reliability">
+							<ao:img
+								src="${sonarHostUrl}/api/project_badges/measure"
+								param.project="${sonarProjectKey}"
+								param.metric="reliability_rating"
+								style="max-width:100%"
+								alt="Reliability Rating"
+							/>
+						</ao:a>
+					</ao:when>
+					<ao:otherwise>
+						<ao:a rel="nofollow" href="${sonarHostUrl}/component_measures" param.id="${sonarProjectKey}" param.branch="${arg.scmBranch}" param.metric="Reliability">
+							<ao:img
+								src="${sonarHostUrl}/api/project_badges/measure"
+								param.branch="${arg.scmBranch}"
+								param.project="${sonarProjectKey}"
+								param.metric="reliability_rating"
+								style="max-width:100%"
+								alt="Reliability Rating"
+							/>
+						</ao:a>
+					</ao:otherwise>
+				</ao:choose>
+			</c:if>
+			<c:if test="${!empty arg.sonarSecurity}">
+				<ao:choose>
+					<ao:when test="#{empty arg.scmBranch}">
+						<ao:a rel="nofollow" href="${sonarHostUrl}/component_measures" param.id="${sonarProjectKey}" param.metric="Security">
+							<ao:img
+								src="${sonarHostUrl}/api/project_badges/measure"
+								param.project="${sonarProjectKey}"
+								param.metric="security_rating"
+								style="max-width:100%"
+								alt="Security Rating"
+							/>
+						</ao:a>
+					</ao:when>
+					<ao:otherwise>
+						<ao:a rel="nofollow" href="${sonarHostUrl}/component_measures" param.id="${sonarProjectKey}" param.branch="${arg.scmBranch}" param.metric="Security">
+							<ao:img
+								src="${sonarHostUrl}/api/project_badges/measure"
+								param.branch="${arg.scmBranch}"
+								param.project="${sonarProjectKey}"
+								param.metric="security_rating"
+								style="max-width:100%"
+								alt="Security Rating"
+							/>
+						</ao:a>
+					</ao:otherwise>
+				</ao:choose>
+			</c:if>
+			<c:if test="${!empty arg.sonarMaintainability}">
+				<ao:choose>
+					<ao:when test="#{empty arg.scmBranch}">
+						<ao:a rel="nofollow" href="${sonarHostUrl}/component_measures" param.id="${sonarProjectKey}" param.metric="Maintainability">
+							<ao:img
+								src="${sonarHostUrl}/api/project_badges/measure"
+								param.project="${sonarProjectKey}"
+								param.metric="sqale_rating"
+								style="max-width:100%"
+								alt="Maintainability Rating"
+							/>
+						</ao:a>
+					</ao:when>
+					<ao:otherwise>
+						<ao:a rel="nofollow" href="${sonarHostUrl}/component_measures" param.id="${sonarProjectKey}" param.branch="${arg.scmBranch}" param.metric="Maintainability">
+							<ao:img
+								src="${sonarHostUrl}/api/project_badges/measure"
+								param.branch="${arg.scmBranch}"
+								param.project="${sonarProjectKey}"
+								param.metric="sqale_rating"
+								style="max-width:100%"
+								alt="Maintainability Rating"
+							/>
+						</ao:a>
+					</ao:otherwise>
+				</ao:choose>
+			</c:if>
+			<c:if test="${!empty arg.sonarCoverage}">
+				<ao:choose>
+					<ao:when test="#{empty arg.scmBranch}">
+						<ao:a rel="nofollow" href="${sonarHostUrl}/component_measures" param.id="${sonarProjectKey}" param.metric="Coverage">
+							<ao:img
+								src="${sonarHostUrl}/api/project_badges/measure"
+								param.project="${sonarProjectKey}"
+								param.metric="coverage"
+								style="max-width:100%"
+								alt="Coverage"
+							/>
+						</ao:a>
+					</ao:when>
+					<ao:otherwise>
+						<ao:a rel="nofollow" href="${sonarHostUrl}/component_measures" param.id="${sonarProjectKey}" param.branch="${arg.scmBranch}" param.metric="Coverage">
+							<ao:img
+								src="${sonarHostUrl}/api/project_badges/measure"
+								param.branch="${arg.scmBranch}"
+								param.project="${sonarProjectKey}"
+								param.metric="coverage"
+								style="max-width:100%"
+								alt="Coverage"
+							/>
+						</ao:a>
+					</ao:otherwise>
+				</ao:choose>
 			</c:if>
 		</p>
 	</c:if>

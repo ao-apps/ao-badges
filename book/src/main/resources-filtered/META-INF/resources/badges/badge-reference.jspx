@@ -33,7 +33,7 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 	<core:page
 		title="Badge Reference"
 		datePublished="2017-07-17T17:00:17-05:00"
-		dateModified="2021-07-15T17:33:32-05:00"
+		dateModified="2021-07-16T03:48:08-05:00"
 	>
 		<!-- TODO: Links in section labels to /life-cycle.jspx -->
 		<section:section label="Project Management">
@@ -658,11 +658,16 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 			</table>
 		</section:section>
 		<section:section label="Continuous Integration">
+			Common Arguments:
+			<ul>
+				<li>(Required) <code>arg.scmUrl="https://github.com/<var>OWNER</var>/<var>REPOSITORY</var>"</code></li>
+				<li>(Optional) <code>arg.scmBranch="<var>BRANCH</var>"</code></li>
+			</ul>
 			<table class="ao-grid">
 				<thead>
 					<tr>
 						<th>Build Status</th>
-						<th>Include Arguments</th>
+						<th>Include Argument</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -672,26 +677,23 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 								<ao:img src="@{project.scm.url}/workflows/Build/badge.svg" style="max-width:100%" alt="Build" />
 							</ao:a>
 						</td>
-						<td><code>arg.scmUrl="https://github.com/<var>OWNER</var>/<var>REPOSITORY</var>" arg.githubBuildWorkflow="<var>WORKFLOW</var>"</code></td>
-					</tr>
-					<tr>
-						<td>
-							<ao:a rel="nofollow" href="@{project.scm.url}/actions" param.query="workflow:Build">
-								<ao:img src="@{project.scm.url}/workflows/Build/badge.svg" param.branch="master" style="max-width:100%" alt="Build" />
-							</ao:a>
-						</td>
-						<td><code>arg.scmUrl="https://github.com/<var>OWNER</var>/<var>REPOSITORY</var>" arg.githubBuildWorkflow="<var>WORKFLOW</var>" arg.scmBranch="<var>BRANCH</var>"</code></td>
+						<td><code>arg.githubBuildWorkflow="<var>WORKFLOW</var>"</code></td>
 					</tr>
 				</tbody>
 			</table>
 		</section:section>
 		<!-- TODO: Links in section labels to https://github.com/softwaremill/maven-badges -->
 		<section:section label="Maven Badges">
+			Common Arguments:
+			<ul>
+				<li>(Required) <code>arg.groupId="<var>\${project.groupId}</var>"</code></li>
+				<li>(Required) <code>arg.artifactId="<var>\${project.artifactId}</var>"</code></li>
+			</ul>
 			<table class="ao-grid">
 				<thead>
 					<tr>
 						<th>Latest Release</th>
-						<th>Include Arguments</th>
+						<th>Include Argument</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -705,7 +707,115 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 								/>
 							</ao:a>
 						</td>
-						<td><code>arg.mavenBadge="maven-central" arg.groupId="<var>\${project.groupId}</var>" arg.artifactId="<var>\${project.artifactId}</var>"</code></td>
+						<td><code>arg.mavenBadge="maven-central"</code></td>
+					</tr>
+				</tbody>
+			</table>
+		</section:section>
+		<!-- TODO: Links in section labels to https://sonarcloud.io/ -->
+		<section:section label="SonarCloud">
+			Common Arguments:
+			<ul>
+				<li>(Default) <code>arg.sonarHostUrl="https://sonarcloud.io"</code></li>
+				<li>(Default) <code>arg.sonarProjectKey="\${arg.groupId}:\${arg.artifactId}"</code>
+					<ul>
+						<li>(Optional) <code>arg.groupId="<var>\${project.groupId}</var>"</code></li>
+						<li>(Optional) <code>arg.artifactId="<var>\${project.artifactId}</var>"</code></li>
+					</ul>
+				</li>
+				<li>(Optional) <code>arg.scmBranch="<var>BRANCH</var>"</code></li>
+			</ul>
+			<table class="ao-grid">
+				<thead>
+					<tr>
+						<th>Measurement</th>
+						<th>Include Argument</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<ao:a rel="nofollow" href="https://sonarcloud.io/dashboard" param.id="@{project.groupId}:@{documented.artifactId}">
+								<ao:img
+									src="https://sonarcloud.io/api/project_badges/measure"
+									param.project="@{project.groupId}:@{documented.artifactId}"
+									param.metric="alert_status"
+									style="max-width:100%"
+									alt="Quality Gate Status"
+								/>
+							</ao:a>
+						</td>
+						<td><code>arg.sonarQualityGate="true"</code></td>
+					</tr>
+					<tr>
+						<td>
+							<ao:a rel="nofollow" href="https://sonarcloud.io/component_measures" param.id="@{project.groupId}:@{documented.artifactId}" param.metric="ncloc">
+								<ao:img
+									src="https://sonarcloud.io/api/project_badges/measure"
+									param.project="@{project.groupId}:@{documented.artifactId}"
+									param.metric="ncloc"
+									style="max-width:100%"
+									alt="Lines of Code"
+								/>
+							</ao:a>
+						</td>
+						<td><code>arg.sonarLinesOfCode="true"</code></td>
+					</tr>
+					<tr>
+						<td>
+							<ao:a rel="nofollow" href="https://sonarcloud.io/component_measures" param.id="@{project.groupId}:@{documented.artifactId}" param.metric="Reliability">
+								<ao:img
+									src="https://sonarcloud.io/api/project_badges/measure"
+									param.project="@{project.groupId}:@{documented.artifactId}"
+									param.metric="reliability_rating"
+									style="max-width:100%"
+									alt="Reliability Rating"
+								/>
+							</ao:a>
+						</td>
+						<td><code>arg.sonarReliability="true"</code></td>
+					</tr>
+					<tr>
+						<td>
+							<ao:a rel="nofollow" href="https://sonarcloud.io/component_measures" param.id="@{project.groupId}:@{documented.artifactId}" param.metric="Security">
+								<ao:img
+									src="https://sonarcloud.io/api/project_badges/measure"
+									param.project="@{project.groupId}:@{documented.artifactId}"
+									param.metric="security_rating"
+									style="max-width:100%"
+									alt="Security Rating"
+								/>
+							</ao:a>
+						</td>
+						<td><code>arg.sonarSecurity="true"</code></td>
+					</tr>
+					<tr>
+						<td>
+							<ao:a rel="nofollow" href="https://sonarcloud.io/component_measures" param.id="@{project.groupId}:@{documented.artifactId}" param.metric="Maintainability">
+								<ao:img
+									src="https://sonarcloud.io/api/project_badges/measure"
+									param.project="@{project.groupId}:@{documented.artifactId}"
+									param.metric="sqale_rating"
+									style="max-width:100%"
+									alt="Maintainability Rating"
+								/>
+							</ao:a>
+						</td>
+						<td><code>arg.sonarMaintainability="true"</code></td>
+					</tr>
+					<tr>
+						<td>
+							<ao:a rel="nofollow" href="https://sonarcloud.io/component_measures" param.id="@{project.groupId}:@{documented.artifactId}" param.metric="Coverage">
+								<ao:img
+									src="https://sonarcloud.io/api/project_badges/measure"
+									param.project="@{project.groupId}:@{documented.artifactId}"
+									param.metric="coverage"
+									style="max-width:100%"
+									alt="Coverage"
+								/>
+							</ao:a>
+						</td>
+						<td><code>arg.sonarCoverage="true"</code></td>
 					</tr>
 				</tbody>
 			</table>
