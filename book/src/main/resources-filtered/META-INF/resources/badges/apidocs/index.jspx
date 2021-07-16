@@ -38,6 +38,6 @@ along with ao-badges.  If not, see <http://www.gnu.org/licenses />.
 		title="@{documented.name} ${ao:getProjectVersion('./', 'com.aoapps', 'ao-badges', '¿@{project.version}?')} API Docs"
 		shortTitle="API Docs"
 		datePublished="2020-03-07T02:28:18-06:00"
-		dateModified="${ao:getLastModified('index.html')}"
+		dateModified="2021-07-16T03:48:08-05:00"
 	/>
 </jsp:root>
