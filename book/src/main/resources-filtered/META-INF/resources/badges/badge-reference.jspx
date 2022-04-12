@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 ao-badges - Badges from shields.io bundled into a reusable JSP-based web component.
-Copyright (C) 2017, 2019, 2020, 2021  AO Industries, Inc.
+Copyright (C) 2017, 2019, 2020, 2021, 2022  AO Industries, Inc.
     support@aoindustries.com
     7262 Bull Pen Cir
     Mobile, AL 36695
@@ -33,7 +33,7 @@ along with ao-badges.  If not, see <https://www.gnu.org/licenses/>.
 	<core:page
 		title="Badge Reference"
 		datePublished="2017-07-17T17:00:17-05:00"
-		dateModified="2021-10-16T09:30:18-05:00"
+		dateModified="2022-04-11T21:07:41-05:00"
 	>
 		<!-- TODO: Links in section labels to /life-cycle -->
 		<section:section label="Project Management">
@@ -329,6 +329,14 @@ along with ao-badges.  If not, see <https://www.gnu.org/licenses/>.
 								</ao:a>
 							</td>
 							<td><code>arg.javaseVersion="18"</code></td>
+						</tr>
+						<tr>
+							<td>
+								<ao:a rel="nofollow" href="@{javadoc.link.javase.19}">
+									<ao:img src="/ao-badges/java-19.svg" width="78" height="20" alt="java: >= 19" />
+								</ao:a>
+							</td>
+							<td><code>arg.javaseVersion="19"</code></td>
 						</tr>
 						<tr>
 							<td>
