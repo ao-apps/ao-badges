@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 ao-badges - Badges from shields.io bundled into a reusable JSP-based web component.
-Copyright (C) 2017, 2019, 2020, 2021  AO Industries, Inc.
+Copyright (C) 2017, 2019, 2020, 2021, 2022  AO Industries, Inc.
     support@aoindustries.com
     7262 Bull Pen Cir
     Mobile, AL 36695
@@ -27,31 +27,31 @@ along with ao-badges.  If not, see <https://www.gnu.org/licenses/>.
                       http://xmlns.jcp.org/xml/ns/javaee/web-fragment_3_1.xsd"
   version="3.1"
   metadata-complete="false">
-	<name>@{project.groupId}:@{project.artifactId}</name>
-	<!-- <display-name>@{project.name} @{project.version}</display-name> -->
-	<description>@{project.description}</description>
+  <name>@{project.groupId}:@{project.artifactId}</name>
+  <!-- <display-name>@{project.name} @{project.version}</display-name> -->
+  <description>@{project.description}</description>
 
-	<!-- Filter to set max-age header for badges (enables GitHub README.md proxy caches) -->
-	<filter>
-		<filter-name>ao-badges-max-age-one-day-filter</filter-name>
-		<filter-class>com.aoapps.servlet.filter.AddResponseHeaderFilter</filter-class>
-		<init-param>
-			<param-name>allowMultiple</param-name>
-			<param-value>false</param-value>
-		</init-param>
-		<init-param>
-			<param-name>cache-control</param-name>
-			<param-value>max-age=86400</param-value>
-		</init-param>
-		<init-param>
-			<param-name>patterns</param-name>
-			<param-value>*.svg</param-value>
-		</init-param>
-	</filter>
-	<filter-mapping>
-		<filter-name>ao-badges-max-age-one-day-filter</filter-name>
-		<url-pattern>/ao-badges/*</url-pattern>
-		<dispatcher>REQUEST</dispatcher>
-	</filter-mapping>
+  <!-- Filter to set max-age header for badges (enables GitHub README.md proxy caches) -->
+  <filter>
+    <filter-name>ao-badges-max-age-one-day-filter</filter-name>
+    <filter-class>com.aoapps.servlet.filter.AddResponseHeaderFilter</filter-class>
+    <init-param>
+      <param-name>allowMultiple</param-name>
+      <param-value>false</param-value>
+    </init-param>
+    <init-param>
+      <param-name>cache-control</param-name>
+      <param-value>max-age=86400</param-value>
+    </init-param>
+    <init-param>
+      <param-name>patterns</param-name>
+      <param-value>*.svg</param-value>
+    </init-param>
+  </filter>
+  <filter-mapping>
+    <filter-name>ao-badges-max-age-one-day-filter</filter-name>
+    <url-pattern>/ao-badges/*</url-pattern>
+    <dispatcher>REQUEST</dispatcher>
+  </filter-mapping>
 
 </web-fragment>

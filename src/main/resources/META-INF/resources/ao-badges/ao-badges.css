@@ -1,9 +1,9 @@
 /*
  * ao-badges - Badges from shields.io bundled into a reusable JSP-based web component.
- * Copyright (C) 2020  AO Industries, Inc.
- * 	   support@aoindustries.com
- * 	   7262 Bull Pen Cir
- * 	   Mobile, AL 36695
+ * Copyright (C) 2020, 2022  AO Industries, Inc.
+ *     support@aoindustries.com
+ *     7262 Bull Pen Cir
+ *     Mobile, AL 36695
  *
  * This file is part of ao-badges.
  *
@@ -22,6 +22,6 @@
  */
 p.ao-badges > a > img,
 p.ao-badges > img {
-	display: inline-block;
-	margin-right: 4px;
+  display: inline-block;
+  margin-right: 4px;
 }
