@@ -3,7 +3,7 @@
  * Copyright (C) 2020, 2021, 2022  AO Industries, Inc.
  *     support@aoindustries.com
  *     7262 Bull Pen Cir
- * 	   Mobile, AL 36695
+ *     Mobile, AL 36695
  *
  * This file is part of ao-badges.
  *
@@ -33,26 +33,26 @@ import javax.servlet.annotation.WebListener;
 @WebListener("Registers the style in RegistryEE.")
 public class AoBadgesStyle implements ServletContextListener {
 
-	/**
-	 * The name of the {@linkplain com.aoapps.web.resources.servlet.RegistryEE.Application application-scope}
-	 * group that will be used for badges.
-	 */
-	public static final Group.Name RESOURCE_GROUP = new Group.Name("ao-badges");
+  /**
+   * The name of the {@linkplain com.aoapps.web.resources.servlet.RegistryEE.Application application-scope}
+   * group that will be used for badges.
+   */
+  public static final Group.Name RESOURCE_GROUP = new Group.Name("ao-badges");
 
-	public static final Style AO_BADGES_CSS = new Style("/ao-badges/ao-badges.css");
+  public static final Style AO_BADGES_CSS = new Style("/ao-badges/ao-badges.css");
 
-	@Override
-	public void contextInitialized(ServletContextEvent event) {
-		// Add our CSS files
-		RegistryEE.Application.get(event.getServletContext())
-			.activate(RESOURCE_GROUP) // TODO: Activate as-needed
-			.getGroup(RESOURCE_GROUP)
-			.styles
-			.add(AO_BADGES_CSS);
-	}
+  @Override
+  public void contextInitialized(ServletContextEvent event) {
+    // Add our CSS files
+    RegistryEE.Application.get(event.getServletContext())
+      .activate(RESOURCE_GROUP) // TODO: Activate as-needed
+      .getGroup(RESOURCE_GROUP)
+      .styles
+      .add(AO_BADGES_CSS);
+  }
 
-	@Override
-	public void contextDestroyed(ServletContextEvent event) {
-		// Do nothing
-	}
+  @Override
+  public void contextDestroyed(ServletContextEvent event) {
+    // Do nothing
+  }
 }

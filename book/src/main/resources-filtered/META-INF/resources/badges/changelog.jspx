@@ -22,306 +22,306 @@ You should have received a copy of the GNU Lesser General Public License
 along with ao-badges.  If not, see <https://www.gnu.org/licenses/>.
 -->
 <jsp:root
-	xmlns:ao="https://oss.aoapps.com/taglib/"
-	xmlns:c="http://java.sun.com/jsp/jstl/core"
-	xmlns:changelog="https://semanticcms.com/changelog/taglib/"
-	xmlns:core="https://semanticcms.com/core/taglib/"
-	xmlns:fn="http://java.sun.com/jsp/jstl/functions"
-	xmlns:jsp="http://java.sun.com/JSP/Page"
-	version="2.1"
+  xmlns:ao="https://oss.aoapps.com/taglib/"
+  xmlns:c="http://java.sun.com/jsp/jstl/core"
+  xmlns:changelog="https://semanticcms.com/changelog/taglib/"
+  xmlns:core="https://semanticcms.com/core/taglib/"
+  xmlns:fn="http://java.sun.com/jsp/jstl/functions"
+  xmlns:jsp="http://java.sun.com/JSP/Page"
+  version="2.1"
 >
-	<jsp:directive.page language="java" pageEncoding="UTF-8" />
-	<jsp:directive.page session="false" />
-	<core:page
-		title="@{documented.name} Changelog"
-		shortTitle="Changelog"
-		tocLevels="1"
-		datePublished="2017-07-15T16:36:26-05:00"
-		dateModified="2022-04-11T21:07:41-05:00"
-	>
-		<c:if test="${fn:endsWith('@{project.version}', '-SNAPSHOT') and !fn:endsWith('@{project.version}', '-POST-SNAPSHOT')}">
-			<changelog:release
-				projectName="@{documented.name}"
-				version="@{project.version}"
-				groupId="@{project.groupId}"
-				artifactId="@{documented.artifactId}"
-				repository="@{nexusUrl}content/repositories/snapshots/"
-				scmUrl="@{project.scm.url}"
-			>
-				<ul>
-					<li>Java updates:
-						<ol>
-							<li>Java 18 is now current stable</li>
-							<li>Java 19 is new beta</li>
-						</ol>
-					</li>
-				</ul>
-			</changelog:release>
-		</c:if>
+  <jsp:directive.page language="java" pageEncoding="UTF-8" />
+  <jsp:directive.page session="false" />
+  <core:page
+    title="@{documented.name} Changelog"
+    shortTitle="Changelog"
+    tocLevels="1"
+    datePublished="2017-07-15T16:36:26-05:00"
+    dateModified="2022-04-11T21:07:41-05:00"
+  >
+    <c:if test="${fn:endsWith('@{project.version}', '-SNAPSHOT') and !fn:endsWith('@{project.version}', '-POST-SNAPSHOT')}">
+      <changelog:release
+        projectName="@{documented.name}"
+        version="@{project.version}"
+        groupId="@{project.groupId}"
+        artifactId="@{documented.artifactId}"
+        repository="@{nexusUrl}content/repositories/snapshots/"
+        scmUrl="@{project.scm.url}"
+      >
+        <ul>
+          <li>Java updates:
+            <ol>
+              <li>Java 18 is now current stable</li>
+              <li>Java 19 is new beta</li>
+            </ol>
+          </li>
+        </ul>
+      </changelog:release>
+    </c:if>
 
-		<changelog:release
-			projectName="@{documented.name}"
-			version="1.7.1"
-			datePublished="2021-10-16T18:18:15-05:00"
-			groupId="@{project.groupId}"
-			artifactId="@{documented.artifactId}"
-			scmUrl="@{project.scm.url}"
-		>
-			<ul>
-				<li>Java updates:
-					<ol>
-						<li>Java 16 is now end-of-life</li>
-						<li>Java 17 is now current stable</li>
-						<li>Java 18 is new beta</li>
-					</ol>
-				</li>
-			</ul>
-		</changelog:release>
+    <changelog:release
+      projectName="@{documented.name}"
+      version="1.7.1"
+      datePublished="2021-10-16T18:18:15-05:00"
+      groupId="@{project.groupId}"
+      artifactId="@{documented.artifactId}"
+      scmUrl="@{project.scm.url}"
+    >
+      <ul>
+        <li>Java updates:
+          <ol>
+            <li>Java 16 is now end-of-life</li>
+            <li>Java 17 is now current stable</li>
+            <li>Java 18 is new beta</li>
+          </ol>
+        </li>
+      </ul>
+    </changelog:release>
 
-		<changelog:release
-			projectName="@{documented.name}"
-			version="1.7.0"
-			datePublished="2021-07-17T22:06:04-05:00"
-			groupId="@{project.groupId}"
-			artifactId="@{documented.artifactId}"
-			scmUrl="@{project.scm.url}"
-		>
-			<ul>
-				<li>Added support for <ao:a href="https://docs.github.com/en/actions/managing-workflow-runs/adding-a-workflow-status-badge">GitHub workflow status badges</ao:a>.</li>
-				<li>Added support for <ao:a href="https://github.com/softwaremill/maven-badges">Maven badges</ao:a>.</li>
-				<li>Added support for <ao:a href="https://sonarcloud.io/">SonarCloud</ao:a> badges.</li>
-			</ul>
-		</changelog:release>
+    <changelog:release
+      projectName="@{documented.name}"
+      version="1.7.0"
+      datePublished="2021-07-17T22:06:04-05:00"
+      groupId="@{project.groupId}"
+      artifactId="@{documented.artifactId}"
+      scmUrl="@{project.scm.url}"
+    >
+      <ul>
+        <li>Added support for <ao:a href="https://docs.github.com/en/actions/managing-workflow-runs/adding-a-workflow-status-badge">GitHub workflow status badges</ao:a>.</li>
+        <li>Added support for <ao:a href="https://github.com/softwaremill/maven-badges">Maven badges</ao:a>.</li>
+        <li>Added support for <ao:a href="https://sonarcloud.io/">SonarCloud</ao:a> badges.</li>
+      </ul>
+    </changelog:release>
 
-		<changelog:release
-			projectName="@{documented.name}"
-			version="1.6.0"
-			datePublished="2021-07-06T02:08:01-05:00"
-			groupId="@{project.groupId}"
-			artifactId="@{documented.artifactId}"
-			scmUrl="@{project.scm.url}"
-		>
-			<ul>
-				<li>Java™ EE updates:
-					<ol>
-						<li>Updated to <ao:a rel="nofollow" href="https://www.oracle.com/java/technologies/javaee/javaeetechnologies.html#javaee7">Java™ EE 7 Web Profile</ao:a> (Servlet 3.1, JSP 2.3, EL 3.0, and JSTL 1.2).</li>
-						<li>Updated apidocs URL for <ao:a href="https://jakarta.ee/specifications/platform/8/apidocs/">Jakarta EE 8</ao:a></li>
-						<li>Added <ao:a href="https://jakarta.ee/specifications/platform/9/apidocs/">Jakarta EE 9</ao:a></li>
-						<li>Added <ao:a href="https://jakarta.ee/specifications/platform/9.1/apidocs/">Jakarta EE 9.1</ao:a></li>
-					</ol>
-				</li>
-				<li>Minimum Java version changed from 1.8 to 11.</li>
-				<li>
-					Now supports Java 9+ modules.  Due to still having filename-based automatic module dependencies,
-					*-SNAPSHOT versions include <code>module-info.class</code> while releases include the
-					<code>Automatic-Module-Name</code> manifest entry.  To minimize the difference between these
-					modes, <code>module-info.java</code> does not perform any transitive requires.
-				</li>
-				<li>Maven artifact relocated from <code>com.aoindustries:ao-badges</code> to <code>com.aoapps:ao-badges</code>.</li>
-				<li>Package renamed from <code>com.aoindustries.badges</code> to <code>com.aoapps.badges</code>.</li>
-			</ul>
-		</changelog:release>
+    <changelog:release
+      projectName="@{documented.name}"
+      version="1.6.0"
+      datePublished="2021-07-06T02:08:01-05:00"
+      groupId="@{project.groupId}"
+      artifactId="@{documented.artifactId}"
+      scmUrl="@{project.scm.url}"
+    >
+      <ul>
+        <li>Java™ EE updates:
+          <ol>
+            <li>Updated to <ao:a rel="nofollow" href="https://www.oracle.com/java/technologies/javaee/javaeetechnologies.html#javaee7">Java™ EE 7 Web Profile</ao:a> (Servlet 3.1, JSP 2.3, EL 3.0, and JSTL 1.2).</li>
+            <li>Updated apidocs URL for <ao:a href="https://jakarta.ee/specifications/platform/8/apidocs/">Jakarta EE 8</ao:a></li>
+            <li>Added <ao:a href="https://jakarta.ee/specifications/platform/9/apidocs/">Jakarta EE 9</ao:a></li>
+            <li>Added <ao:a href="https://jakarta.ee/specifications/platform/9.1/apidocs/">Jakarta EE 9.1</ao:a></li>
+          </ol>
+        </li>
+        <li>Minimum Java version changed from 1.8 to 11.</li>
+        <li>
+          Now supports Java 9+ modules.  Due to still having filename-based automatic module dependencies,
+          *-SNAPSHOT versions include <code>module-info.class</code> while releases include the
+          <code>Automatic-Module-Name</code> manifest entry.  To minimize the difference between these
+          modes, <code>module-info.java</code> does not perform any transitive requires.
+        </li>
+        <li>Maven artifact relocated from <code>com.aoindustries:ao-badges</code> to <code>com.aoapps:ao-badges</code>.</li>
+        <li>Package renamed from <code>com.aoindustries.badges</code> to <code>com.aoapps.badges</code>.</li>
+      </ul>
+    </changelog:release>
 
-		<changelog:release
-			projectName="@{documented.name}"
-			version="1.5.1"
-			datePublished="2021-03-20T10:17:21-05:00"
-			groupId="com.aoindustries"
-			artifactId="@{documented.artifactId}"
-			scmUrl="@{project.scm.url}"
-		>
-			<ul>
-				<li>Java updates:
-					<ol>
-						<li>Java 15 is now end-of-life</li>
-						<li>Java 16 is now current stable</li>
-						<li>Java 17 is new beta</li>
-					</ol>
-				</li>
-			</ul>
-		</changelog:release>
+    <changelog:release
+      projectName="@{documented.name}"
+      version="1.5.1"
+      datePublished="2021-03-20T10:17:21-05:00"
+      groupId="com.aoindustries"
+      artifactId="@{documented.artifactId}"
+      scmUrl="@{project.scm.url}"
+    >
+      <ul>
+        <li>Java updates:
+          <ol>
+            <li>Java 15 is now end-of-life</li>
+            <li>Java 16 is now current stable</li>
+            <li>Java 17 is new beta</li>
+          </ol>
+        </li>
+      </ul>
+    </changelog:release>
 
-		<changelog:release
-			projectName="@{documented.name}"
-			version="1.5.0"
-			datePublished="2021-01-17T14:05:00-06:00"
-			groupId="com.aoindustries"
-			artifactId="@{documented.artifactId}"
-			scmUrl="@{project.scm.url}"
-		>
-			<ul>
-				<li>Java 7 is now end-of-life</li>
-			</ul>
-		</changelog:release>
+    <changelog:release
+      projectName="@{documented.name}"
+      version="1.5.0"
+      datePublished="2021-01-17T14:05:00-06:00"
+      groupId="com.aoindustries"
+      artifactId="@{documented.artifactId}"
+      scmUrl="@{project.scm.url}"
+    >
+      <ul>
+        <li>Java 7 is now end-of-life</li>
+      </ul>
+    </changelog:release>
 
-		<changelog:release
-			projectName="@{documented.name}"
-			version="1.4.0"
-			datePublished="2020-11-25T05:42:40-06:00"
-			groupId="com.aoindustries"
-			artifactId="@{documented.artifactId}"
-			scmUrl="@{project.scm.url}"
-		>
-			<ul>
-				<li>Java updates:
-					<ol>
-						<li>Java 14 is now end-of-life</li>
-						<li>Java 15 is now current stable</li>
-						<li>Java 16 is new beta</li>
-					</ol>
-				</li>
-				<li>Recreated all badges.</li>
-			</ul>
-		</changelog:release>
+    <changelog:release
+      projectName="@{documented.name}"
+      version="1.4.0"
+      datePublished="2020-11-25T05:42:40-06:00"
+      groupId="com.aoindustries"
+      artifactId="@{documented.artifactId}"
+      scmUrl="@{project.scm.url}"
+    >
+      <ul>
+        <li>Java updates:
+          <ol>
+            <li>Java 14 is now end-of-life</li>
+            <li>Java 15 is now current stable</li>
+            <li>Java 16 is new beta</li>
+          </ol>
+        </li>
+        <li>Recreated all badges.</li>
+      </ul>
+    </changelog:release>
 
-		<changelog:release
-			projectName="@{documented.name}"
-			version="1.3.0"
-			datePublished="2020-03-27T01:14:29-05:00"
-			groupId="com.aoindustries"
-			artifactId="@{documented.artifactId}"
-			scmUrl="@{project.scm.url}"
-		>
-			<ul>
-				<li>Minimum Java version changed from 1.6 to 1.8.</li>
-				<li>
-					Reduced use of property substitutions in <code>pom.xml</code>.
-					This is to help 3rd-party parsers that fail to perform full Maven-compatible substitutions.
-				</li>
-				<li>
-					Now outputting HTML or XHTML based on the current response content type.
-					This should eliminate validator warnings when used as HTML.
-				</li>
-				<li>Registers itself with <core:link book="/web-resources/servlet" page="/" />.</li>
-				<li>Java updates:
-					<ol>
-						<li>Java 13 is now end-of-life</li>
-						<li>Java 14 is now current stable</li>
-						<li>Java 15 is new beta</li>
-					</ol>
-				</li>
-			</ul>
-		</changelog:release>
+    <changelog:release
+      projectName="@{documented.name}"
+      version="1.3.0"
+      datePublished="2020-03-27T01:14:29-05:00"
+      groupId="com.aoindustries"
+      artifactId="@{documented.artifactId}"
+      scmUrl="@{project.scm.url}"
+    >
+      <ul>
+        <li>Minimum Java version changed from 1.6 to 1.8.</li>
+        <li>
+          Reduced use of property substitutions in <code>pom.xml</code>.
+          This is to help 3rd-party parsers that fail to perform full Maven-compatible substitutions.
+        </li>
+        <li>
+          Now outputting HTML or XHTML based on the current response content type.
+          This should eliminate validator warnings when used as HTML.
+        </li>
+        <li>Registers itself with <core:link book="/web-resources/servlet" page="/" />.</li>
+        <li>Java updates:
+          <ol>
+            <li>Java 13 is now end-of-life</li>
+            <li>Java 14 is now current stable</li>
+            <li>Java 15 is new beta</li>
+          </ol>
+        </li>
+      </ul>
+    </changelog:release>
 
-		<changelog:release
-			projectName="@{documented.name}"
-			version="1.2.0"
-			datePublished="2019-10-11T16:57:11-05:00"
-			groupId="com.aoindustries"
-			artifactId="@{documented.artifactId}"
-			scmUrl="@{project.scm.url}"
-		>
-			<ul>
-				<li>Added:
-					<ol>
-						<li><code>license="gpl-2.0"</code>:
-							<ao:a rel="nofollow" href="https://www.gnu.org/licenses/old-licenses/gpl-2.0"><ao:img src="/ao-badges/license-gpl-2.0.svg" width="96" height="20" alt="license: GPL v2" /></ao:a>
-						</li>
-					</ol>
-				</li>
-				<li>Java updates:
-					<ol>
-						<li>Java 12 is now end-of-life</li>
-						<li>Java 13 is now current stable</li>
-						<li>Java 14 is new beta</li>
-					</ol>
-				</li>
-			</ul>
-		</changelog:release>
+    <changelog:release
+      projectName="@{documented.name}"
+      version="1.2.0"
+      datePublished="2019-10-11T16:57:11-05:00"
+      groupId="com.aoindustries"
+      artifactId="@{documented.artifactId}"
+      scmUrl="@{project.scm.url}"
+    >
+      <ul>
+        <li>Added:
+          <ol>
+            <li><code>license="gpl-2.0"</code>:
+              <ao:a rel="nofollow" href="https://www.gnu.org/licenses/old-licenses/gpl-2.0"><ao:img src="/ao-badges/license-gpl-2.0.svg" width="96" height="20" alt="license: GPL v2" /></ao:a>
+            </li>
+          </ol>
+        </li>
+        <li>Java updates:
+          <ol>
+            <li>Java 12 is now end-of-life</li>
+            <li>Java 13 is now current stable</li>
+            <li>Java 14 is new beta</li>
+          </ol>
+        </li>
+      </ul>
+    </changelog:release>
 
-		<changelog:release
-			projectName="@{documented.name}"
-			version="1.1.1"
-			datePublished="2019-06-19T08:13:34-05:00"
-			groupId="com.aoindustries"
-			artifactId="@{documented.artifactId}"
-			scmUrl="@{project.scm.url}"
-		>
-			<ul>
-				<li>Using managed dependencies:
-					<ol>
-						<li>This project uses managed dependencies.</li>
-						<li>This project's managed dependencies may also be imported by other projects.</li>
-					</ol>
-				</li>
-			</ul>
-		</changelog:release>
+    <changelog:release
+      projectName="@{documented.name}"
+      version="1.1.1"
+      datePublished="2019-06-19T08:13:34-05:00"
+      groupId="com.aoindustries"
+      artifactId="@{documented.artifactId}"
+      scmUrl="@{project.scm.url}"
+    >
+      <ul>
+        <li>Using managed dependencies:
+          <ol>
+            <li>This project uses managed dependencies.</li>
+            <li>This project's managed dependencies may also be imported by other projects.</li>
+          </ol>
+        </li>
+      </ul>
+    </changelog:release>
 
-		<changelog:release
-			projectName="@{documented.name}"
-			version="1.1.0"
-			datePublished="2019-04-19T04:25:33-05:00"
-			groupId="com.aoindustries"
-			artifactId="@{documented.artifactId}"
-			scmUrl="@{project.scm.url}"
-		>
-			<ul>
-				<li>Minimum Java version changed from 1.6 to 1.7.</li>
-				<li>Removed:
-					<ol>
-						<li><code>javaseVersion="1.9"</code>:
-							<code>javaseVersion="9"</code> remains and should be used.
-						</li>
-					</ol>
-				</li>
-				<li>Added:
-					<ol>
-						<li><code>javaseVersion="10"</code>:
-							<ao:a href="https://aoindustries.com/life-cycle#project-old-stable"><span class="life-cycle project old-stable">Old Stable</span></ao:a>
-						</li>
-						<li><code>javaseVersion="11"</code>:
-							<ao:a href="https://aoindustries.com/life-cycle#project-current-stable"><span class="life-cycle project current-stable">Current Stable</span></ao:a>
-						</li>
-						<li><code>javaseVersion="12"</code>:
-							<ao:a href="https://aoindustries.com/life-cycle#project-current-stable"><span class="life-cycle project current-stable">Current Stable</span></ao:a>
-						</li>
-						<li><code>javaseVersion="13"</code>:
-							<ao:a href="https://aoindustries.com/life-cycle#project-beta"><span class="life-cycle project beta">Beta</span></ao:a>
-						</li>
-					</ol>
-				</li>
-				<li>Changed:
-					<ol>
-						<li><code>javaseVersion="1.5"</code> or <code>javaseVersion="5"</code>:
-							<ao:a href="https://aoindustries.com/life-cycle#project-old-stable"><span class="life-cycle project old-stable">Old Stable</span></ao:a>
-							→ <ao:a href="https://aoindustries.com/life-cycle#project-end-of-life"><span class="life-cycle project end-of-life">End of Life</span></ao:a>
-						</li>
-						<li><code>javaseVersion="1.6"</code> or <code>javaseVersion="6"</code>:
-							<ao:a href="https://aoindustries.com/life-cycle#project-old-stable"><span class="life-cycle project old-stable">Old Stable</span></ao:a>
-							→ <ao:a href="https://aoindustries.com/life-cycle#project-end-of-life"><span class="life-cycle project end-of-life">End of Life</span></ao:a>
-						</li>
-						<li><code>javaseVersion="1.8"</code> or <code>javaseVersion="8"</code>:
-							<ao:a href="https://aoindustries.com/life-cycle#project-current-stable"><span class="life-cycle project current-stable">Current Stable</span></ao:a>
-							→ <ao:a href="https://aoindustries.com/life-cycle#project-old-stable"><span class="life-cycle project old-stable">Old Stable</span></ao:a>
-						</li>
-						<li><code>javaseVersion="9"</code>:
-							<ao:a href="https://aoindustries.com/life-cycle#project-beta"><span class="life-cycle project beta">Beta</span></ao:a>
-							→ <ao:a href="https://aoindustries.com/life-cycle#project-current-stable"><span class="life-cycle project current-stable">Current Stable</span></ao:a>
-						</li>
-						<li><code>jqueryVersion="1.x"</code> or <code>jqueryVersion="1"</code>:
-							<ao:a href="https://aoindustries.com/life-cycle#project-old-stable"><span class="life-cycle project old-stable">Old Stable</span></ao:a>
-							→ <ao:a href="https://aoindustries.com/life-cycle#project-end-of-life"><span class="life-cycle project end-of-life">End of Life</span></ao:a>
-						</li>
-						<li><code>jqueryVersion="2.x"</code> or <code>jqueryVersion="2"</code>:
-							<ao:a href="https://aoindustries.com/life-cycle#project-old-stable"><span class="life-cycle project old-stable">Old Stable</span></ao:a>
-							→ <ao:a href="https://aoindustries.com/life-cycle#project-end-of-life"><span class="life-cycle project end-of-life">End of Life</span></ao:a>
-						</li>
-					</ol>
-				</li>
-			</ul>
-		</changelog:release>
+    <changelog:release
+      projectName="@{documented.name}"
+      version="1.1.0"
+      datePublished="2019-04-19T04:25:33-05:00"
+      groupId="com.aoindustries"
+      artifactId="@{documented.artifactId}"
+      scmUrl="@{project.scm.url}"
+    >
+      <ul>
+        <li>Minimum Java version changed from 1.6 to 1.7.</li>
+        <li>Removed:
+          <ol>
+            <li><code>javaseVersion="1.9"</code>:
+              <code>javaseVersion="9"</code> remains and should be used.
+            </li>
+          </ol>
+        </li>
+        <li>Added:
+          <ol>
+            <li><code>javaseVersion="10"</code>:
+              <ao:a href="https://aoindustries.com/life-cycle#project-old-stable"><span class="life-cycle project old-stable">Old Stable</span></ao:a>
+            </li>
+            <li><code>javaseVersion="11"</code>:
+              <ao:a href="https://aoindustries.com/life-cycle#project-current-stable"><span class="life-cycle project current-stable">Current Stable</span></ao:a>
+            </li>
+            <li><code>javaseVersion="12"</code>:
+              <ao:a href="https://aoindustries.com/life-cycle#project-current-stable"><span class="life-cycle project current-stable">Current Stable</span></ao:a>
+            </li>
+            <li><code>javaseVersion="13"</code>:
+              <ao:a href="https://aoindustries.com/life-cycle#project-beta"><span class="life-cycle project beta">Beta</span></ao:a>
+            </li>
+          </ol>
+        </li>
+        <li>Changed:
+          <ol>
+            <li><code>javaseVersion="1.5"</code> or <code>javaseVersion="5"</code>:
+              <ao:a href="https://aoindustries.com/life-cycle#project-old-stable"><span class="life-cycle project old-stable">Old Stable</span></ao:a>
+              → <ao:a href="https://aoindustries.com/life-cycle#project-end-of-life"><span class="life-cycle project end-of-life">End of Life</span></ao:a>
+            </li>
+            <li><code>javaseVersion="1.6"</code> or <code>javaseVersion="6"</code>:
+              <ao:a href="https://aoindustries.com/life-cycle#project-old-stable"><span class="life-cycle project old-stable">Old Stable</span></ao:a>
+              → <ao:a href="https://aoindustries.com/life-cycle#project-end-of-life"><span class="life-cycle project end-of-life">End of Life</span></ao:a>
+            </li>
+            <li><code>javaseVersion="1.8"</code> or <code>javaseVersion="8"</code>:
+              <ao:a href="https://aoindustries.com/life-cycle#project-current-stable"><span class="life-cycle project current-stable">Current Stable</span></ao:a>
+              → <ao:a href="https://aoindustries.com/life-cycle#project-old-stable"><span class="life-cycle project old-stable">Old Stable</span></ao:a>
+            </li>
+            <li><code>javaseVersion="9"</code>:
+              <ao:a href="https://aoindustries.com/life-cycle#project-beta"><span class="life-cycle project beta">Beta</span></ao:a>
+              → <ao:a href="https://aoindustries.com/life-cycle#project-current-stable"><span class="life-cycle project current-stable">Current Stable</span></ao:a>
+            </li>
+            <li><code>jqueryVersion="1.x"</code> or <code>jqueryVersion="1"</code>:
+              <ao:a href="https://aoindustries.com/life-cycle#project-old-stable"><span class="life-cycle project old-stable">Old Stable</span></ao:a>
+              → <ao:a href="https://aoindustries.com/life-cycle#project-end-of-life"><span class="life-cycle project end-of-life">End of Life</span></ao:a>
+            </li>
+            <li><code>jqueryVersion="2.x"</code> or <code>jqueryVersion="2"</code>:
+              <ao:a href="https://aoindustries.com/life-cycle#project-old-stable"><span class="life-cycle project old-stable">Old Stable</span></ao:a>
+              → <ao:a href="https://aoindustries.com/life-cycle#project-end-of-life"><span class="life-cycle project end-of-life">End of Life</span></ao:a>
+            </li>
+          </ol>
+        </li>
+      </ul>
+    </changelog:release>
 
-		<changelog:release
-			projectName="@{documented.name}"
-			version="1.0.0"
-			datePublished="2017-07-19T19:34:20-05:00"
-			groupId="com.aoindustries"
-			artifactId="@{documented.artifactId}"
-			scmUrl="@{project.scm.url}"
-		>
-			<ul>
-				<li>New project for badges shared between components.</li>
-			</ul>
-		</changelog:release>
-	</core:page>
+    <changelog:release
+      projectName="@{documented.name}"
+      version="1.0.0"
+      datePublished="2017-07-19T19:34:20-05:00"
+      groupId="com.aoindustries"
+      artifactId="@{documented.artifactId}"
+      scmUrl="@{project.scm.url}"
+    >
+      <ul>
+        <li>New project for badges shared between components.</li>
+      </ul>
+    </changelog:release>
+  </core:page>
 </jsp:root>
