@@ -45,7 +45,7 @@ along with ao-badges.  If not, see <https://www.gnu.org/licenses/>.
         page="/semanticcms-changelog-taglib/generated-dependencies.inc.jspx"
         arg.release="${changelog:findRelease(core:capturePage('changelog', 'meta'))}"
         arg.dependencies="${
-          empty semanticCMS.books['/taglib']
+          empty semanticCms.books['/taglib']
           ? null
           : changelog:findRelease(core:capturePageInBook('/taglib', '/changelog', 'meta'))
         }"
