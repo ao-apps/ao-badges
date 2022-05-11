@@ -30,6 +30,9 @@ import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 import javax.servlet.annotation.WebListener;
 
+/**
+ * Registers the style in {@link RegistryEE}.
+ */
 @WebListener("Registers the style in RegistryEE.")
 public class AoBadgesStyle implements ServletContextListener {
 
@@ -47,8 +50,8 @@ public class AoBadgesStyle implements ServletContextListener {
     RegistryEE.Application.get(event.getServletContext())
         .activate(RESOURCE_GROUP)// TODO: Activate as-needed
         .getGroup(RESOURCE_GROUP)
-        .styles
-        .add(AO_BADGES_CSS);
+            .styles
+            .add(AO_BADGES_CSS);
   }
 
   @Override
