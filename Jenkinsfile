@@ -32,8 +32,8 @@ def upstreamProjects = [
 
   // Direct
   'taglib', // <groupId>com.aoapps</groupId><artifactId>ao-taglib</artifactId>
-  'web-resources/registry', // <groupId>com.aoapps</groupId><artifactId>web-resources-registry</artifactId>
-  'web-resources/servlet', // <groupId>com.aoapps</groupId><artifactId>web-resources-servlet</artifactId>
+  'web-resources/registry', // <groupId>com.aoapps</groupId><artifactId>ao-web-resources-registry</artifactId>
+  'web-resources/servlet', // <groupId>com.aoapps</groupId><artifactId>ao-web-resources-servlet</artifactId>
   // No Jenkins: <groupId>javax.servlet</groupId><artifactId>javax.servlet-api</artifactId>
   // No Jenkins: <groupId>org.apache.taglibs</groupId><artifactId>taglibs-standard-spec</artifactId>
 
