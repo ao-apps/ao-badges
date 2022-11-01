@@ -340,6 +340,14 @@ along with ao-badges.  If not, see <https://www.gnu.org/licenses/>.
             </tr>
             <tr>
               <td>
+                <ao:a rel="nofollow" href="@{javadoc.link.javase.20}">
+                  <ao:img src="/ao-badges/java-20.svg" width="78" height="20" alt="java: >= 20" />
+                </ao:a>
+              </td>
+              <td><code>arg.javaseVersion="20"</code></td>
+            </tr>
+            <tr>
+              <td>
                 <ao:a rel="nofollow" href="https://www.java.com/">
                   <ao:img src="/ao-badges/java-unknown.svg" width="94" height="20" alt="java: unknown" />
                 </ao:a>
