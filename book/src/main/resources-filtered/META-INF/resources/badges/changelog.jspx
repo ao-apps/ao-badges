@@ -37,7 +37,7 @@ along with ao-badges.  If not, see <https://www.gnu.org/licenses/>.
     shortTitle="Changelog"
     tocLevels="1"
     datePublished="2017-07-15T16:36:26-05:00"
-    dateModified="2022-10-31T19:08:12-05:00"
+    dateModified="2022-11-14T15:31:04-06:00"
   >
     <c:if test="${fn:endsWith('@{project.version}', '-SNAPSHOT') and !fn:endsWith('@{project.version}', '-POST-SNAPSHOT')}">
       <changelog:release
@@ -49,16 +49,33 @@ along with ao-badges.  If not, see <https://www.gnu.org/licenses/>.
         scmUrl="@{project.scm.url}"
       >
         <ul>
-          <li>Java updates:
+          <li>Jakarta EE updates:
             <ol>
-              <li>Java 18 is now end-of-life</li>
-              <li>Java 19 is now current stable</li>
-              <li>Java 20 is new beta</li>
+              <li>Added <ao:a href="https://jakarta.ee/specifications/platform/10/">Jakarta EE 10</ao:a></li>
             </ol>
           </li>
         </ul>
       </changelog:release>
     </c:if>
+
+    <changelog:release
+      projectName="@{documented.name}"
+      version="1.9.0"
+      datePublished="2022-11-03T19:16:59-05:00"
+      groupId="@{project.groupId}"
+      artifactId="@{documented.artifactId}"
+      scmUrl="@{project.scm.url}"
+    >
+      <ul>
+        <li>Java updates:
+          <ol>
+            <li>Java 18 is now end-of-life</li>
+            <li>Java 19 is now current stable</li>
+            <li>Java 20 is new beta</li>
+          </ol>
+        </li>
+      </ul>
+    </changelog:release>
 
     <changelog:release
       projectName="@{documented.name}"
@@ -124,9 +141,9 @@ along with ao-badges.  If not, see <https://www.gnu.org/licenses/>.
         <li>Java™ EE updates:
           <ol>
             <li>Updated to <ao:a rel="nofollow" href="https://www.oracle.com/java/technologies/javaee/javaeetechnologies.html#javaee7">Java™ EE 7 Web Profile</ao:a> (Servlet 3.1, JSP 2.3, EL 3.0, and JSTL 1.2).</li>
-            <li>Updated apidocs URL for <ao:a href="https://jakarta.ee/specifications/platform/8/apidocs/">Jakarta EE 8</ao:a></li>
-            <li>Added <ao:a href="https://jakarta.ee/specifications/platform/9/apidocs/">Jakarta EE 9</ao:a></li>
-            <li>Added <ao:a href="https://jakarta.ee/specifications/platform/9.1/apidocs/">Jakarta EE 9.1</ao:a></li>
+            <li>Updated apidocs URL for <ao:a href="https://jakarta.ee/specifications/platform/8/">Jakarta EE 8</ao:a></li>
+            <li>Added <ao:a href="https://jakarta.ee/specifications/platform/9/">Jakarta EE 9</ao:a></li>
+            <li>Added <ao:a href="https://jakarta.ee/specifications/platform/9.1/">Jakarta EE 9.1</ao:a></li>
           </ol>
         </li>
         <li>Minimum Java version changed from 1.8 to 11.</li>

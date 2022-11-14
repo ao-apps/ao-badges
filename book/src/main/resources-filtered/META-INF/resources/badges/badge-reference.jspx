@@ -33,7 +33,7 @@ along with ao-badges.  If not, see <https://www.gnu.org/licenses/>.
   <core:page
     title="Badge Reference"
     datePublished="2017-07-17T17:00:17-05:00"
-    dateModified="2022-04-11T21:07:41-05:00"
+    dateModified="2022-11-14T15:31:04-06:00"
   >
     <!-- TODO: Links in section labels to /life-cycle -->
     <section:section label="Project Management">
@@ -393,31 +393,60 @@ along with ao-badges.  If not, see <https://www.gnu.org/licenses/>.
             </tr>
             <tr>
               <td>
-                <ao:a rel="nofollow" href="@{javadoc.link.javaee.8}">
-                  <ao:img src="/ao-badges/javaee-8.svg" width="90" height="20" alt="java ee: >= 8" />
-                </ao:a>
-              </td>
-              <td><code>arg.javaeeVersion="8"</code></td>
-            </tr>
-            <tr>
-              <td>
-                <ao:a rel="nofollow" href="@{javadoc.link.javaee.9}">
-                  <ao:img src="/ao-badges/javaee-9.svg" width="90" height="20" alt="java ee: >= 9" />
-                </ao:a>
-              </td>
-              <td><code>arg.javaeeVersion="9"</code></td>
-            </tr>
-            <tr>
-              <td>
-                <ao:a rel="nofollow" href="@{javadoc.link.javaee.9.1}">
-                  <ao:img src="/ao-badges/javaee-9.1.svg" width="100" height="20" alt="java ee: >= 9.1" />
-                </ao:a>
-              </td>
-              <td><code>arg.javaeeVersion="9.1"</code></td>
-            </tr>
-            <tr>
-              <td>
                 <ao:a rel="nofollow" href="https://www.oracle.com/java/technologies/java-ee-glance.html">
+                  <ao:img src="/ao-badges/javaee-unknown.svg" width="112" height="20" alt="java ee: unknown" />
+                </ao:a>
+              </td>
+              <td><code>arg.javaeeVersion="unknown"</code></td>
+            </tr>
+          </tbody>
+        </table>
+      </section:section>
+      <!-- TODO: Link in section header -->
+      <section:section label="Jakarta EE">
+        <table class="ao-grid">
+          <thead>
+            <tr>
+              <th><ao:a href="https://jakarta.ee/specifications/platform/">Jakarta EE</ao:a> Version</th>
+              <th>Include Argument</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <ao:a href="@{javadoc.link.jakartaee.8}">
+                  <ao:img src="/ao-badges/jakartaee-8.svg" width="106" height="20" alt="jakarta ee: >= 8" />
+                </ao:a>
+              </td>
+              <td><code>arg.jakartaeeVersion="8"</code></td>
+            </tr>
+            <tr>
+              <td>
+                <ao:a href="@{javadoc.link.jakartaee.9}">
+                  <ao:img src="/ao-badges/jakartaee-9.svg" width="106" height="20" alt="jakarta ee: >= 9" />
+                </ao:a>
+              </td>
+              <td><code>arg.jakartaeeVersion="9"</code></td>
+            </tr>
+            <tr>
+              <td>
+                <ao:a href="@{javadoc.link.jakartaee.9.1}">
+                  <ao:img src="/ao-badges/jakartaee-9.1.svg" width="116" height="20" alt="jakarta ee: >= 9.1" />
+                </ao:a>
+              </td>
+              <td><code>arg.jakartaeeVersion="9.1"</code></td>
+            </tr>
+            <tr>
+              <td>
+                <ao:a href="@{javadoc.link.jakartaee.10}">
+                  <ao:img src="/ao-badges/jakartaee-10.svg" width="112" height="20" alt="jakarta ee: >= 10" />
+                </ao:a>
+              </td>
+              <td><code>arg.jakartaeeVersion="10"</code></td>
+            </tr>
+            <tr>
+              <td>
+                <ao:a href="https://jakarta.ee/specifications/platform/">
                   <ao:img src="/ao-badges/javaee-unknown.svg" width="112" height="20" alt="java ee: unknown" />
                 </ao:a>
               </td>
