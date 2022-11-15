@@ -33,7 +33,7 @@ along with ao-badges.  If not, see <https://www.gnu.org/licenses/>.
   <core:page
     title="Badge Reference"
     datePublished="2017-07-17T17:00:17-05:00"
-    dateModified="2022-11-14T15:31:04-06:00"
+    dateModified="2022-11-15T02:50:35-06:00"
   >
     <!-- TODO: Links in section labels to /life-cycle.jspx -->
     <section:section label="Project Management">
@@ -447,7 +447,7 @@ along with ao-badges.  If not, see <https://www.gnu.org/licenses/>.
             <tr>
               <td>
                 <ao:a href="https://jakarta.ee/specifications/platform/">
-                  <ao:img src="/ao-badges/javaee-unknown.svg" width="112" height="20" alt="java ee: unknown" />
+                  <ao:img src="/ao-badges/jakartaee-unknown.svg" width="128" height="20" alt="jakarta ee: unknown" />
                 </ao:a>
               </td>
               <td><code>arg.javaeeVersion="unknown"</code></td>
