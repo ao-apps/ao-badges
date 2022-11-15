@@ -226,87 +226,87 @@ Arguments:
       <c:if test="${!empty arg.javaseVersion}">
         <ao:choose>
           <ao:when test="#{arg.javaseVersion == '1.5' or arg.javaseVersion == '5'}">
-            <ao:a rel="nofollow" href="@{javadoc.link.javase.5}">
+            <ao:a rel="nofollow" href="https://www.oracle.com/java/technologies/javase/j2se5.0.html">
               <ao:img src="/ao-badges/java-5.svg" width="72" height="20" alt="java: >= 5" />
             </ao:a>
           </ao:when>
           <ao:when test="#{arg.javaseVersion == '1.6' or arg.javaseVersion == '6'}">
-            <ao:a rel="nofollow" href="@{javadoc.link.javase.6}">
+            <ao:a rel="nofollow" href="https://www.oracle.com/java/technologies/javase/javase-overview6.html">
               <ao:img src="/ao-badges/java-6.svg" width="72" height="20" alt="java: >= 6" />
             </ao:a>
           </ao:when>
           <ao:when test="#{arg.javaseVersion == '1.7' or arg.javaseVersion == '7'}">
-            <ao:a rel="nofollow" href="@{javadoc.link.javase.7}">
+            <ao:a rel="nofollow" href="https://docs.oracle.com/javase/7/docs/">
               <ao:img src="/ao-badges/java-7.svg" width="72" height="20" alt="java: >= 7" />
             </ao:a>
           </ao:when>
           <ao:when test="#{arg.javaseVersion == '1.8' or arg.javaseVersion == '8'}">
-            <ao:a rel="nofollow" href="@{javadoc.link.javase.8}">
+            <ao:a rel="nofollow" href="https://docs.oracle.com/javase/8/">
               <ao:img src="/ao-badges/java-8.svg" width="72" height="20" alt="java: >= 8" />
             </ao:a>
           </ao:when>
           <ao:when test="#{arg.javaseVersion == '9'}">
-            <ao:a rel="nofollow" href="@{javadoc.link.javase.9}">
+            <ao:a rel="nofollow" href="https://docs.oracle.com/javase/9/">
               <ao:img src="/ao-badges/java-9.svg" width="72" height="20" alt="java: >= 9" />
             </ao:a>
           </ao:when>
           <ao:when test="#{arg.javaseVersion == '10'}">
-            <ao:a rel="nofollow" href="@{javadoc.link.javase.10}">
+            <ao:a rel="nofollow" href="https://docs.oracle.com/javase/10/">
               <ao:img src="/ao-badges/java-10.svg" width="78" height="20" alt="java: >= 10" />
             </ao:a>
           </ao:when>
           <ao:when test="#{arg.javaseVersion == '11'}">
-            <ao:a rel="nofollow" href="@{javadoc.link.javase.11}">
+            <ao:a rel="nofollow" href="https://docs.oracle.com/en/java/javase/11/">
               <ao:img src="/ao-badges/java-11.svg" width="78" height="20" alt="java: >= 11" />
             </ao:a>
           </ao:when>
           <ao:when test="#{arg.javaseVersion == '12'}">
-            <ao:a rel="nofollow" href="@{javadoc.link.javase.12}">
+            <ao:a rel="nofollow" href="https://docs.oracle.com/en/java/javase/12/">
               <ao:img src="/ao-badges/java-12.svg" width="78" height="20" alt="java: >= 12" />
             </ao:a>
           </ao:when>
           <ao:when test="#{arg.javaseVersion == '13'}">
-            <ao:a rel="nofollow" href="@{javadoc.link.javase.13}">
+            <ao:a rel="nofollow" href="https://docs.oracle.com/en/java/javase/13/">
               <ao:img src="/ao-badges/java-13.svg" width="78" height="20" alt="java: >= 13" />
             </ao:a>
           </ao:when>
           <ao:when test="#{arg.javaseVersion == '14'}">
-            <ao:a rel="nofollow" href="@{javadoc.link.javase.14}">
+            <ao:a rel="nofollow" href="https://docs.oracle.com/en/java/javase/14/">
               <ao:img src="/ao-badges/java-14.svg" width="78" height="20" alt="java: >= 14" />
             </ao:a>
           </ao:when>
           <ao:when test="#{arg.javaseVersion == '15'}">
-            <ao:a rel="nofollow" href="@{javadoc.link.javase.15}">
+            <ao:a rel="nofollow" href="https://docs.oracle.com/en/java/javase/15/">
               <ao:img src="/ao-badges/java-15.svg" width="78" height="20" alt="java: >= 15" />
             </ao:a>
           </ao:when>
           <ao:when test="#{arg.javaseVersion == '16'}">
-            <ao:a rel="nofollow" href="@{javadoc.link.javase.16}">
+            <ao:a rel="nofollow" href="https://docs.oracle.com/en/java/javase/16/">
               <ao:img src="/ao-badges/java-16.svg" width="78" height="20" alt="java: >= 16" />
             </ao:a>
           </ao:when>
           <ao:when test="#{arg.javaseVersion == '17'}">
-            <ao:a rel="nofollow" href="@{javadoc.link.javase.17}">
+            <ao:a rel="nofollow" href="https://docs.oracle.com/en/java/javase/17/">
               <ao:img src="/ao-badges/java-17.svg" width="78" height="20" alt="java: >= 17" />
             </ao:a>
           </ao:when>
           <ao:when test="#{arg.javaseVersion == '18'}">
-            <ao:a rel="nofollow" href="@{javadoc.link.javase.18}">
+            <ao:a rel="nofollow" href="https://docs.oracle.com/en/java/javase/18/">
               <ao:img src="/ao-badges/java-18.svg" width="78" height="20" alt="java: >= 18" />
             </ao:a>
           </ao:when>
           <ao:when test="#{arg.javaseVersion == '19'}">
-            <ao:a rel="nofollow" href="@{javadoc.link.javase.19}">
+            <ao:a rel="nofollow" href="https://docs.oracle.com/en/java/javase/19/">
               <ao:img src="/ao-badges/java-19.svg" width="78" height="20" alt="java: >= 19" />
             </ao:a>
           </ao:when>
           <ao:when test="#{arg.javaseVersion == '20'}">
-            <ao:a rel="nofollow" href="@{javadoc.link.javase.20}">
+            <ao:a rel="nofollow" href="https://openjdk.org/projects/jdk/20/">
               <ao:img src="/ao-badges/java-20.svg" width="78" height="20" alt="java: >= 20" />
             </ao:a>
           </ao:when>
           <ao:otherwise>
-            <ao:a rel="nofollow" href="https://www.java.com/">
+            <ao:a rel="nofollow" href="https://docs.oracle.com/en/java/javase/">
               <ao:img src="/ao-badges/java-unknown.svg" width="94" height="20" alt="java: unknown" />
             </ao:a>
           </ao:otherwise>
@@ -315,17 +315,17 @@ Arguments:
       <c:if test="${!empty arg.javaeeVersion}">
         <ao:choose>
           <ao:when test="#{arg.javaeeVersion == '5'}">
-            <ao:a rel="nofollow" href="@{javadoc.link.javaee.5}">
+            <ao:a rel="nofollow" href="https://docs.oracle.com/javaee/5/">
               <ao:img src="/ao-badges/javaee-5.svg" width="90" height="20" alt="java ee: >= 5" />
             </ao:a>
           </ao:when>
           <ao:when test="#{arg.javaeeVersion == '6'}">
-            <ao:a rel="nofollow" href="@{javadoc.link.javaee.6}">
+            <ao:a rel="nofollow" href="https://docs.oracle.com/javaee/6/">
               <ao:img src="/ao-badges/javaee-6.svg" width="90" height="20" alt="java ee: >= 6" />
             </ao:a>
           </ao:when>
           <ao:when test="#{arg.javaeeVersion == '7'}">
-            <ao:a rel="nofollow" href="@{javadoc.link.javaee.7}">
+            <ao:a rel="nofollow" href="https://docs.oracle.com/javaee/7/">
               <ao:img src="/ao-badges/javaee-7.svg" width="90" height="20" alt="java ee: >= 7" />
             </ao:a>
           </ao:when>
@@ -339,27 +339,27 @@ Arguments:
       <c:if test="${!empty arg.jakartaeeVersion}">
         <ao:choose>
           <ao:when test="#{arg.jakartaeeVersion == '8'}">
-            <ao:a href="@{javadoc.link.jakartaee.8}">
+            <ao:a href="https://jakarta.ee/release/8/">
               <ao:img src="/ao-badges/jakartaee-8.svg" width="106" height="20" alt="jakarta ee: >= 8" />
             </ao:a>
           </ao:when>
           <ao:when test="#{arg.jakartaeeVersion == '9'}">
-            <ao:a href="@{javadoc.link.jakartaee.9}">
+            <ao:a href="https://jakarta.ee/release/9/">
               <ao:img src="/ao-badges/jakartaee-9.svg" width="106" height="20" alt="jakarta ee: >= 9" />
             </ao:a>
           </ao:when>
           <ao:when test="#{arg.jakartaeeVersion == '9.1'}">
-            <ao:a href="@{javadoc.link.jakartaee.9.1}">
+            <ao:a href="https://jakarta.ee/release/9.1/">
               <ao:img src="/ao-badges/jakartaee-9.1.svg" width="116" height="20" alt="jakarta ee: >= 9.1" />
             </ao:a>
           </ao:when>
           <ao:when test="#{arg.jakartaeeVersion == '10'}">
-            <ao:a href="@{javadoc.link.jakartaee.10}">
+            <ao:a href="https://jakarta.ee/release/10/">
               <ao:img src="/ao-badges/jakartaee-10.svg" width="112" height="20" alt="jakarta ee: >= 10" />
             </ao:a>
           </ao:when>
           <ao:otherwise>
-            <ao:a href="https://jakarta.ee/specifications/platform/">
+            <ao:a href="https://jakarta.ee/">
               <ao:img src="/ao-badges/jakartaee-unknown.svg" width="128" height="20" alt="jakarta ee: unknown" />
             </ao:a>
           </ao:otherwise>
