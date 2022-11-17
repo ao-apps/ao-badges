@@ -385,7 +385,7 @@ along with ao-badges.  If not, see <https://www.gnu.org/licenses/>.
             </tr>
             <tr>
               <td>
-                <ao:a rel="nofollow" href="https://docs.oracle.com/javaee/7/}">
+                <ao:a rel="nofollow" href="https://docs.oracle.com/javaee/7/">
                   <ao:img src="/ao-badges/javaee-7.svg" width="90" height="20" alt="java ee: >= 7" />
                 </ao:a>
               </td>
