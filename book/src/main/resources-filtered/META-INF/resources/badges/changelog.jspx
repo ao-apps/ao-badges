@@ -37,7 +37,7 @@ along with ao-badges.  If not, see <https://www.gnu.org/licenses/>.
     shortTitle="Changelog"
     tocLevels="1"
     datePublished="2017-07-15T16:36:26-05:00"
-    dateModified="2022-11-15T11:18:43-06:00"
+    dateModified="2022-11-19T11:06:41-06:00"
   >
     <c:if test="${fn:endsWith('@{project.version}', '-SNAPSHOT') and !fn:endsWith('@{project.version}', '-POST-SNAPSHOT')}">
       <changelog:release
@@ -47,16 +47,25 @@ along with ao-badges.  If not, see <https://www.gnu.org/licenses/>.
         artifactId="@{documented.artifactId}"
         repository="@{nexusUrl}content/repositories/snapshots/"
         scmUrl="@{project.scm.url}"
-      >
-        <ul>
-          <li>Jakarta EE updates:
-            <ol>
-              <li>Added <ao:a href="https://jakarta.ee/release/10/">Jakarta EE 10</ao:a></li>
-            </ol>
-          </li>
-        </ul>
-      </changelog:release>
+      />
     </c:if>
+
+    <changelog:release
+      projectName="@{documented.name}"
+      version="1.10.0"
+      datePublished="2022-11-19T11:06:41-06:00"
+      groupId="@{project.groupId}"
+      artifactId="@{documented.artifactId}"
+      scmUrl="@{project.scm.url}"
+    >
+      <ul>
+        <li>Jakarta EE updates:
+          <ol>
+            <li>Added <ao:a href="https://jakarta.ee/release/10/">Jakarta EE 10</ao:a></li>
+          </ol>
+        </li>
+      </ul>
+    </changelog:release>
 
     <changelog:release
       projectName="@{documented.name}"
