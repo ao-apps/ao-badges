@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 ao-badges - Badges from shields.io bundled into a reusable JSP-based web component.
-Copyright (C) 2017, 2019, 2020, 2021, 2022  AO Industries, Inc.
+Copyright (C) 2017, 2019, 2020, 2021, 2022, 2023  AO Industries, Inc.
     support@aoindustries.com
     7262 Bull Pen Cir
     Mobile, AL 36695
@@ -37,7 +37,7 @@ along with ao-badges.  If not, see <https://www.gnu.org/licenses/>.
     shortTitle="Changelog"
     tocLevels="1"
     datePublished="2017-07-15T16:36:26-05:00"
-    dateModified="2022-11-19T11:06:41-06:00"
+    dateModified="2023-07-11T01:16:46Z"
   >
     <c:if test="${fn:endsWith('@{project.version}', '-SNAPSHOT') and !fn:endsWith('@{project.version}', '-POST-SNAPSHOT')}">
       <changelog:release
@@ -47,7 +47,17 @@ along with ao-badges.  If not, see <https://www.gnu.org/licenses/>.
         artifactId="@{documented.artifactId}"
         repository="@{nexusUrl}content/repositories/snapshots/"
         scmUrl="@{project.scm.url}"
-      />
+      >
+        <ul>
+          <li>Java updates:
+            <ol>
+              <li>Java 19 is now end-of-life</li>
+              <li>Java 20 is now current stable</li>
+              <li>Java 21 is new beta</li>
+            </ol>
+          </li>
+        </ul>
+      </changelog:release>
     </c:if>
 
     <changelog:release
