@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 ao-badges - Badges from shields.io bundled into a reusable JSP-based web component.
-Copyright (C) 2017, 2019, 2020, 2021, 2022  AO Industries, Inc.
+Copyright (C) 2017, 2019, 2020, 2021, 2022, 2023  AO Industries, Inc.
     support@aoindustries.com
     7262 Bull Pen Cir
     Mobile, AL 36695
@@ -33,7 +33,7 @@ along with ao-badges.  If not, see <https://www.gnu.org/licenses/>.
   <core:page
     title="Badge Reference"
     datePublished="2017-07-17T17:00:17-05:00"
-    dateModified="2022-11-15T11:18:43-06:00"
+    dateModified="2023-07-11T01:16:46Z"
   >
     <!-- TODO: Links in section labels to /life-cycle -->
     <section:section label="Project Management">
@@ -340,11 +340,19 @@ along with ao-badges.  If not, see <https://www.gnu.org/licenses/>.
             </tr>
             <tr>
               <td>
-                <ao:a rel="nofollow" href="https://openjdk.org/projects/jdk/20/">
+                <ao:a rel="nofollow" href="https://docs.oracle.com/en/java/javase/20/">
                   <ao:img src="/ao-badges/java-20.svg" width="78" height="20" alt="java: >= 20" />
                 </ao:a>
               </td>
               <td><code>arg.javaseVersion="20"</code></td>
+            </tr>
+            <tr>
+              <td>
+                <ao:a rel="nofollow" href="https://openjdk.org/projects/jdk/21/">
+                  <ao:img src="/ao-badges/java-21.svg" width="78" height="20" alt="java: >= 21" />
+                </ao:a>
+              </td>
+              <td><code>arg.javaseVersion="21"</code></td>
             </tr>
             <tr>
               <td>
