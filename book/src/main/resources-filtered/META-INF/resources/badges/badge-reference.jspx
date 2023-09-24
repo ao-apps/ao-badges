@@ -33,7 +33,7 @@ along with ao-badges.  If not, see <https://www.gnu.org/licenses/>.
   <core:page
     title="Badge Reference"
     datePublished="2017-07-17T17:00:17-05:00"
-    dateModified="2023-07-11T01:16:46Z"
+    dateModified="2023-09-24T19:14:00Z"
   >
     <!-- TODO: Links in section labels to /life-cycle.jspx -->
     <section:section label="Project Management">
@@ -662,14 +662,14 @@ along with ao-badges.  If not, see <https://www.gnu.org/licenses/>.
       <table class="ao-grid">
         <thead>
           <tr>
-            <th><ao:a rel="nofollow" href="http://semver.org/">Semantic Versioning</ao:a> Version</th>
+            <th><ao:a rel="nofollow" href="https://semver.org/">Semantic Versioning</ao:a> Version</th>
             <th>Include Argument</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td>
-              <ao:a rel="nofollow" href="http://semver.org/spec/v2.0.0.html">
+              <ao:a rel="nofollow" href="https://semver.org/spec/v2.0.0.html">
                 <ao:img src="/ao-badges/semver-2.0.0.svg" width="90" height="20" alt="semantic versioning: 2.0.0" />
               </ao:a>
             </td>
@@ -677,7 +677,7 @@ along with ao-badges.  If not, see <https://www.gnu.org/licenses/>.
           </tr>
           <tr>
             <td>
-              <ao:a rel="nofollow" href="http://semver.org/">
+              <ao:a rel="nofollow" href="https://semver.org/">
                 <ao:img src="/ao-badges/semver-unknown.svg" width="112" height="20" alt="semantic versioning: unknown" />
               </ao:a>
             </td>
