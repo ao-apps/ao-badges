@@ -470,12 +470,12 @@ Arguments:
       <c:if test="${!empty arg.semanticVersioning}">
         <ao:choose>
           <ao:when test="#{arg.semanticVersioning == '2.0.0'}">
-            <ao:a rel="nofollow" href="http://semver.org/spec/v2.0.0.html">
+            <ao:a rel="nofollow" href="https://semver.org/spec/v2.0.0.html">
               <ao:img src="/ao-badges/semver-2.0.0.svg" width="90" height="20" alt="semantic versioning: 2.0.0" />
             </ao:a>
           </ao:when>
           <ao:otherwise>
-            <ao:a rel="nofollow" href="http://semver.org/">
+            <ao:a rel="nofollow" href="https://semver.org/">
               <ao:img src="/ao-badges/semver-unknown.svg" width="112" height="20" alt="semantic versioning: unknown" />
             </ao:a>
           </ao:otherwise>
