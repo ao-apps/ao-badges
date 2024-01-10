@@ -33,7 +33,7 @@ along with ao-badges.  If not, see <https://www.gnu.org/licenses/>.
   <core:page
     title="Badge Reference"
     datePublished="2017-07-17T17:00:17-05:00"
-    dateModified="2024-01-08T00:08:41Z"
+    dateModified="2024-01-10T17:43:44Z"
   >
     <!-- TODO: Links in section labels to /life-cycle.jspx -->
     <section:section label="Project Management">
@@ -349,7 +349,7 @@ along with ao-badges.  If not, see <https://www.gnu.org/licenses/>.
             <tr>
               <td>
                 <ao:a rel="nofollow" href="https://docs.oracle.com/en/java/javase/21/">
-                  <ao:img src="/ao-badges/java-20.svg" width="78" height="20" alt="java: >= 21" />
+                  <ao:img src="/ao-badges/java-21.svg" width="78" height="20" alt="java: >= 21" />
                 </ao:a>
               </td>
               <td><code>arg.javaseVersion="21"</code></td>
