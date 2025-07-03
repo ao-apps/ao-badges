@@ -25,7 +25,7 @@ Badges from [shields.io](https://shields.io/) bundled into a reusable JSP-based 
 * [User Guide](https://oss.aoapps.com/badges/user-guide)
 * [Badge Reference](https://oss.aoapps.com/badges/badge-reference)
 * [API Docs](https://oss.aoapps.com/badges/apidocs/)
-* [Maven Central Repository](https://central.sonatype.com/artifact/com.aoapps/ao-badges)
+* [Central Repository](https://central.sonatype.com/artifact/com.aoapps/ao-badges)
 * [GitHub](https://github.com/ao-apps/ao-badges)
 
 ## Contact Us
