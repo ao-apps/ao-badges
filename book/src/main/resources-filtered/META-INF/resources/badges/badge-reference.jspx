@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 ao-badges - Badges from shields.io bundled into a reusable JSP-based web component.
-Copyright (C) 2017, 2019, 2020, 2021, 2022, 2023, 2024  AO Industries, Inc.
+Copyright (C) 2017, 2019, 2020, 2021, 2022, 2023, 2024, 2025  AO Industries, Inc.
     support@aoindustries.com
     7262 Bull Pen Cir
     Mobile, AL 36695
@@ -33,7 +33,7 @@ along with ao-badges.  If not, see <https://www.gnu.org/licenses/>.
   <core:page
     title="Badge Reference"
     datePublished="2017-07-17T17:00:17-05:00"
-    dateModified="2024-01-10T17:43:44Z"
+    dateModified="2025-12-06T07:47:51Z"
   >
     <!-- TODO: Links in section labels to /life-cycle -->
     <section:section label="Project Management">
@@ -741,12 +741,13 @@ along with ao-badges.  If not, see <https://www.gnu.org/licenses/>.
         </thead>
         <tbody>
           <tr>
-            <td>
+            <td rowspan="2">
               <ao:a rel="nofollow" href="@{project.scm.url}/actions" param.query="workflow:Build">
-                <ao:img src="@{project.scm.url}/workflows/Build/badge.svg" style="max-width:100%" alt="Build" />
+                <ao:img src="@{project.scm.url}/actions/workflows/build.yml/badge.svg" style="max-width:100%" alt="Build" />
               </ao:a>
             </td>
             <td><code>arg.githubBuildWorkflow="<var>WORKFLOW</var>"</code></td>
+            <td>(Optional) <code>arg.githubBuildFile="<var>WORKFLOW_FILENAME</var>.yml"</code></td>
           </tr>
         </tbody>
       </table>

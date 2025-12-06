@@ -37,7 +37,7 @@ along with ao-badges.  If not, see <https://www.gnu.org/licenses/>.
     shortTitle="Changelog"
     tocLevels="1"
     datePublished="2017-07-15T16:36:26-05:00"
-    dateModified="2025-07-02T23:05:45Z"
+    dateModified="2025-12-06T07:47:51Z"
   >
     <c:set var="latestRelease" value="1.11.0" />
     <c:if test="${
@@ -51,7 +51,15 @@ along with ao-badges.  If not, see <https://www.gnu.org/licenses/>.
         groupId="@{project.groupId}"
         artifactId="@{documented.artifactId}"
         scmUrl="@{project.scm.url}"
-      />
+      >
+        <ul>
+          <li>
+            Updated <ao:a href="https://docs.github.com/en/actions/how-tos/monitor-workflows/add-a-status-badge">GitHub build status badge image URL</ao:a>
+            to resolve "Build: no status".  It appears GitHub changed the URL pattern and didn't maintain backward
+            compatibility when a build parameter is provided.
+          </li>
+        </ul>
+      </changelog:release>
     </c:if>
 
     <changelog:release
