@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 ao-badges - Badges from shields.io bundled into a reusable JSP-based web component.
-Copyright (C) 2017, 2019, 2020, 2021, 2022, 2023, 2024  AO Industries, Inc.
+Copyright (C) 2017, 2019, 2020, 2021, 2022, 2023, 2024, 2025  AO Industries, Inc.
     support@aoindustries.com
     7262 Bull Pen Cir
     Mobile, AL 36695
@@ -65,6 +65,9 @@ Arguments:
                            For GitHub: https://github.com/<OWNER>/<REPOSITORY>
 
   arg.githubBuildWorkflow  (Optional) Adds a build status badge for the workflow of the given name.
+
+  arg.githubBuildFile      (Optional) Specifies the workflow filename for the build status badge.
+                           Defaults to "${arg.githubBuildWorkflow}.yml"
 
   arg.scmBranch            (Optional) The name of the branch to use for build and SonarCloud badges.
 
@@ -520,11 +523,12 @@ Arguments:
   }">
     <p class="ao-badges">
       <c:if test="${!empty arg.githubBuildWorkflow}">
+        <c:set var="githubBuildFile" value="${empty arg.githubBuildFile ? arg.githubBuildWorkflow.concat('.yml') : arg.githubBuildFile}" />
         <ao:choose>
           <ao:when test="#{empty arg.scmBranch}">
             <ao:a rel="nofollow" href="${arg.scmUrl}/actions" param.query="workflow:${arg.githubBuildWorkflow}">
               <ao:img
-                src="${arg.scmUrl}/workflows/${ao:encodeURIComponent(arg.githubBuildWorkflow)}/badge.svg"
+                src="${arg.scmUrl}/actions/workflows/${ao:encodeURIComponent(githubBuildFile)}/badge.svg"
                 style="max-width:100%"
                 alt="${arg.githubBuildWorkflow}"
               />
@@ -533,7 +537,7 @@ Arguments:
           <ao:otherwise>
             <ao:a rel="nofollow" href="${arg.scmUrl}/actions" param.query="workflow:${arg.githubBuildWorkflow}">
               <ao:img
-                src="${arg.scmUrl}/workflows/${ao:encodeURIComponent(arg.githubBuildWorkflow)}/badge.svg"
+                src="${arg.scmUrl}/actions/workflows/${ao:encodeURIComponent(githubBuildFile)}/badge.svg"
                 param.branch="${arg.scmBranch}"
                 style="max-width:100%"
                 alt="${arg.githubBuildWorkflow}"
