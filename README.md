@@ -8,14 +8,14 @@
 [![semantic versioning: 2.0.0](https://oss.aoapps.com/ao-badges/semver-2.0.0.svg)](https://semver.org/spec/v2.0.0.html)
 [![license: LGPL v3](https://oss.aoapps.com/ao-badges/license-lgpl-3.0.svg)](https://www.gnu.org/licenses/lgpl-3.0)
 
-[![Build](https://github.com/ao-apps/ao-badges/actions/workflows/build.yml/badge.svg?branch=1.x)](https://github.com/ao-apps/ao-badges/actions?query=workflow%3ABuild)
+[![Build](https://github.com/ao-apps/ao-badges/actions/workflows/build.yml/badge.svg?branch=javaee)](https://github.com/ao-apps/ao-badges/actions?query=workflow%3ABuild)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.aoapps/ao-badges/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.aoapps/ao-badges)
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?branch=1.x&project=com.aoapps%3Aao-badges&metric=alert_status)](https://sonarcloud.io/dashboard?branch=1.x&id=com.aoapps%3Aao-badges)
-[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?branch=1.x&project=com.aoapps%3Aao-badges&metric=ncloc)](https://sonarcloud.io/component_measures?branch=1.x&id=com.aoapps%3Aao-badges&metric=ncloc)  
-[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?branch=1.x&project=com.aoapps%3Aao-badges&metric=reliability_rating)](https://sonarcloud.io/component_measures?branch=1.x&id=com.aoapps%3Aao-badges&metric=Reliability)
-[![Security Rating](https://sonarcloud.io/api/project_badges/measure?branch=1.x&project=com.aoapps%3Aao-badges&metric=security_rating)](https://sonarcloud.io/component_measures?branch=1.x&id=com.aoapps%3Aao-badges&metric=Security)
-[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?branch=1.x&project=com.aoapps%3Aao-badges&metric=sqale_rating)](https://sonarcloud.io/component_measures?branch=1.x&id=com.aoapps%3Aao-badges&metric=Maintainability)
-[![Coverage](https://sonarcloud.io/api/project_badges/measure?branch=1.x&project=com.aoapps%3Aao-badges&metric=coverage)](https://sonarcloud.io/component_measures?branch=1.x&id=com.aoapps%3Aao-badges&metric=Coverage)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?branch=javaee&project=com.aoapps%3Aao-badges&metric=alert_status)](https://sonarcloud.io/dashboard?branch=javaee&id=com.aoapps%3Aao-badges)
+[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?branch=javaee&project=com.aoapps%3Aao-badges&metric=ncloc)](https://sonarcloud.io/component_measures?branch=javaee&id=com.aoapps%3Aao-badges&metric=ncloc)  
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?branch=javaee&project=com.aoapps%3Aao-badges&metric=reliability_rating)](https://sonarcloud.io/component_measures?branch=javaee&id=com.aoapps%3Aao-badges&metric=Reliability)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?branch=javaee&project=com.aoapps%3Aao-badges&metric=security_rating)](https://sonarcloud.io/component_measures?branch=javaee&id=com.aoapps%3Aao-badges&metric=Security)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?branch=javaee&project=com.aoapps%3Aao-badges&metric=sqale_rating)](https://sonarcloud.io/component_measures?branch=javaee&id=com.aoapps%3Aao-badges&metric=Maintainability)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?branch=javaee&project=com.aoapps%3Aao-badges&metric=coverage)](https://sonarcloud.io/component_measures?branch=javaee&id=com.aoapps%3Aao-badges&metric=Coverage)
 
 Badges from [shields.io](https://shields.io/) bundled into a reusable JSP-based web component.
 
