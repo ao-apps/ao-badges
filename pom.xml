@@ -116,12 +116,8 @@ along with ao-badges.  If not, see <https://www.gnu.org/licenses/>.
           <usedDependencies>
             <!-- JSP Only -->
             <dependency>org.apache.taglibs:taglibs-standard-spec</dependency>
-          </usedDependencies>
-          <ignoredDependencies>
-            <!-- No "module-info.java" in some release builds -->
-            <dependency>com.aoapps:ao-collections</dependency>
             <dependency>com.aoapps:ao-taglib</dependency>
-          </ignoredDependencies>
+          </usedDependencies>
         </configuration>
       </plugin>
     </plugins>
