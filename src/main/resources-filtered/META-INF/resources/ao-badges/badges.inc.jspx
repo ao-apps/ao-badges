@@ -228,7 +228,7 @@ Arguments:
       </c:if>
       <c:if test="${!empty arg.javaseVersion}">
         <ao:choose>
-          <%-- Note: versions added here must also be added to ao-oss-parent:pom.xml:update-readme --%>
+          <!-- Note: versions added here must also be added to ao-oss-parent:pom.xml:update-readme -->
           <ao:when test="#{arg.javaseVersion == '1.5' or arg.javaseVersion == '5'}">
             <ao:a rel="nofollow" href="@{javase.href.5}">
               <ao:img src="/ao-badges/java-5.svg" width="72" height="20" alt="java: >= 5" />
@@ -319,7 +319,7 @@ Arguments:
               <ao:img src="/ao-badges/java-22.svg" width="78" height="20" alt="java: >= 22" />
             </ao:a>
           </ao:when>
-          <%-- Note: versions added here must also be added to ao-oss-parent:pom.xml:update-readme --%>
+          <!-- Note: versions added here must also be added to ao-oss-parent:pom.xml:update-readme -->
           <ao:otherwise>
             <ao:a rel="nofollow" href="https://docs.oracle.com/en/java/javase/">
               <ao:img src="/ao-badges/java-unknown.svg" width="94" height="20" alt="java: unknown" />
@@ -329,7 +329,7 @@ Arguments:
       </c:if>
       <c:if test="${!empty arg.javaeeVersion}">
         <ao:choose>
-          <%-- Note: versions added here must also be added to ao-oss-parent:pom.xml:update-readme --%>
+          <!-- Note: versions added here must also be added to ao-oss-parent:pom.xml:update-readme -->
           <ao:when test="#{arg.javaeeVersion == '5'}">
             <ao:a rel="nofollow" href="@{javaee.href.5}">
               <ao:img src="/ao-badges/javaee-5.svg" width="90" height="20" alt="java ee: >= 5" />
@@ -345,7 +345,7 @@ Arguments:
               <ao:img src="/ao-badges/javaee-7.svg" width="90" height="20" alt="java ee: >= 7" />
             </ao:a>
           </ao:when>
-          <%-- Note: versions added here must also be added to ao-oss-parent:pom.xml:update-readme --%>
+          <!-- Note: versions added here must also be added to ao-oss-parent:pom.xml:update-readme -->
           <ao:otherwise>
             <ao:a rel="nofollow" href="https://www.oracle.com/java/technologies/java-ee-glance.html">
               <ao:img src="/ao-badges/javaee-unknown.svg" width="112" height="20" alt="java ee: unknown" />
@@ -355,7 +355,7 @@ Arguments:
       </c:if>
       <c:if test="${!empty arg.jakartaeeVersion}">
         <ao:choose>
-          <%-- Note: versions added here must also be added to ao-oss-parent:pom.xml:update-readme --%>
+          <!-- Note: versions added here must also be added to ao-oss-parent:pom.xml:update-readme -->
           <ao:when test="#{arg.jakartaeeVersion == '8'}">
             <ao:a href="@{jakartaee.href.8}">
               <ao:img src="/ao-badges/jakartaee-8.svg" width="106" height="20" alt="jakarta ee: >= 8" />
@@ -376,7 +376,7 @@ Arguments:
               <ao:img src="/ao-badges/jakartaee-10.svg" width="112" height="20" alt="jakarta ee: >= 10" />
             </ao:a>
           </ao:when>
-          <%-- Note: versions added here must also be added to ao-oss-parent:pom.xml:update-readme --%>
+          <!-- Note: versions added here must also be added to ao-oss-parent:pom.xml:update-readme -->
           <ao:otherwise>
             <ao:a href="https://jakarta.ee/">
               <ao:img src="/ao-badges/jakartaee-unknown.svg" width="128" height="20" alt="jakarta ee: unknown" />
