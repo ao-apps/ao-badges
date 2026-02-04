@@ -1,8 +1,8 @@
 # [<img src="ao-logo.png" alt="AO Logo" width="35" height="40">](https://github.com/ao-apps) [AO OSS](https://github.com/ao-apps/ao-oss) / [Badges](https://github.com/ao-apps/ao-badges)
 
-[![project: old stable](https://oss.aoapps.com/ao-badges/project-old-stable.svg)](https://aoindustries.com/life-cycle#project-old-stable)
-[![management: migration](https://oss.aoapps.com/ao-badges/management-migration.svg)](https://aoindustries.com/life-cycle#management-migration)
-[![packaging: active](https://oss.aoapps.com/ao-badges/packaging-active.svg)](https://aoindustries.com/life-cycle#packaging-active)  
+[![project: end of life](https://oss.aoapps.com/ao-badges/project-end-of-life.svg)](https://aoindustries.com/life-cycle#project-end-of-life)
+[![management: cleanup](https://oss.aoapps.com/ao-badges/management-cleanup.svg)](https://aoindustries.com/life-cycle#management-cleanup)
+[![packaging: unsupported](https://oss.aoapps.com/ao-badges/packaging-unsupported.svg)](https://aoindustries.com/life-cycle#packaging-unsupported)  
 [![java: &gt;= 11](https://oss.aoapps.com/ao-badges/java-11.svg)](https://docs.oracle.com/en/java/javase/11/)
 [![java ee: &gt;= 7](https://oss.aoapps.com/ao-badges/javaee-7.svg)](https://docs.oracle.com/javaee/7/)
 [![semantic versioning: 2.0.0](https://oss.aoapps.com/ao-badges/semver-2.0.0.svg)](https://semver.org/spec/v2.0.0.html)
@@ -18,6 +18,10 @@
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?branch=javaee&project=com.aoapps%3Aao-badges&metric=coverage)](https://sonarcloud.io/component_measures?branch=javaee&id=com.aoapps%3Aao-badges&metric=Coverage)
 
 Badges from [shields.io](https://shields.io/) bundled into a reusable JSP-based web component.
+
+## End of Life
+This branch is end-of-life and will no longer receive any updates or releases.
+Please switch to a newer, maintained branch.
 
 ## Project Links
 * [Project Home](https://oss.aoapps.com/badges/)
