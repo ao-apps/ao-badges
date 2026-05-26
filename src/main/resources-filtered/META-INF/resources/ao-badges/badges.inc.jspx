@@ -319,6 +319,31 @@ Arguments:
               <ao:img src="/ao-badges/java-22.svg" width="78" height="20" alt="java: >= 22" />
             </ao:a>
           </ao:when>
+          <ao:when test="#{arg.javaseVersion == '23'}">
+            <ao:a rel="nofollow" href="@{javase.href.23}">
+              <ao:img src="/ao-badges/java-23.svg" width="78" height="20" alt="java: >= 23" />
+            </ao:a>
+          </ao:when>
+          <ao:when test="#{arg.javaseVersion == '24'}">
+            <ao:a rel="nofollow" href="@{javase.href.24}">
+              <ao:img src="/ao-badges/java-24.svg" width="78" height="20" alt="java: >= 24" />
+            </ao:a>
+          </ao:when>
+          <ao:when test="#{arg.javaseVersion == '25'}">
+            <ao:a rel="nofollow" href="@{javase.href.25}">
+              <ao:img src="/ao-badges/java-25.svg" width="78" height="20" alt="java: >= 25" />
+            </ao:a>
+          </ao:when>
+          <ao:when test="#{arg.javaseVersion == '26'}">
+            <ao:a rel="nofollow" href="@{javase.href.26}">
+              <ao:img src="/ao-badges/java-26.svg" width="78" height="20" alt="java: >= 26" />
+            </ao:a>
+          </ao:when>
+          <ao:when test="#{arg.javaseVersion == '27'}">
+            <ao:a rel="nofollow" href="@{javase.href.27}">
+              <ao:img src="/ao-badges/java-27.svg" width="78" height="20" alt="java: >= 27" />
+            </ao:a>
+          </ao:when>
           <!-- Note: versions added here must also be added to ao-oss-parent:pom.xml:update-readme -->
           <ao:otherwise>
             <ao:a rel="nofollow" href="https://docs.oracle.com/en/java/javase/">
