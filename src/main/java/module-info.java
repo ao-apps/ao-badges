@@ -21,11 +21,12 @@
  * along with ao-badges.  If not, see <https://www.gnu.org/licenses/>.
  */
 module com.aoapps.badges {
-  exports com.aoapps.badges;
   // Direct
   requires com.aoapps.taglib; // <groupId>com.aoapps</groupId><artifactId>ao-taglib</artifactId>
   requires com.aoapps.web.resources.registry; // <groupId>com.aoapps</groupId><artifactId>ao-web-resources-registry</artifactId>
   requires com.aoapps.web.resources.servlet; // <groupId>com.aoapps</groupId><artifactId>ao-web-resources-servlet</artifactId>
   requires jakarta.servlet; // <groupId>jakarta.servlet</groupId><artifactId>jakarta.servlet-api</artifactId>
   requires jakarta.servlet.jsp.jstl; // <groupId>jakarta.servlet.jsp.jstl</groupId><artifactId>jakarta.servlet.jsp.jstl-api</artifactId>
+
+  exports com.aoapps.badges;
 }
