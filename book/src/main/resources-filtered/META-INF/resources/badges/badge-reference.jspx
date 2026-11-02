@@ -404,6 +404,14 @@ along with ao-badges.  If not, see <https://www.gnu.org/licenses/>.
             </tr>
             <tr>
               <td>
+                <ao:a rel="nofollow" href="@{javase.href.28}">
+                  <ao:img src="/ao-badges/java-28.svg" width="78" height="20" alt="java: >= 28" />
+                </ao:a>
+              </td>
+              <td><code>arg.javaseVersion="28"</code></td>
+            </tr>
+            <tr>
+              <td>
                 <ao:a rel="nofollow" href="https://docs.oracle.com/en/java/javase/">
                   <ao:img src="/ao-badges/java-unknown.svg" width="94" height="20" alt="java: unknown" />
                 </ao:a>
